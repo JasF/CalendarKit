@@ -1,0 +1,36 @@
+PODS:
+  - CryptoSwift (1.6.0)
+  - ProgressHUD (13.6.2)
+  - PryntTrimmerView (4.0.2)
+  - SteviaLayout (5.1.2)
+  - YPImagePicker (5.2.1):
+    - PryntTrimmerView (= 4.0.2)
+    - SteviaLayout (= 5.1.2)
+
+DEPENDENCIES:
+  - CryptoSwift (from `./Components/CryptoSwift-main`)
+  - ProgressHUD
+  - YPImagePicker (from `./Components/YPImagePicker-master`)
+
+SPEC REPOS:
+  trunk:
+    - ProgressHUD
+    - PryntTrimmerView
+    - SteviaLayout
+
+EXTERNAL SOURCES:
+  CryptoSwift:
+    :path: "./Components/CryptoSwift-main"
+  YPImagePicker:
+    :path: "./Components/YPImagePicker-master"
+
+SPEC CHECKSUMS:
+  CryptoSwift: 562f8eceb40e80796fffc668b0cad9313284cfa6
+  ProgressHUD: 355915c8f033e626788fa9b0d99d06e8691595ab
+  PryntTrimmerView: 6a43cc90df5d99addeabd33d4ba09b1365322130
+  SteviaLayout: 05424e528d643657d39ce72c786e4adf13cfc5f2
+  YPImagePicker: e7f9a34273fdf56283ac03ec2efa0601f946489f
+
+PODFILE CHECKSUM: d51ed739fbe0af992763959e120d8b37f899e62d
+
+COCOAPODS: 1.10.1
