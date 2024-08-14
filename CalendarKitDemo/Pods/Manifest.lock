@@ -1,36 +1,107 @@
 PODS:
+  - CocoaLumberjack (3.4.2):
+    - CocoaLumberjack/Default (= 3.4.2)
+    - CocoaLumberjack/Extensions (= 3.4.2)
+  - CocoaLumberjack/Default (3.4.2)
+  - CocoaLumberjack/Extensions (3.4.2):
+    - CocoaLumberjack/Default
   - CryptoSwift (1.6.0)
-  - ProgressHUD (13.6.2)
+  - EasyMapping (0.22.0):
+    - EasyMapping/Core (= 0.22.0)
+  - EasyMapping/Core (0.22.0)
+  - FMDB (2.7.4):
+    - FMDB/standard (= 2.7.4)
+  - FMDB/standard (2.7.4)
+  - libextobjc (0.6):
+    - libextobjc/EXTADT (= 0.6)
+    - libextobjc/EXTConcreteProtocol (= 0.6)
+    - libextobjc/EXTKeyPathCoding (= 0.6)
+    - libextobjc/EXTNil (= 0.6)
+    - libextobjc/EXTSafeCategory (= 0.6)
+    - libextobjc/EXTScope (= 0.6)
+    - libextobjc/EXTSelectorChecking (= 0.6)
+    - libextobjc/EXTSynthesize (= 0.6)
+    - "libextobjc/NSInvocation+EXT (= 0.6)"
+    - "libextobjc/NSMethodSignature+EXT (= 0.6)"
+    - libextobjc/RuntimeExtensions (= 0.6)
+    - libextobjc/UmbrellaHeader (= 0.6)
+  - libextobjc/EXTADT (0.6):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTConcreteProtocol (0.6):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTKeyPathCoding (0.6):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTNil (0.6):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTSafeCategory (0.6):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTScope (0.6):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTSelectorChecking (0.6):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTSynthesize (0.6):
+    - libextobjc/RuntimeExtensions
+  - "libextobjc/NSInvocation+EXT (0.6)":
+    - libextobjc/RuntimeExtensions
+  - "libextobjc/NSMethodSignature+EXT (0.6)":
+    - libextobjc/RuntimeExtensions
+  - libextobjc/RuntimeExtensions (0.6)
+  - libextobjc/UmbrellaHeader (0.6)
+  - MTDates (1.0.3)
+  - ProgressHUD (14.1.1)
   - PryntTrimmerView (4.0.2)
   - SteviaLayout (5.1.2)
+  - SwiftReflection (0.1.0)
   - YPImagePicker (5.2.1):
     - PryntTrimmerView (= 4.0.2)
     - SteviaLayout (= 5.1.2)
 
 DEPENDENCIES:
+  - CocoaLumberjack (from `Components/CocoaLumberjack`)
   - CryptoSwift (from `./Components/CryptoSwift-main`)
+  - EasyMapping (from `Components/EasyMapping`)
+  - FMDB (from `Components/fmdb`)
+  - libextobjc
+  - MTDates
   - ProgressHUD
+  - SwiftReflection (from `Components/SwiftReflection`)
   - YPImagePicker (from `./Components/YPImagePicker-master`)
 
 SPEC REPOS:
   trunk:
+    - libextobjc
+    - MTDates
     - ProgressHUD
     - PryntTrimmerView
     - SteviaLayout
 
 EXTERNAL SOURCES:
+  CocoaLumberjack:
+    :path: Components/CocoaLumberjack
   CryptoSwift:
     :path: "./Components/CryptoSwift-main"
+  EasyMapping:
+    :path: Components/EasyMapping
+  FMDB:
+    :path: Components/fmdb
+  SwiftReflection:
+    :path: Components/SwiftReflection
   YPImagePicker:
     :path: "./Components/YPImagePicker-master"
 
 SPEC CHECKSUMS:
+  CocoaLumberjack: db7cc9e464771f12054c22ff6947c5a58d43a0fd
   CryptoSwift: 562f8eceb40e80796fffc668b0cad9313284cfa6
-  ProgressHUD: 355915c8f033e626788fa9b0d99d06e8691595ab
+  EasyMapping: 60f8b3cac9a9d2b76a75e2b96f556480de103601
+  FMDB: 773f41d0d6e6e4cc7a46168ca896b11c3d7e560e
+  libextobjc: aed8b7d2b07f511c1a7ecaacb33ea03e327c69b7
+  MTDates: c65affdfb7b34001c5c9e3fe0beac4b1b8334a58
+  ProgressHUD: abb9136ae23c85204236828562cb9a8ec98efb44
   PryntTrimmerView: 6a43cc90df5d99addeabd33d4ba09b1365322130
   SteviaLayout: 05424e528d643657d39ce72c786e4adf13cfc5f2
+  SwiftReflection: 503b9468c5e74eb905b791c211ca513b3d97024e
   YPImagePicker: e7f9a34273fdf56283ac03ec2efa0601f946489f
 
-PODFILE CHECKSUM: d51ed739fbe0af992763959e120d8b37f899e62d
+PODFILE CHECKSUM: 38ab327dc6428842a080658bee2612ceab9a6a91
 
-COCOAPODS: 1.10.1
+COCOAPODS: 1.15.2

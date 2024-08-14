@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="TLP-8q-nac">
+            <objects>
+                <navigationController id="SUm-d1-ShI" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="sAH-7H-hYq">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="4Qm-nh-nB1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bdS-gw-gEL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1205" y="-27"/>
+        </scene>
+        <!--Counters View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="CountersViewController" id="Y6W-OH-hqX" customClass="CountersViewController" customModule="CalendarApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fc5-PA-INW" userLabel="topContainer">
+                                <rect key="frame" x="0.0" y="103" width="393" height="95"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Первый счетчик: 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YTC-FV-g5V">
+                                        <rect key="frame" x="16" y="17" width="146.33333333333334" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Третий счетчик: 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HLM-Az-Hz2">
+                                        <rect key="frame" x="16" y="54" width="140" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Второй счетчик:1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gZU-ig-n5f">
+                                        <rect key="frame" x="239" y="17" width="138" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.85098039215686272" green="0.85098039215686272" blue="0.85098039215686272" alpha="1" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstItem="HLM-Az-Hz2" firstAttribute="top" secondItem="YTC-FV-g5V" secondAttribute="bottom" constant="16" id="GWv-IQ-TSs"/>
+                                    <constraint firstItem="gZU-ig-n5f" firstAttribute="top" secondItem="Fc5-PA-INW" secondAttribute="top" constant="17" id="Gtp-XJ-ihR"/>
+                                    <constraint firstAttribute="bottom" secondItem="HLM-Az-Hz2" secondAttribute="bottom" constant="20" id="UQS-f9-MgX"/>
+                                    <constraint firstItem="gZU-ig-n5f" firstAttribute="top" secondItem="YTC-FV-g5V" secondAttribute="top" id="Vau-Sa-Mos"/>
+                                    <constraint firstAttribute="trailing" secondItem="gZU-ig-n5f" secondAttribute="trailing" constant="16" id="a7q-7e-qic"/>
+                                    <constraint firstItem="YTC-FV-g5V" firstAttribute="leading" secondItem="Fc5-PA-INW" secondAttribute="leading" constant="16" id="gUb-0n-plY"/>
+                                    <constraint firstItem="HLM-Az-Hz2" firstAttribute="leading" secondItem="Fc5-PA-INW" secondAttribute="leading" constant="16" id="gnt-Wv-tgT"/>
+                                    <constraint firstItem="YTC-FV-g5V" firstAttribute="top" secondItem="Fc5-PA-INW" secondAttribute="top" constant="17" id="pNa-4d-Bbt"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uF9-T0-Bq8">
+                                <rect key="frame" x="20" y="218" width="175" height="34"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="eqO-Vn-ZhQ"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Увеличить 1й счетчик">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="increaseFirstButtonTapped" destination="Y6W-OH-hqX" eventType="touchUpInside" id="DBi-0o-2IJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VFG-7v-gjP">
+                                <rect key="frame" x="257" y="218" width="120" height="34"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="v73-Fa-ubf"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Уменьшить 1й">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="decreaseFirstCounterTapped" destination="Y6W-OH-hqX" eventType="touchUpInside" id="5zJ-vz-KhE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="awk-8a-zII">
+                                <rect key="frame" x="20" y="268" width="177" height="34"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="vKR-cu-c6r"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Увеличить 2й счетчик">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="increaseSecondButtonTapped" destination="Y6W-OH-hqX" eventType="touchUpInside" id="zC7-D6-bxd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z3a-Ha-WYe">
+                                <rect key="frame" x="255" y="268" width="122" height="34"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="ceC-se-Qxq"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Уменьшить 2й">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="decreaseSecondButtonTapped" destination="Y6W-OH-hqX" eventType="touchUpInside" id="yZq-CL-EkP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VTR-yV-Bum">
+                                <rect key="frame" x="20" y="318" width="177" height="34"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="ae6-qB-K7P"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Увеличить 3й счетчик">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="increaseThirdButtonTapped" destination="Y6W-OH-hqX" eventType="touchUpInside" id="X2g-0e-hIy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Fc5-PA-INW" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="1T0-M2-qg6"/>
+                            <constraint firstItem="VTR-yV-Bum" firstAttribute="top" secondItem="awk-8a-zII" secondAttribute="bottom" constant="16" id="NW0-QC-VSg"/>
+                            <constraint firstItem="awk-8a-zII" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="OQ0-Rr-rU1"/>
+                            <constraint firstItem="VFG-7v-gjP" firstAttribute="top" secondItem="Fc5-PA-INW" secondAttribute="bottom" constant="20" id="TnS-5A-S2s"/>
+                            <constraint firstItem="uF9-T0-Bq8" firstAttribute="top" secondItem="Fc5-PA-INW" secondAttribute="bottom" constant="20" id="a05-4I-aIE"/>
+                            <constraint firstItem="z3a-Ha-WYe" firstAttribute="top" secondItem="VFG-7v-gjP" secondAttribute="bottom" constant="16" id="a2H-G0-cOP"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Fc5-PA-INW" secondAttribute="trailing" id="bJE-bM-9zy"/>
+                            <constraint firstItem="awk-8a-zII" firstAttribute="top" secondItem="uF9-T0-Bq8" secondAttribute="bottom" constant="16" id="k9n-Tl-Rmm"/>
+                            <constraint firstItem="Fc5-PA-INW" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="mg8-nV-jvR"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="VFG-7v-gjP" secondAttribute="trailing" constant="16" id="tAl-KR-cuC"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="z3a-Ha-WYe" secondAttribute="trailing" constant="16" id="ui8-sg-itk"/>
+                            <constraint firstItem="uF9-T0-Bq8" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="utb-5J-JYo"/>
+                            <constraint firstItem="VTR-yV-Bum" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="vJP-cm-Zld"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="fji-Mh-rtE"/>
+                    <connections>
+                        <outlet property="decreaseFirstButton" destination="VFG-7v-gjP" id="7DW-5w-bxX"/>
+                        <outlet property="decreaseSecondButton" destination="z3a-Ha-WYe" id="zEF-Sh-hVq"/>
+                        <outlet property="firstCounterLabel" destination="YTC-FV-g5V" id="6PM-hO-o8s"/>
+                        <outlet property="increaseFirstButton" destination="uF9-T0-Bq8" id="ATp-Dt-MlK"/>
+                        <outlet property="increaseSecondButton" destination="awk-8a-zII" id="ieZ-4N-NSg"/>
+                        <outlet property="increaseThirdButton" destination="VTR-yV-Bum" id="16J-2F-Hn2"/>
+                        <outlet property="secondCounterLabel" destination="gZU-ig-n5f" id="pxO-g8-f67"/>
+                        <outlet property="thirdCounterLabel" destination="HLM-Az-Hz2" id="8Wi-uk-XKN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-98.473282442748086" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

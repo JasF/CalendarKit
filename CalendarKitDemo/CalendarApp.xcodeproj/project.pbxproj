@@ -8,6 +8,33 @@
 
 /* Begin PBXBuildFile section */
 		44B7FBB805D7BFC9DFBE897B /* Pods_CalendarApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A223D8E39EB8C7A25F4E823A /* Pods_CalendarApp.framework */; };
+		5D460C152C6D25570096BC59 /* JMSDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D460C142C6D25570096BC59 /* JMSDatabase.swift */; };
+		5D460C172C6D267C0096BC59 /* JMSDAOFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D460C162C6D267C0096BC59 /* JMSDAOFactory.swift */; };
+		5D460C292C6D26EE0096BC59 /* JMSManagedObjectContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D460C192C6D26EE0096BC59 /* JMSManagedObjectContext.m */; };
+		5D460C2A2C6D26EE0096BC59 /* RXTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D460C1A2C6D26EE0096BC59 /* RXTimer.m */; };
+		5D460C2B2C6D26EE0096BC59 /* JMSFetchRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D460C1B2C6D26EE0096BC59 /* JMSFetchRequest.m */; };
+		5D460C2C2C6D26EE0096BC59 /* JMSFetchedResultsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D460C1C2C6D26EE0096BC59 /* JMSFetchedResultsController.m */; };
+		5D460C2D2C6D26EE0096BC59 /* NSPredicate2SQL.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D460C1D2C6D26EE0096BC59 /* NSPredicate2SQL.m */; };
+		5D460C2E2C6D26EE0096BC59 /* JMSEntityDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D460C1E2C6D26EE0096BC59 /* JMSEntityDescription.swift */; };
+		5D460C2F2C6D26EE0096BC59 /* MagicalRecordPatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D460C1F2C6D26EE0096BC59 /* MagicalRecordPatch.m */; };
+		5D460C302C6D26EF0096BC59 /* EasyMappingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D460C202C6D26EE0096BC59 /* EasyMappingHelper.swift */; };
+		5D460C312C6D26EF0096BC59 /* NSPredicate+SQL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D460C212C6D26EE0096BC59 /* NSPredicate+SQL.swift */; };
+		5D460C322C6D26EF0096BC59 /* NSDateFormatter+SQL.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D460C262C6D26EE0096BC59 /* NSDateFormatter+SQL.m */; };
+		5D460C362C6D28170096BC59 /* JMSOwnerUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D460C352C6D28170096BC59 /* JMSOwnerUser.m */; };
+		5D460C432C6D28B40096BC59 /* JMSApplicationAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D460C3F2C6D28B40096BC59 /* JMSApplicationAssembly.m */; };
+		5D460C442C6D28B40096BC59 /* JMSDAOAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D460C422C6D28B40096BC59 /* JMSDAOAssembly.m */; };
+		5D460C472C6D28D40096BC59 /* JMSOwnerUserDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D460C462C6D28D40096BC59 /* JMSOwnerUserDAO.swift */; };
+		5D460C492C6D28FD0096BC59 /* JMSBaseDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D460C482C6D28FD0096BC59 /* JMSBaseDAO.swift */; };
+		5D460C4C2C6D29220096BC59 /* JMSAbstractUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D460C4B2C6D29220096BC59 /* JMSAbstractUser.m */; };
+		5D460C542C6D2CB00096BC59 /* Managers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D460C512C6D2CB00096BC59 /* Managers.swift */; };
+		5D460C552C6D2CB00096BC59 /* RSSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D460C522C6D2CB00096BC59 /* RSSwizzle.m */; };
+		5D460C5B2C6D2E380096BC59 /* NSDate+JMSHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D460C582C6D2E380096BC59 /* NSDate+JMSHelper.m */; };
+		5D460C5C2C6D2E380096BC59 /* NSDate+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D460C592C6D2E380096BC59 /* NSDate+Helper.m */; };
+		5D952A122C6BC8F200D6BF67 /* CountersViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D952A112C6BC8F200D6BF67 /* CountersViewController.storyboard */; };
+		5D952A142C6BC90E00D6BF67 /* CountersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D952A132C6BC90E00D6BF67 /* CountersViewController.swift */; };
+		5DAE543D2C6D34E6003076B1 /* DSCoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DAE543C2C6D34E6003076B1 /* DSCoreData.m */; };
+		5DAE54402C6D3532003076B1 /* Singleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DAE543E2C6D3532003076B1 /* Singleton.m */; };
+		5DAE54432C6D3684003076B1 /* JMSOwnerUser+JMSFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DAE54422C6D3684003076B1 /* JMSOwnerUser+JMSFactory.m */; };
 		7924834D23CB7B58003E3D27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7924834C23CB7B58003E3D27 /* Assets.xcassets */; };
 		7924835023CB7B58003E3D27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7924834E23CB7B58003E3D27 /* LaunchScreen.storyboard */; };
 		7924836A23CB7BFE003E3D27 /* DatePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7924836423CB7BFE003E3D27 /* DatePickerController.swift */; };
@@ -19,6 +46,51 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5D460C142C6D25570096BC59 /* JMSDatabase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JMSDatabase.swift; sourceTree = "<group>"; };
+		5D460C162C6D267C0096BC59 /* JMSDAOFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JMSDAOFactory.swift; sourceTree = "<group>"; };
+		5D460C192C6D26EE0096BC59 /* JMSManagedObjectContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMSManagedObjectContext.m; sourceTree = "<group>"; };
+		5D460C1A2C6D26EE0096BC59 /* RXTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RXTimer.m; sourceTree = "<group>"; };
+		5D460C1B2C6D26EE0096BC59 /* JMSFetchRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMSFetchRequest.m; sourceTree = "<group>"; };
+		5D460C1C2C6D26EE0096BC59 /* JMSFetchedResultsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMSFetchedResultsController.m; sourceTree = "<group>"; };
+		5D460C1D2C6D26EE0096BC59 /* NSPredicate2SQL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSPredicate2SQL.m; sourceTree = "<group>"; };
+		5D460C1E2C6D26EE0096BC59 /* JMSEntityDescription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JMSEntityDescription.swift; sourceTree = "<group>"; };
+		5D460C1F2C6D26EE0096BC59 /* MagicalRecordPatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MagicalRecordPatch.m; sourceTree = "<group>"; };
+		5D460C202C6D26EE0096BC59 /* EasyMappingHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasyMappingHelper.swift; sourceTree = "<group>"; };
+		5D460C212C6D26EE0096BC59 /* NSPredicate+SQL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSPredicate+SQL.swift"; sourceTree = "<group>"; };
+		5D460C222C6D26EE0096BC59 /* JMSFetchRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMSFetchRequest.h; sourceTree = "<group>"; };
+		5D460C232C6D26EE0096BC59 /* RXTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RXTimer.h; sourceTree = "<group>"; };
+		5D460C242C6D26EE0096BC59 /* JMSManagedObjectContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMSManagedObjectContext.h; sourceTree = "<group>"; };
+		5D460C252C6D26EE0096BC59 /* JMSFetchedResultsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMSFetchedResultsController.h; sourceTree = "<group>"; };
+		5D460C262C6D26EE0096BC59 /* NSDateFormatter+SQL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDateFormatter+SQL.m"; sourceTree = "<group>"; };
+		5D460C272C6D26EE0096BC59 /* MagicalRecordPatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagicalRecordPatch.h; sourceTree = "<group>"; };
+		5D460C282C6D26EE0096BC59 /* NSPredicate2SQL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSPredicate2SQL.h; sourceTree = "<group>"; };
+		5D460C342C6D28170096BC59 /* JMSOwnerUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMSOwnerUser.h; sourceTree = "<group>"; };
+		5D460C352C6D28170096BC59 /* JMSOwnerUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMSOwnerUser.m; sourceTree = "<group>"; };
+		5D460C3F2C6D28B40096BC59 /* JMSApplicationAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMSApplicationAssembly.m; sourceTree = "<group>"; };
+		5D460C402C6D28B40096BC59 /* JMSDAOAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMSDAOAssembly.h; sourceTree = "<group>"; };
+		5D460C412C6D28B40096BC59 /* JMSApplicationAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMSApplicationAssembly.h; sourceTree = "<group>"; };
+		5D460C422C6D28B40096BC59 /* JMSDAOAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMSDAOAssembly.m; sourceTree = "<group>"; };
+		5D460C462C6D28D40096BC59 /* JMSOwnerUserDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JMSOwnerUserDAO.swift; sourceTree = "<group>"; };
+		5D460C482C6D28FD0096BC59 /* JMSBaseDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JMSBaseDAO.swift; sourceTree = "<group>"; };
+		5D460C4A2C6D29220096BC59 /* JMSAbstractUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMSAbstractUser.h; sourceTree = "<group>"; };
+		5D460C4B2C6D29220096BC59 /* JMSAbstractUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMSAbstractUser.m; sourceTree = "<group>"; };
+		5D460C4F2C6D2AD20096BC59 /* CalendarApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CalendarApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		5D460C512C6D2CB00096BC59 /* Managers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Managers.swift; sourceTree = "<group>"; };
+		5D460C522C6D2CB00096BC59 /* RSSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSwizzle.m; sourceTree = "<group>"; };
+		5D460C532C6D2CB00096BC59 /* RSSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSwizzle.h; sourceTree = "<group>"; };
+		5D460C572C6D2E380096BC59 /* NSDate+JMSHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+JMSHelper.h"; sourceTree = "<group>"; };
+		5D460C582C6D2E380096BC59 /* NSDate+JMSHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+JMSHelper.m"; sourceTree = "<group>"; };
+		5D460C592C6D2E380096BC59 /* NSDate+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Helper.m"; sourceTree = "<group>"; };
+		5D460C5A2C6D2E380096BC59 /* NSDate+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Helper.h"; sourceTree = "<group>"; };
+		5D460C5D2C6D31FE0096BC59 /* CalendarApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CalendarApp-Prefix.pch"; sourceTree = "<group>"; };
+		5D952A112C6BC8F200D6BF67 /* CountersViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CountersViewController.storyboard; sourceTree = "<group>"; };
+		5D952A132C6BC90E00D6BF67 /* CountersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountersViewController.swift; sourceTree = "<group>"; };
+		5DAE543B2C6D34E6003076B1 /* DSCoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSCoreData.h; sourceTree = "<group>"; };
+		5DAE543C2C6D34E6003076B1 /* DSCoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSCoreData.m; sourceTree = "<group>"; };
+		5DAE543E2C6D3532003076B1 /* Singleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Singleton.m; sourceTree = "<group>"; };
+		5DAE543F2C6D3532003076B1 /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
+		5DAE54412C6D3684003076B1 /* JMSOwnerUser+JMSFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JMSOwnerUser+JMSFactory.h"; sourceTree = "<group>"; };
+		5DAE54422C6D3684003076B1 /* JMSOwnerUser+JMSFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JMSOwnerUser+JMSFactory.m"; sourceTree = "<group>"; };
 		7924834023CB7B57003E3D27 /* CalendarApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalendarApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7924834C23CB7B58003E3D27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7924834F23CB7B58003E3D27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +119,142 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5D460C132C6D249C0096BC59 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				5DAE543A2C6D34DC003076B1 /* Other */,
+				5D460C452C6D28B80096BC59 /* DAOs */,
+				5D460C3E2C6D28B40096BC59 /* Assemblies */,
+				5D460C332C6D27F10096BC59 /* Model */,
+				5D460C182C6D26EE0096BC59 /* AntiCoreData */,
+				5D460C162C6D267C0096BC59 /* JMSDAOFactory.swift */,
+				5D460C142C6D25570096BC59 /* JMSDatabase.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		5D460C182C6D26EE0096BC59 /* AntiCoreData */ = {
+			isa = PBXGroup;
+			children = (
+				5D460C192C6D26EE0096BC59 /* JMSManagedObjectContext.m */,
+				5D460C1A2C6D26EE0096BC59 /* RXTimer.m */,
+				5D460C1B2C6D26EE0096BC59 /* JMSFetchRequest.m */,
+				5D460C1C2C6D26EE0096BC59 /* JMSFetchedResultsController.m */,
+				5D460C1D2C6D26EE0096BC59 /* NSPredicate2SQL.m */,
+				5D460C1E2C6D26EE0096BC59 /* JMSEntityDescription.swift */,
+				5D460C1F2C6D26EE0096BC59 /* MagicalRecordPatch.m */,
+				5D460C202C6D26EE0096BC59 /* EasyMappingHelper.swift */,
+				5D460C212C6D26EE0096BC59 /* NSPredicate+SQL.swift */,
+				5D460C222C6D26EE0096BC59 /* JMSFetchRequest.h */,
+				5D460C232C6D26EE0096BC59 /* RXTimer.h */,
+				5D460C242C6D26EE0096BC59 /* JMSManagedObjectContext.h */,
+				5D460C252C6D26EE0096BC59 /* JMSFetchedResultsController.h */,
+				5D460C262C6D26EE0096BC59 /* NSDateFormatter+SQL.m */,
+				5D460C272C6D26EE0096BC59 /* MagicalRecordPatch.h */,
+				5D460C282C6D26EE0096BC59 /* NSPredicate2SQL.h */,
+			);
+			path = AntiCoreData;
+			sourceTree = "<group>";
+		};
+		5D460C332C6D27F10096BC59 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5DAE54412C6D3684003076B1 /* JMSOwnerUser+JMSFactory.h */,
+				5DAE54422C6D3684003076B1 /* JMSOwnerUser+JMSFactory.m */,
+				5D460C4A2C6D29220096BC59 /* JMSAbstractUser.h */,
+				5D460C4B2C6D29220096BC59 /* JMSAbstractUser.m */,
+				5D460C342C6D28170096BC59 /* JMSOwnerUser.h */,
+				5D460C352C6D28170096BC59 /* JMSOwnerUser.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5D460C3E2C6D28B40096BC59 /* Assemblies */ = {
+			isa = PBXGroup;
+			children = (
+				5D460C3F2C6D28B40096BC59 /* JMSApplicationAssembly.m */,
+				5D460C412C6D28B40096BC59 /* JMSApplicationAssembly.h */,
+				5D460C422C6D28B40096BC59 /* JMSDAOAssembly.m */,
+				5D460C402C6D28B40096BC59 /* JMSDAOAssembly.h */,
+			);
+			path = Assemblies;
+			sourceTree = "<group>";
+		};
+		5D460C452C6D28B80096BC59 /* DAOs */ = {
+			isa = PBXGroup;
+			children = (
+				5D460C482C6D28FD0096BC59 /* JMSBaseDAO.swift */,
+				5D460C462C6D28D40096BC59 /* JMSOwnerUserDAO.swift */,
+			);
+			path = DAOs;
+			sourceTree = "<group>";
+		};
+		5D460C4D2C6D2A1A0096BC59 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5D460C4F2C6D2AD20096BC59 /* CalendarApp-Bridging-Header.h */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5D460C502C6D2C9E0096BC59 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				5D460C512C6D2CB00096BC59 /* Managers.swift */,
+				5D460C532C6D2CB00096BC59 /* RSSwizzle.h */,
+				5D460C522C6D2CB00096BC59 /* RSSwizzle.m */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		5D460C562C6D2E0F0096BC59 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				5DAE543F2C6D3532003076B1 /* Singleton.h */,
+				5DAE543E2C6D3532003076B1 /* Singleton.m */,
+				5D460C5D2C6D31FE0096BC59 /* CalendarApp-Prefix.pch */,
+				5D460C5A2C6D2E380096BC59 /* NSDate+Helper.h */,
+				5D460C592C6D2E380096BC59 /* NSDate+Helper.m */,
+				5D460C572C6D2E380096BC59 /* NSDate+JMSHelper.h */,
+				5D460C582C6D2E380096BC59 /* NSDate+JMSHelper.m */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		5D952A0E2C6BC8CE00D6BF67 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				5D952A0F2C6BC8D600D6BF67 /* ViewControllers */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		5D952A0F2C6BC8D600D6BF67 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				5D952A102C6BC8DF00D6BF67 /* CountersViewController */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		5D952A102C6BC8DF00D6BF67 /* CountersViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5D952A112C6BC8F200D6BF67 /* CountersViewController.storyboard */,
+				5D952A132C6BC90E00D6BF67 /* CountersViewController.swift */,
+			);
+			path = CountersViewController;
+			sourceTree = "<group>";
+		};
+		5DAE543A2C6D34DC003076B1 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				5DAE543B2C6D34E6003076B1 /* DSCoreData.h */,
+				5DAE543C2C6D34E6003076B1 /* DSCoreData.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
 		7924833723CB7B57003E3D27 = {
 			isa = PBXGroup;
 			children = (
@@ -68,6 +276,11 @@
 		7924834223CB7B57003E3D27 /* CalendarApp */ = {
 			isa = PBXGroup;
 			children = (
+				5D460C562C6D2E0F0096BC59 /* Support */,
+				5D460C502C6D2C9E0096BC59 /* Managers */,
+				5D460C4D2C6D2A1A0096BC59 /* Resources */,
+				5D460C132C6D249C0096BC59 /* Database */,
+				5D952A0E2C6BC8CE00D6BF67 /* UI */,
 				C3EB26FF296B30BF00024DB3 /* Podfile */,
 				7924836523CB7BFE003E3D27 /* AppDelegate.swift */,
 				7924836623CB7BFE003E3D27 /* CustomCalendarExampleController.swift */,
@@ -194,6 +407,7 @@
 			files = (
 				C3EB2617296B2D3C00024DB3 /* PhotosViewController.storyboard in Resources */,
 				7924835023CB7B58003E3D27 /* LaunchScreen.storyboard in Resources */,
+				5D952A122C6BC8F200D6BF67 /* CountersViewController.storyboard in Resources */,
 				7924834D23CB7B58003E3D27 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -248,9 +462,35 @@
 			buildActionMask = 2147483647;
 			files = (
 				7924836B23CB7BFE003E3D27 /* AppDelegate.swift in Sources */,
+				5D460C152C6D25570096BC59 /* JMSDatabase.swift in Sources */,
 				C3EB2619296B2D4E00024DB3 /* PhotosViewController.swift in Sources */,
+				5D460C2E2C6D26EE0096BC59 /* JMSEntityDescription.swift in Sources */,
+				5D460C2B2C6D26EE0096BC59 /* JMSFetchRequest.m in Sources */,
+				5DAE54432C6D3684003076B1 /* JMSOwnerUser+JMSFactory.m in Sources */,
+				5D460C2C2C6D26EE0096BC59 /* JMSFetchedResultsController.m in Sources */,
 				7924836C23CB7BFE003E3D27 /* CustomCalendarExampleController.swift in Sources */,
 				7924836A23CB7BFE003E3D27 /* DatePickerController.swift in Sources */,
+				5D460C552C6D2CB00096BC59 /* RSSwizzle.m in Sources */,
+				5D460C2F2C6D26EE0096BC59 /* MagicalRecordPatch.m in Sources */,
+				5D460C302C6D26EF0096BC59 /* EasyMappingHelper.swift in Sources */,
+				5DAE54402C6D3532003076B1 /* Singleton.m in Sources */,
+				5D460C322C6D26EF0096BC59 /* NSDateFormatter+SQL.m in Sources */,
+				5D952A142C6BC90E00D6BF67 /* CountersViewController.swift in Sources */,
+				5DAE543D2C6D34E6003076B1 /* DSCoreData.m in Sources */,
+				5D460C2D2C6D26EE0096BC59 /* NSPredicate2SQL.m in Sources */,
+				5D460C442C6D28B40096BC59 /* JMSDAOAssembly.m in Sources */,
+				5D460C492C6D28FD0096BC59 /* JMSBaseDAO.swift in Sources */,
+				5D460C172C6D267C0096BC59 /* JMSDAOFactory.swift in Sources */,
+				5D460C312C6D26EF0096BC59 /* NSPredicate+SQL.swift in Sources */,
+				5D460C472C6D28D40096BC59 /* JMSOwnerUserDAO.swift in Sources */,
+				5D460C292C6D26EE0096BC59 /* JMSManagedObjectContext.m in Sources */,
+				5D460C2A2C6D26EE0096BC59 /* RXTimer.m in Sources */,
+				5D460C5C2C6D2E380096BC59 /* NSDate+Helper.m in Sources */,
+				5D460C5B2C6D2E380096BC59 /* NSDate+JMSHelper.m in Sources */,
+				5D460C432C6D28B40096BC59 /* JMSApplicationAssembly.m in Sources */,
+				5D460C4C2C6D29220096BC59 /* JMSAbstractUser.m in Sources */,
+				5D460C362C6D28170096BC59 /* JMSOwnerUser.m in Sources */,
+				5D460C542C6D2CB00096BC59 /* Managers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,6 +634,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = JKTMVMQ362;
+				GCC_PREFIX_HEADER = "CalendarApp/Support/CalendarApp-Prefix.pch";
 				INFOPLIST_FILE = CalendarApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -404,6 +645,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "CalendarApp-dev";
+				SWIFT_OBJC_BRIDGING_HEADER = "CalendarApp/Resources/CalendarApp-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -420,6 +662,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = JKTMVMQ362;
+				GCC_PREFIX_HEADER = "CalendarApp/Support/CalendarApp-Prefix.pch";
 				INFOPLIST_FILE = CalendarApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -430,6 +673,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "CalendarApp-dev";
+				SWIFT_OBJC_BRIDGING_HEADER = "CalendarApp/Resources/CalendarApp-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

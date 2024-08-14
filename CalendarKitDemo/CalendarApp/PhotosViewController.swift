@@ -51,7 +51,7 @@ class PhotosViewController : UIViewController {
             present(controller, animated: true)
             return
         }
-        ProgressHUD.show("Photo adding")
+        ProgressHUD.animate("Photo adding")
         DispatchQueue.global(qos: .userInitiated).async {
             print("This is run on a background queue")
             
@@ -200,7 +200,7 @@ class FilesViewController : UIViewController, UITableViewDelegate,  UITableViewD
     }
     
     func decryptDataAndShowImage(_ data: Data) {
-        ProgressHUD.show("Photo opening")
+        ProgressHUD.animate("Photo opening")
         DispatchQueue.global(qos: .userInitiated).async {
             print("This is run on a background queue")
             

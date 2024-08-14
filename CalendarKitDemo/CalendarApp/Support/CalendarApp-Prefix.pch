@@ -1,0 +1,285 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#undef NS_BLOCK_ASSERTIONS
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+#import "DDLog.h"
+
+#define XCODE_COLORS_ESCAPE_MAC @""
+#define XCODE_COLORS_ESCAPE_IOS @""
+
+//#if TARGET_OS_IPHONE
+//#define XCODE_COLORS_ESCAPE  XCODE_COLORS_ESCAPE_IOS
+//#else
+#define XCODE_COLORS_ESCAPE  XCODE_COLORS_ESCAPE_MAC
+//#endif
+
+#if DEBUG == 1
+#define JMSAssert(a) assert(a)
+#else
+#define JMSAssert(a)
+#endif
+
+#define XCODE_COLORS_RESET_FG  XCODE_COLORS_ESCAPE @"" // Clear any foreground color
+#define XCODE_COLORS_RESET_BG  XCODE_COLORS_ESCAPE @"" // Clear any background color
+#define XCODE_COLORS_RESET     XCODE_COLORS_ESCAPE @""   // Clear any foreground or background color
+
+#define LogBlue(frmt, ...) DDLogInfo((XCODE_COLORS_ESCAPE @"fg0,0,255;" frmt XCODE_COLORS_RESET), ##__VA_ARGS__)
+
+#define EVENTS_LOGGING 0
+#define TIMING_LOGGING 0
+#if DEBUG == 1
+#define IMMEDIATELY_PRINT_LOGS_TO_CONSOLE 1 // 0 does not affect! Look at source directly
+#define PARSER_LOGGING 1
+#define CLEAN_DATABASE 0
+#define CLEAN_DATABASE_LIGHT 0
+#define ENTER_AUTOCOMPLETION 0
+#define SERVICE_AUTOENTER 0
+#define SERVICE_EDIT_AUTOENTER 0
+#define WEEKDAY_EDIT_AUTOENTER 0
+
+
+#define SETTINGS_PAYWALL_TARIFFS_AUTOENTER 0
+#define SETTINGS_PAYWALL_TARIFF_DETAIL_AUTOENTER 0
+#define SETTINGS_AUTOENTER 0
+#define WIDGETSSORT_AUTOENTER 0
+#define LOGS_AUTOENTER 0
+#define SETTINGS_WORKPLACES_ENTER 0
+#define SETTINGS_PROFILE_AUTOENTER 0
+#define SETTINGS_PROFILE_PHONENUMBER_AUTOENTER 0
+#define SETTINGS_DISCONTS_AUTOENTER 0
+#define SETTINGS_WORKTIME_AUTOENTER 0 // contain SETTINGS_AUTOENTER
+#define SETTINGS_WORKTIME_SALON_AUTOENTER 0
+#define SETTINGS_WORKTIME_SALON_NEW_AUTOENTER 0
+#define SETTINGS_WORKTIME_HOMEADDRESS_AUTOENTER 0
+#define SETTINGS_INTERVAL_AUTOENTER 0
+#define SETTINGS_APPOINTMENT_AUTOENTER 0
+#define SETTINGS_SMS_AUTOENTER 0
+#define SETTINGS_SMS_EDIT_AUTOENTER 0
+#define SETTINGS_EMAIL_AUTOENTER 0
+#define SETTINGS_PRIVACY_AUTOENTER 0
+#define SETTINGS_SERVICES_AUTOENTER 0
+#define SETTINGS_SERVICE_AUTOENTER 0
+#define SETTINGS_SERVICE_GROUPS_ENTER 0
+#define SETTINGS_SERVICE_GROUP_EDIT_ENTER 0
+#define SETTINGS_SERVICE_ADD_AUTOENTER 0
+#define SETTINGS_SERVICE_EDIT_AUTOENTER 0
+#define SETTINGS_WEEKDAY_AUTOENTER 0
+#define SETTINGS_WAITINGLIST_AUTOENTER 0
+#define INVITE_MASTER_AUTOENTER 0
+#define INVITE_MASTER_MANUAL_AUTOENTER 0
+
+#define MENU_AUTOENTER 0
+#define CHAT_AUTOENTER 0
+#define CHAT_SMS_AUTOENTER 0
+#define CHAT_SMS_ENTRY_AUTOENTER 0
+#define MASTER_CARD_AUTOENTER 0
+#define MASTER_CARD_PROFILE_AUTOENTER 0
+#define MASTER_CARD_SERVICES_AUTOENTER 0 // look at SERVICE_EDIT_AUTOENTER
+#define CONTACTS_AUTOENTER 0 // Deprecated! Use CLIENTS_AUTOENTER
+#define REMINDER_AUTOENTER 0
+#define REMINDER_VIEW_AUTOENTER 0
+#define NEW_SMS_ALERT 0
+
+#define EVENT_AUTOENTER 0 // вход в создание мероприятия через дашборд с автозаполнением полей
+#define POPULAR_SERVICES_EVENT_AUTOENTER 0 // depends on EVENT_AUTOENTER
+#define EVENT_AUTOENTER_PROHIBIT_EVENTEDIT 0
+#define SCHEDULE_EVENT_TRANSFER_AUTOENTER 0
+#define SCHEDULE_EVENT_REPEAT_AUTOENTER 0 // without date setting inside edit-VC
+#define SCHEDULE_EVENT_MASTER_PROCENT_AUTOENTER 0
+#define SCHEDULE_MONTH_CALENDAR 0
+#define SCHEDULE_EVENT_EDIT_AUTOENTER 0 //////////
+#define SCHEDULE_EVENT_EDIT_AUTOENTER_ONLY 0 //////////
+#define SCHEDULE_EVENT_EDIT_SERVICES 0
+#define SCHEDULE_EVENT_EDIT_DISCONTS 0 //////////
+#define SCHEDULE_EVENT_EDIT_ADDSERVICE_AUTOENTER 0
+#define SCHEDULE_EVENT_EDIT_WORKPLACE_AUTOENTER 0
+#define SCHEDULE_EVENT_EDIT_BEGIN_AUTOENTER 0
+#define SCHEDULE_EVENT_EDIT_ONLY_AUTOENTER 0 //----
+#define SCHEDULE_EVENT_GALLERY_VIEW 0
+#define SCHEDULE_AUTOENTER 0 // OR SCHEDULE_EVENT_AUTOENTER, if you not want just open scheduleVC
+#define NEWFEATURES_AUTOENTER 0
+#define TIMELINE_AUTOENTER 0
+#define UCHET_AUTOENTER 0
+#define SCHEDULE_EVENT_AUTOENTER 0
+#define SCHEDULE_EVENT_CLIENT_AUTOENTER 0
+#define SCHEDULE_LENTA_AUTOENTER 0
+#define SCHEDULE_SEARCH_AUTOENTER 0
+#define SCHEDULE_EVENT_WORKTIME_EDIT 0
+#define SCHEDULE_EVENT_EDIT_TOTALCOST_AUTOENTER 0
+#define SCHEDULE_EVENT_CREATE 0
+#define SCHEDULE_EVENT_CREATE_FILLING_CLIENT_MASTER 0
+#define SCHEDULE_CLIENT_REJECTED 0
+#define SCHEDULE_FILTER_AUTOENTER 0
+#define SCHEDULE_LIST_FILTER_AUTOENTER 0
+#define SCHEDULE_BREAK_AUTOENTER 0
+#define SCHEDULE_BREAK_EDIT_AUTOENTEER 0
+
+#define CLIENTS_AUTOENTER 0
+#define CLIENTS_CARD_AUTOENTER 0
+#define CLIENTS_CARD_PREVIOUS_AUTOENTER 0
+#define CLIENTS_CARD_CANCELLED_AUTOENTER 0
+#define CLIENTS_CARD_PROFILE_AUTOENTER 0
+#define CLIENTS_ADD_CLIENT 0
+#define CLIENTS_ADD_GROUP_AUTOENTER 0
+#define CLIENTS_ADD_GROUP_ADDCONTACTS_AUTOENTER 0
+#define CLIENTS_EDIT_GROUP_AUTOENTER 0
+#define CLIENTS_EDIT_GROUP_NAME_AUTOENTER 0
+#define CLIENTS_IMPORT_FROM_ADDRESSBOOK 0
+#define CLIENTS_BIRTHDAY 0
+#define CLIENTS_SLEEPING 0
+#define CLIENTS_BLOCKED 0
+#define FREE_TIME_AUTOENTER 0
+#define FREE_TIME_SHARE_AUTOENTER 0
+#define FREE_TIME_SHARE_MONTH_AUTOENTER 0
+
+#define WAITING_LIST_AUTOENTER 0
+#define WAITINGLIST_ARCHIVE_AUTOENTER 0
+
+#define EXPENSES_AUTOENTER 0
+#define EXPENSES_EXPENSE_AUTOENTER 0
+#define EXPENSES_EXPENSE_CATEGORY_AUTOENTER 0
+#define EXPENSES_EXPENSE_PROVIDER_AUTOENTER 0
+
+#define ALBUMS_AUTOENTER 0
+#define ALBUMS_SETTINGS_AUTOENTER 0
+#define ALBUMS_ALBUM_AUTOENTER 0
+#define ALBUMS_ALBUM_ADDIMAGE_AUTOENTER 0
+#define ALBUMS_ALBUM_ADDIMAGES_AUTOENTER 0
+#define ALBUMS_ALBUM_VIEWIMAGE_AUTOENTER 0
+
+#define REVIEWS_AUTOENTER 0
+#define REVIEW_GET_AUTOENTER 0
+#define REVIEW_PUBLISHED_AUTOENTER 0
+#define REVIEW_PUBLISHED_SHARE_AUTOENTER 0
+
+#define EVENT_EDIT_AUTOENTER 0
+#define EVENT_SEARCH_AUTOENTER 0
+#define SIMULATE_SERVICES_FOR_SALON_MASTERS 0
+#define DEBUGGING_NETWORK 0
+#define SMS_LOGGING 0
+#define WIZARD_CLIENT_ADD 0
+#define CLIENT_MODE_AUTOENTER 0
+#define CLIENT_ENTER_TO_MASTER 0
+
+#define C_NEWEVENT_AUTOENTER 0
+#define C_SELECTMASTER_AUTOCHOOSE 0
+#define C_SM_SELECTSERVICE_AUTOCHOOSE 0
+#define C_ST_ZONE_AUTOCHOOSE 0
+#define C_EVENTS_AUTOENTER 0
+#define C_MYMASTERS_AUTOENTER 0
+#define C_MYMASTERS_MASTER_AUTOENTER 0
+#define SELECT_TIME_AUTOENTER 0
+
+#define LOGGING_NETWORK 1
+#define DUMP_LOGGING 0
+#else
+#define DUMP_LOGGING 0
+
+#if FEATURES == 1
+#define LOGGING_NETWORK 1
+#else
+#if RELEASE == 1
+#define LOGGING_NETWORK 0
+#else
+#define LOGGING_NETWORK 1
+//#define PARSER_LOGGING 0
+#endif
+#endif
+
+#endif
+#define SQLITE_MASTER 1
+#define SQLITE_DISABLED 0
+#define MSGLOG 0
+
+#ifdef SALON
+#define FBSDK_ENABLED 1
+#else
+#define FBSDK_ENABLED 1
+#endif
+
+#define SQL_HOTARRAY_CHECK 0
+
+#define NEW_CLIENTS_CARD 1
+
+#if FEATURES == 1 || DEBUG == 1
+#define DATABASE_EDIT 1
+#endif
+
+#if FEATURES == 1 || DEBUG == 1
+#define TIMELINE 1
+#endif
+
+#define WITH_LANGUAGES 1
+
+#if DEBUG == 1
+// ******** IMPORTANT ********** //
+// Also needs update logging level on CocoaLumberjack.swift:51 for making effect in Swift sources
+///////////////////////////////////
+static const DDLogLevel ddLogLevel = DDLogLevelVerbose;//DDLogLevelWarning;//DDLogLevelVerbose;
+#else
+
+#if RELEASE == 1
+static const DDLogLevel ddLogLevel = DDLogLevelWarning;
+#else
+static const DDLogLevel ddLogLevel = DDLogLevelInfo;
+#endif
+
+#endif
+
+CF_INLINE bool IsEqualFloat(float a, float b) { return ABS(a - b) < pow(10, -10); }
+CF_INLINE bool IsFloatEqual(float a, float b) { return IsEqualFloat(a,b);}
+
+#import "EXTScope.h"
+#import "MagicalRecordPatch.h"
+#define L(a) a
+#import "JMSFetchRequest.h"
+#import "JMSFetchedResultsController.h"
+#import "JMSManagedObjectContext.h"
+#import "DSCoreData.h"
+#import "JMSOwnerUser+JMSFactory.h"
+/*
+#import "Masters-Common.h"
+#import "settings-masters.h"
+#import "JMSAlertController.h"
+#import "JMSPlace+JMSHelper.h"
+#import "JMSFetchRequest.h"
+#import "JMSFetchedResultsController.h"
+#import "JMSManagedObjectContext.h"
+#import "JMSUserSettings.h"
+#import "JMSGlobalNoticesUI.h"
+#import "AppearanceHooks.h"
+#import "UIManagedFont.h"
+#import "NanoFrame.h"
+#import "UIViewController+NavigationBar.h"
+#import "JMSParameters.h"
+#import "MessageDictionaryResult.h"
+#import "UIView+Utils.h"
+#import "UIDevice+platform.h"
+#ifdef SALON
+#import "JMSSalonOwnerUser.h"
+#endif
+#import "JMSStatistics.h"
+#import "JMSInvitedMaster.h"
+#import "JMSGoodsCategory.h"
+#import "JMSProduct.h"
+#import "UIDevice+platform.h"
+#import "JMSWaitingList.h"
+#import "JMSLog.h"
+#import "JMSLogManager.h"
+#import "JMSNLogs.h"
+#import "NSDateFormatter+JMSHelper.h"
+*/
+#endif
+
+#ifndef SALON
+#define MERGE_DISABLED
+#endif

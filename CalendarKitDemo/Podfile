@@ -10,6 +10,12 @@ platform :ios, '16.0'
     pod 'YPImagePicker', :path => "./Components/YPImagePicker-master"
     pod 'CryptoSwift', :path => "./Components/CryptoSwift-main"
     pod 'ProgressHUD'
+    pod 'FMDB', :path => 'Components/fmdb'
+    pod 'EasyMapping', :path => 'Components/EasyMapping'
+    pod 'SwiftReflection', :path => 'Components/SwiftReflection'
+    pod 'CocoaLumberjack', :path => 'Components/CocoaLumberjack'
+    pod 'MTDates'
+    pod 'libextobjc'
 end
 
 target 'CalendarApp' do

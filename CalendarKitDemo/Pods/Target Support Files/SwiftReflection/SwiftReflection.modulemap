@@ -1,0 +1,6 @@
+framework module SwiftReflection {
+  umbrella header "SwiftReflection-umbrella.h"
+
+  export *
+  module * { export * }
+}
