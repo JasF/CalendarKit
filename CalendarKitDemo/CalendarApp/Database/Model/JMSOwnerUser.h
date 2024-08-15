@@ -120,6 +120,9 @@
 @property (nonatomic, strong) NSString * share_days;
 @property (nonatomic, strong) NSDictionary *parameters;
 @property (nonatomic, strong) NSNumber *first_counter;
+@property (nonatomic, strong) NSNumber *second_counter;
+@property (nonatomic, strong) NSNumber *third_counter;
+@property (nonatomic, strong) NSNumber *fourth_counter;
 - (NSString *)settingOnlineUrl;
 - (NSNumber *)is_dashboard;
 - (NSString *)app_lang;

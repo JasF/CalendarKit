@@ -54,16 +54,24 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Четвертый счетчик:0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a5V-7w-Nvj">
+                                        <rect key="frame" x="208" y="54" width="169" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.85098039215686272" green="0.85098039215686272" blue="0.85098039215686272" alpha="1" colorSpace="deviceRGB"/>
                                 <constraints>
                                     <constraint firstItem="HLM-Az-Hz2" firstAttribute="top" secondItem="YTC-FV-g5V" secondAttribute="bottom" constant="16" id="GWv-IQ-TSs"/>
                                     <constraint firstItem="gZU-ig-n5f" firstAttribute="top" secondItem="Fc5-PA-INW" secondAttribute="top" constant="17" id="Gtp-XJ-ihR"/>
+                                    <constraint firstItem="a5V-7w-Nvj" firstAttribute="top" secondItem="gZU-ig-n5f" secondAttribute="bottom" constant="16" id="RB2-1a-Sv1"/>
                                     <constraint firstAttribute="bottom" secondItem="HLM-Az-Hz2" secondAttribute="bottom" constant="20" id="UQS-f9-MgX"/>
                                     <constraint firstItem="gZU-ig-n5f" firstAttribute="top" secondItem="YTC-FV-g5V" secondAttribute="top" id="Vau-Sa-Mos"/>
                                     <constraint firstAttribute="trailing" secondItem="gZU-ig-n5f" secondAttribute="trailing" constant="16" id="a7q-7e-qic"/>
                                     <constraint firstItem="YTC-FV-g5V" firstAttribute="leading" secondItem="Fc5-PA-INW" secondAttribute="leading" constant="16" id="gUb-0n-plY"/>
                                     <constraint firstItem="HLM-Az-Hz2" firstAttribute="leading" secondItem="Fc5-PA-INW" secondAttribute="leading" constant="16" id="gnt-Wv-tgT"/>
+                                    <constraint firstAttribute="trailing" secondItem="a5V-7w-Nvj" secondAttribute="trailing" constant="16" id="mYA-CT-4wE"/>
                                     <constraint firstItem="YTC-FV-g5V" firstAttribute="top" secondItem="Fc5-PA-INW" secondAttribute="top" constant="17" id="pNa-4d-Bbt"/>
                                 </constraints>
                             </view>
@@ -142,17 +150,68 @@
                                     <action selector="increaseThirdButtonTapped" destination="Y6W-OH-hqX" eventType="touchUpInside" id="X2g-0e-hIy"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3J7-Dk-d2V">
+                                <rect key="frame" x="254" y="322" width="123" height="34"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="TAm-Aq-iOp"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Уменьшить 3й">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="decreaseThirdButtonTapped" destination="Y6W-OH-hqX" eventType="touchUpInside" id="n1B-mT-HlX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ofz-fG-70L">
+                                <rect key="frame" x="20" y="368" width="178" height="34"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="KaY-SA-JEw"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Увеличить 4й счетчик">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="increaseFourthButtonTapped" destination="Y6W-OH-hqX" eventType="touchUpInside" id="NlQ-GM-TJE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3cg-n3-XYV">
+                                <rect key="frame" x="254" y="372" width="123" height="34"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="3Kq-tR-lCA"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Уменьшить 4й">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="decreaseFourthButtonTapped" destination="Y6W-OH-hqX" eventType="touchUpInside" id="kqo-IL-c6J"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Fc5-PA-INW" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="1T0-M2-qg6"/>
+                            <constraint firstItem="3cg-n3-XYV" firstAttribute="top" secondItem="3J7-Dk-d2V" secondAttribute="bottom" constant="16" id="HFO-ZZ-cFX"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="3cg-n3-XYV" secondAttribute="trailing" constant="16" id="MqK-9T-btu"/>
                             <constraint firstItem="VTR-yV-Bum" firstAttribute="top" secondItem="awk-8a-zII" secondAttribute="bottom" constant="16" id="NW0-QC-VSg"/>
                             <constraint firstItem="awk-8a-zII" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="OQ0-Rr-rU1"/>
                             <constraint firstItem="VFG-7v-gjP" firstAttribute="top" secondItem="Fc5-PA-INW" secondAttribute="bottom" constant="20" id="TnS-5A-S2s"/>
                             <constraint firstItem="uF9-T0-Bq8" firstAttribute="top" secondItem="Fc5-PA-INW" secondAttribute="bottom" constant="20" id="a05-4I-aIE"/>
                             <constraint firstItem="z3a-Ha-WYe" firstAttribute="top" secondItem="VFG-7v-gjP" secondAttribute="bottom" constant="16" id="a2H-G0-cOP"/>
+                            <constraint firstItem="ofz-fG-70L" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="aH0-qT-bU5"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Fc5-PA-INW" secondAttribute="trailing" id="bJE-bM-9zy"/>
+                            <constraint firstItem="3J7-Dk-d2V" firstAttribute="top" secondItem="z3a-Ha-WYe" secondAttribute="bottom" constant="20" id="fr4-8z-ZEL"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="3J7-Dk-d2V" secondAttribute="trailing" constant="16" id="gS9-9k-tEg"/>
+                            <constraint firstItem="ofz-fG-70L" firstAttribute="top" secondItem="VTR-yV-Bum" secondAttribute="bottom" constant="16" id="haA-ml-AIa"/>
                             <constraint firstItem="awk-8a-zII" firstAttribute="top" secondItem="uF9-T0-Bq8" secondAttribute="bottom" constant="16" id="k9n-Tl-Rmm"/>
                             <constraint firstItem="Fc5-PA-INW" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="mg8-nV-jvR"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="VFG-7v-gjP" secondAttribute="trailing" constant="16" id="tAl-KR-cuC"/>
@@ -164,9 +223,13 @@
                     <navigationItem key="navigationItem" id="fji-Mh-rtE"/>
                     <connections>
                         <outlet property="decreaseFirstButton" destination="VFG-7v-gjP" id="7DW-5w-bxX"/>
+                        <outlet property="decreaseFourthButton" destination="3cg-n3-XYV" id="4Ix-Sa-XOh"/>
                         <outlet property="decreaseSecondButton" destination="z3a-Ha-WYe" id="zEF-Sh-hVq"/>
+                        <outlet property="decreaseThirdButton" destination="3J7-Dk-d2V" id="RzP-Gd-lAU"/>
                         <outlet property="firstCounterLabel" destination="YTC-FV-g5V" id="6PM-hO-o8s"/>
+                        <outlet property="fourthCounterLabel" destination="a5V-7w-Nvj" id="3fc-1y-QJd"/>
                         <outlet property="increaseFirstButton" destination="uF9-T0-Bq8" id="ATp-Dt-MlK"/>
+                        <outlet property="increaseFourthButton" destination="ofz-fG-70L" id="Qe4-jj-Izj"/>
                         <outlet property="increaseSecondButton" destination="awk-8a-zII" id="ieZ-4N-NSg"/>
                         <outlet property="increaseThirdButton" destination="VTR-yV-Bum" id="16J-2F-Hn2"/>
                         <outlet property="secondCounterLabel" destination="gZU-ig-n5f" id="pxO-g8-f67"/>
@@ -183,7 +246,7 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBlueColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
