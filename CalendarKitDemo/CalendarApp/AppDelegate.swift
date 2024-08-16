@@ -10,9 +10,13 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
     window?.backgroundColor = UIColor.white
     window?.makeKeyAndVisible()
 
-      let storyboard = UIStoryboard(name: "CountersViewController", bundle: nil)
-      let viewController = storyboard.instantiateInitialViewController() as! CountersViewController
+      let storyboard = UIStoryboard(name: "ProfileViewController", bundle: nil)
+      let viewController = storyboard.instantiateInitialViewController() as! ProfileViewController
       let navigationController = UINavigationController(rootViewController: viewController)
+      
+    //  let storyboard = UIStoryboard(name: "CountersViewController", bundle: nil)
+    //  let viewController = storyboard.instantiateInitialViewController() as! CountersViewController
+    //  let navigationController = UINavigationController(rootViewController: viewController)
       
 //    let dayViewController = CustomCalendarExampleController()
 //    let navigationController = UINavigationController(rootViewController: dayViewController)

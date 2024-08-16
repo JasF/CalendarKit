@@ -36,7 +36,8 @@ static NSInteger const kEventCreateRefreshPeriodDefault = 60;
             ,@"disconts"
 #endif
             , @"ext_phone", @"client_to_book", @"client_to_sleep2"
-            ,@"clients_all", @"clients_new_cur", @"clients_new_prev", @"clients_sleep_cur", @"clients_sleep_prev", @"senders", @"albums", @"url_recommendation", @"color_rec", @"is_waitinglist", @"interval_waitinglist", @"en_waitinglist", @"tariffEmpty", @"share_color", @"share_month", @"share_days", @"parameters", @"first_counter", @"second_counter", @"third_counter", @"fourth_counter"
+            ,@"clients_all", @"clients_new_cur", @"clients_new_prev", @"clients_sleep_cur", @"clients_sleep_prev", @"senders", @"albums", @"url_recommendation", @"color_rec", @"is_waitinglist", @"interval_waitinglist", @"en_waitinglist", @"tariffEmpty", @"share_color", @"share_month", @"share_days", @"parameters", @"first_counter", @"second_counter", @"third_counter", @"fourth_counter",
+                @"name", @"surname"
         ]];
         
         /*
@@ -727,29 +728,7 @@ static NSInteger const kEventCreateRefreshPeriodDefault = 60;
 }
 
 + (NSString *)styledTimeForDate:(NSDate *)date {
-    NSDateFormatter *formatter = [NSDateFormatter new];
-    [formatter setDateStyle:NSDateFormatterNoStyle];
-    JMSOwnerUser *owner = [JMSOwnerUser owner];
-    NSString *style = owner.date_style_time;
-    BOOL freeStyle = NO;
-    if ([style isEqualToString:@"short"]) {
-        [formatter setTimeStyle:NSDateFormatterShortStyle];
-    }
-    else if ([style isEqualToString:@"medium"]) {
-        [formatter setTimeStyle:NSDateFormatterMediumStyle];
-    }
-    else if ([style isEqualToString:@"long"]) {
-        [formatter setTimeStyle:NSDateFormatterLongStyle];
-    }
-    else {
-        freeStyle = YES;
-        formatter.dateFormat = style;
-    }
-    NSString *result = [formatter stringFromDate:date];
-    if (freeStyle && [style containsString:@"a"] && [[owner app_lang] isEqualToString:@"ru"]) {
-        result = [self updateAmPmFromRus:result];
-    }
-    return result;
+    return @"";
 }
 
 + (NSString *)updateAmPmFromRus:(NSString *)string {

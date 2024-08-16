@@ -52,6 +52,7 @@ PODS:
   - PryntTrimmerView (4.0.2)
   - SteviaLayout (5.1.2)
   - SwiftReflection (0.1.0)
+  - "UITextView+Placeholder (1.4.0)"
   - YPImagePicker (5.2.1):
     - PryntTrimmerView (= 4.0.2)
     - SteviaLayout (= 5.1.2)
@@ -65,6 +66,7 @@ DEPENDENCIES:
   - MTDates
   - ProgressHUD
   - SwiftReflection (from `Components/SwiftReflection`)
+  - "UITextView+Placeholder"
   - YPImagePicker (from `./Components/YPImagePicker-master`)
 
 SPEC REPOS:
@@ -74,6 +76,7 @@ SPEC REPOS:
     - ProgressHUD
     - PryntTrimmerView
     - SteviaLayout
+    - "UITextView+Placeholder"
 
 EXTERNAL SOURCES:
   CocoaLumberjack:
@@ -100,8 +103,9 @@ SPEC CHECKSUMS:
   PryntTrimmerView: 6a43cc90df5d99addeabd33d4ba09b1365322130
   SteviaLayout: 05424e528d643657d39ce72c786e4adf13cfc5f2
   SwiftReflection: 503b9468c5e74eb905b791c211ca513b3d97024e
+  "UITextView+Placeholder": d7b0c400921f66523f3a85d74f774512e14f6502
   YPImagePicker: e7f9a34273fdf56283ac03ec2efa0601f946489f
 
-PODFILE CHECKSUM: 38ab327dc6428842a080658bee2612ceab9a6a91
+PODFILE CHECKSUM: e3fb22a567afb2f12d1d436036fe38b231e35ca1
 
 COCOAPODS: 1.15.2

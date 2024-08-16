@@ -16,6 +16,7 @@ platform :ios, '16.0'
     pod 'CocoaLumberjack', :path => 'Components/CocoaLumberjack'
     pod 'MTDates'
     pod 'libextobjc'
+    pod 'UITextView+Placeholder'
 end
 
 target 'CalendarApp' do
