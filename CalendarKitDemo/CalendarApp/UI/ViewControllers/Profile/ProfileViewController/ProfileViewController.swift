@@ -19,9 +19,9 @@ class JMSPTitleSubtitleCell : UITableViewCell {
 
 class ProfileViewController : UIViewController, UITableViewDelegate, UITableViewDataSource {
     enum Cells:Int {
-        case header, namesurname
+        case header, namesurname, aboutyou
     }
-    let cells = [Cells.header, .namesurname]
+    let cells = [Cells.header, .namesurname,.aboutyou]
     @IBOutlet var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,6 +49,9 @@ class ProfileViewController : UIViewController, UITableViewDelegate, UITableView
             return tableView.dequeueReusableCell(withIdentifier: "JMSPHeaderCell")!
         case .namesurname:
             return nameSurnameCell()
+        case .aboutyou:
+            return aboutYouCell()
+            
         }
     }
     
@@ -75,6 +78,22 @@ class ProfileViewController : UIViewController, UITableViewDelegate, UITableView
         cell.subtitle?.text = subtitle
         return cell
     }
+    func aboutYouCell() -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "JMSPTitleSubtitleCell") as! JMSPTitleSubtitleCell
+        cell.title?.text = "Подробнее о вас"
+        let owner = JMSOwnerUser.owner()!
+        var subtitle = "Увлечения"
+        let aboutYou = owner.about_you ?? ""
+        if aboutYou.isEmpty == false {
+            subtitle = "Ваши увлечения: \(aboutYou)"
+        }
+        cell.subtitle?.text = subtitle
+        
+        return cell
+        
+        
+    }
+    
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)

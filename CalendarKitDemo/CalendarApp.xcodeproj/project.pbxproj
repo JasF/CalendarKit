@@ -35,6 +35,8 @@
 		5D5E162F2C6FB9DB004F9BC2 /* JMSNameSurnameViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D5E162E2C6FB9DB004F9BC2 /* JMSNameSurnameViewController.storyboard */; };
 		5D5E16312C6FB9E9004F9BC2 /* JMSNameSurnameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5E16302C6FB9E9004F9BC2 /* JMSNameSurnameViewController.swift */; };
 		5D5E16342C6FBC20004F9BC2 /* JMSNSInputCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D5E16332C6FBC20004F9BC2 /* JMSNSInputCell.xib */; };
+		5D5E16372C6FD600004F9BC2 /* JMSAboutYouViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D5E16362C6FD600004F9BC2 /* JMSAboutYouViewController.storyboard */; };
+		5D5E16392C6FD632004F9BC2 /* JMSAboutYouViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5E16382C6FD632004F9BC2 /* JMSAboutYouViewController.swift */; };
 		5D952A122C6BC8F200D6BF67 /* CountersViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D952A112C6BC8F200D6BF67 /* CountersViewController.storyboard */; };
 		5D952A142C6BC90E00D6BF67 /* CountersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D952A132C6BC90E00D6BF67 /* CountersViewController.swift */; };
 		5DAE543D2C6D34E6003076B1 /* DSCoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DAE543C2C6D34E6003076B1 /* DSCoreData.m */; };
@@ -93,6 +95,8 @@
 		5D5E162E2C6FB9DB004F9BC2 /* JMSNameSurnameViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = JMSNameSurnameViewController.storyboard; sourceTree = "<group>"; };
 		5D5E16302C6FB9E9004F9BC2 /* JMSNameSurnameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JMSNameSurnameViewController.swift; sourceTree = "<group>"; };
 		5D5E16332C6FBC20004F9BC2 /* JMSNSInputCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JMSNSInputCell.xib; sourceTree = "<group>"; };
+		5D5E16362C6FD600004F9BC2 /* JMSAboutYouViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = JMSAboutYouViewController.storyboard; sourceTree = "<group>"; };
+		5D5E16382C6FD632004F9BC2 /* JMSAboutYouViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JMSAboutYouViewController.swift; sourceTree = "<group>"; };
 		5D952A112C6BC8F200D6BF67 /* CountersViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CountersViewController.storyboard; sourceTree = "<group>"; };
 		5D952A132C6BC90E00D6BF67 /* CountersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountersViewController.swift; sourceTree = "<group>"; };
 		5DAE543B2C6D34E6003076B1 /* DSCoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSCoreData.h; sourceTree = "<group>"; };
@@ -234,6 +238,7 @@
 		5D5E16272C6FB41A004F9BC2 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				5D5E16352C6FD5A1004F9BC2 /* JMSAboutYouViewController */,
 				5D5E162D2C6FB9CA004F9BC2 /* JMSNameSurnameViewController */,
 				5D5E16282C6FB421004F9BC2 /* ProfileViewController */,
 			);
@@ -264,6 +269,15 @@
 				5D5E16332C6FBC20004F9BC2 /* JMSNSInputCell.xib */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		5D5E16352C6FD5A1004F9BC2 /* JMSAboutYouViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5D5E16362C6FD600004F9BC2 /* JMSAboutYouViewController.storyboard */,
+				5D5E16382C6FD632004F9BC2 /* JMSAboutYouViewController.swift */,
+			);
+			path = JMSAboutYouViewController;
 			sourceTree = "<group>";
 		};
 		5D952A0E2C6BC8CE00D6BF67 /* UI */ = {
@@ -457,6 +471,7 @@
 				C3EB2617296B2D3C00024DB3 /* PhotosViewController.storyboard in Resources */,
 				7924835023CB7B58003E3D27 /* LaunchScreen.storyboard in Resources */,
 				5D952A122C6BC8F200D6BF67 /* CountersViewController.storyboard in Resources */,
+				5D5E16372C6FD600004F9BC2 /* JMSAboutYouViewController.storyboard in Resources */,
 				7924834D23CB7B58003E3D27 /* Assets.xcassets in Resources */,
 				5D5E162A2C6FB482004F9BC2 /* ProfileViewController.storyboard in Resources */,
 				5D5E162F2C6FB9DB004F9BC2 /* JMSNameSurnameViewController.storyboard in Resources */,
@@ -538,6 +553,7 @@
 				5D460C472C6D28D40096BC59 /* JMSOwnerUserDAO.swift in Sources */,
 				5D460C292C6D26EE0096BC59 /* JMSManagedObjectContext.m in Sources */,
 				5D460C2A2C6D26EE0096BC59 /* RXTimer.m in Sources */,
+				5D5E16392C6FD632004F9BC2 /* JMSAboutYouViewController.swift in Sources */,
 				5D460C5C2C6D2E380096BC59 /* NSDate+Helper.m in Sources */,
 				5D460C5B2C6D2E380096BC59 /* NSDate+JMSHelper.m in Sources */,
 				5D460C432C6D28B40096BC59 /* JMSApplicationAssembly.m in Sources */,

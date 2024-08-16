@@ -116,5 +116,6 @@
 @property (nonatomic, strong) NSNumber *fourth_counter;
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSString *surname;
+@property (nonatomic, strong) NSString *about_you;
 
 @end
