@@ -7,6 +7,11 @@
 //
 
 import Foundation
+
+class JMSAYNoticeCell : UITableViewCell {
+    @IBOutlet var title: UILabel?
+}
+
 class JMSAboutYouViewController : UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet var tableView: UITableView!
     @IBOutlet var doneItem: UIBarButtonItem?
@@ -42,7 +47,7 @@ class JMSAboutYouViewController : UIViewController, UITableViewDelegate, UITable
     func aboutyouCell() -> JMSNSInputCell {
         if _aboutyouCell == nil {
             _aboutyouCell = Bundle.main.loadNibNamed("JMSNSInputCell", owner: nil)?.first as? JMSNSInputCell
-            _aboutyouCell?.textView?.text = JMSOwnerUser.owner().name ?? ""
+            _aboutyouCell?.textView?.text = JMSOwnerUser.owner().about_you ?? ""
             _aboutyouCell?.textView?.placeholder = "Укажите ваши увлечения"
             _aboutyouCell?.textChangedBlock = { [weak self] in
                 self?.tableView.beginUpdates()
@@ -53,10 +58,16 @@ class JMSAboutYouViewController : UIViewController, UITableViewDelegate, UITable
         
         return _aboutyouCell!
     }
+    
     func noticeCell() -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "JMSNSNoticeCell") as! JMSNSNoticeCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "JMSAYNoticeCell") as! JMSAYNoticeCell
         cell.title?.text = "Более подробная информация о вас"
         return cell
+    }
+    @IBAction func doneTapped() {
+        JMSOwnerUser.owner().about_you = aboutyouCell().textView?.text ?? ""
+        DSCoreData.shared().saveContext()
+        navigationController?.popViewController(animated: true)
     }
     
     func updateDoneButton() {

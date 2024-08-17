@@ -19,9 +19,9 @@ class JMSPTitleSubtitleCell : UITableViewCell {
 
 class ProfileViewController : UIViewController, UITableViewDelegate, UITableViewDataSource {
     enum Cells:Int {
-        case header, namesurname, aboutyou
+        case header, namesurname, aboutyou, religion
     }
-    let cells = [Cells.header, .namesurname,.aboutyou]
+    let cells = [Cells.header, .namesurname,.aboutyou, .religion]
     @IBOutlet var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,6 +51,11 @@ class ProfileViewController : UIViewController, UITableViewDelegate, UITableView
             return nameSurnameCell()
         case .aboutyou:
             return aboutYouCell()
+        case .religion:
+            return religionCell()
+            
+            
+        
             
         }
     }
@@ -93,6 +98,22 @@ class ProfileViewController : UIViewController, UITableViewDelegate, UITableView
         
         
     }
+    func religionCell() -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "JMSPTitleSubtitleCell") as! JMSPTitleSubtitleCell
+        cell.title?.text = "Религиозные предпочтения"
+        let owner = JMSOwnerUser.owner()!
+        var subtitle = "Укажите вашу религию"
+        let religion = owner.religion ?? ""
+        if religion.isEmpty == false {
+            subtitle = "Ваша религия: \(religion)"
+        }
+        cell.subtitle?.text = subtitle
+        
+        return cell
+        
+        
+    }
+
     
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -101,14 +122,23 @@ class ProfileViewController : UIViewController, UITableViewDelegate, UITableView
         case .namesurname:
             showNameSurnameViewController()
             break
+        case .aboutyou:
+            showAboutYouViewController()
+            
         default:
             break
         }
     }
     
+    
     func showNameSurnameViewController() {
         let storyboard = UIStoryboard(name: "JMSNameSurnameViewController", bundle: nil)
         let viewController = storyboard.instantiateInitialViewController()! as! JMSNameSurnameViewController
+        navigationController?.pushViewController(viewController, animated: true)
+    }
+    func showAboutYouViewController() {
+        let storyboard = UIStoryboard(name: "JMSAboutYouViewController", bundle: nil)
+        let viewController = storyboard.instantiateInitialViewController()! as! JMSAboutYouViewController
         navigationController?.pushViewController(viewController, animated: true)
     }
 }

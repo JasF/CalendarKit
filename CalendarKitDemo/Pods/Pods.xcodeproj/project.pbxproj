@@ -537,7 +537,7 @@
 		0265C9023843EF2C2AA92260197838FF /* AVCaptureDevice+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "AVCaptureDevice+Extensions.swift"; sourceTree = "<group>"; };
 		03A72B82DA03A1D2F428246713AE31DA /* YPIcons.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = YPIcons.swift; sourceTree = "<group>"; };
 		03FCB6CE430090CBF097DDD1371A7D14 /* CBCMAC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CBCMAC.swift; path = Sources/CryptoSwift/CBCMAC.swift; sourceTree = "<group>"; };
-		0423B83D86BBE555978A3CD19D86FF7B /* CryptoSwift.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = CryptoSwift.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		0423B83D86BBE555978A3CD19D86FF7B /* CryptoSwift.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = CryptoSwift.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		043235C8B776F45CEC26A433EC4B9C47 /* UIBarButtonItem+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extensions.swift"; sourceTree = "<group>"; };
 		055B7FE7BBC537882232E0DBF04BE4C0 /* EasyMapping-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EasyMapping-dummy.m"; sourceTree = "<group>"; };
 		0675517F94AB44B6C94868A4CFBE791D /* Data Conversion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Data Conversion.swift"; sourceTree = "<group>"; };
@@ -555,13 +555,13 @@
 		0B6AFEF796923EE4DA443F6FF186611F /* Pods-CalendarApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CalendarApp-acknowledgements.markdown"; sourceTree = "<group>"; };
 		0C198C4D7D266582F061CD8D19B8B5B4 /* Stevia+Size.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Size.swift"; path = "Sources/Stevia/Stevia+Size.swift"; sourceTree = "<group>"; };
 		0C384D3DA48481EDD2EDD152CD147638 /* libextobjc-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "libextobjc-prefix.pch"; sourceTree = "<group>"; };
-		0D3287058D2F13BD484A454154BEA62B /* ProgressHUD */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ProgressHUD; path = ProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D3287058D2F13BD484A454154BEA62B /* ProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DA98B35623A5629277667CAB166A975 /* UITextView+Placeholder-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UITextView+Placeholder-umbrella.h"; sourceTree = "<group>"; };
 		0DB058293C62609B5268CEE8E3865DFC /* UITextView+Placeholder-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UITextView+Placeholder-prefix.pch"; sourceTree = "<group>"; };
 		0E4FAB3CB47053C991FA03E7F62D6BDB /* NSDateFormatter+EasyMappingAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDateFormatter+EasyMappingAdditions.h"; path = "Sources/EasyMapping/NSDateFormatter+EasyMappingAdditions.h"; sourceTree = "<group>"; };
 		0E5F456A875652E71AD0D6BB8290CEF1 /* BigUInt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BigUInt.swift; sourceTree = "<group>"; };
 		102D2730D472F0AF4E0266449A4398F8 /* DDAbstractDatabaseLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDAbstractDatabaseLogger.m; path = Classes/DDAbstractDatabaseLogger.m; sourceTree = "<group>"; };
-		1070F8618574CEAF63504542B6420422 /* YPImagePicker.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = YPImagePicker.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		1070F8618574CEAF63504542B6420422 /* YPImagePicker.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = YPImagePicker.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		10FEA6694AB293FE4FBE6DC52941CAF4 /* HandlerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HandlerView.swift; path = Sources/PryntTrimmerView/Trimmer/HandlerView.swift; sourceTree = "<group>"; };
 		110EADB502FA8EAACA5531BDFD67DD96 /* StreamDecryptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StreamDecryptor.swift; path = Sources/CryptoSwift/StreamDecryptor.swift; sourceTree = "<group>"; };
 		11507608513EDB8D066995A8BF215642 /* YPLoadingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = YPLoadingView.swift; sourceTree = "<group>"; };
@@ -574,7 +574,7 @@
 		151CC043E6C8E31A7CFED9E9D240CCD9 /* ProgressHUD+CircleStrokeSpin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ProgressHUD+CircleStrokeSpin.swift"; path = "ProgressHUD/Sources/Animations/ProgressHUD+CircleStrokeSpin.swift"; sourceTree = "<group>"; };
 		15FF81DEFAD32705C64977823E5E26F4 /* UITextView+Placeholder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITextView+Placeholder.h"; path = "Sources/UITextView+Placeholder.h"; sourceTree = "<group>"; };
 		16E5634D7729DAC5083939C5C59A3722 /* UITextView+Placeholder-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "UITextView+Placeholder-Info.plist"; sourceTree = "<group>"; };
-		178F053AC152BEB1E965190F5E4226B9 /* pl.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = pl.lproj; sourceTree = "<group>"; };
+		178F053AC152BEB1E965190F5E4226B9 /* pl.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = pl.lproj; sourceTree = "<group>"; };
 		1802A7F95D74B6ABA60589C07DF5F046 /* UITextView+Placeholder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "UITextView+Placeholder.release.xcconfig"; sourceTree = "<group>"; };
 		1862233A89201D4C640783B89727FE45 /* EKManagedObjectMapping.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EKManagedObjectMapping.m; path = Sources/EasyMapping/EKManagedObjectMapping.m; sourceTree = "<group>"; };
 		19EDD6910141B80BA92C6BF79B207719 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseAdditions.m; path = src/fmdb/FMDatabaseAdditions.m; sourceTree = "<group>"; };
@@ -584,7 +584,7 @@
 		1CAA2CFC86DB04D2AA11CC15EB3D94FF /* FMDB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FMDB.release.xcconfig; sourceTree = "<group>"; };
 		1D2F8496D97A72DFB2D70B856F997E8F /* DDLogMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDLogMacros.h; path = Classes/DDLogMacros.h; sourceTree = "<group>"; };
 		1E056EC32FAB678DF890E8A259F71DE6 /* PryntTrimmerView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PryntTrimmerView-dummy.m"; sourceTree = "<group>"; };
-		1EC0B95CA76666EAE9ED3A93576A23EB /* id.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = id.lproj; sourceTree = "<group>"; };
+		1EC0B95CA76666EAE9ED3A93576A23EB /* id.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = id.lproj; sourceTree = "<group>"; };
 		1EE0B11C88D2F2CA69CA14C7D2E6907E /* EKRelationshipMapping.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EKRelationshipMapping.h; path = Sources/EasyMapping/EKRelationshipMapping.h; sourceTree = "<group>"; };
 		1FF7F46B81139074B20A56901D3479F6 /* Stevia+Content.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Content.swift"; path = "Sources/Stevia/Stevia+Content.swift"; sourceTree = "<group>"; };
 		20A360B052E9C824758017BA081321FC /* Data+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Data+Extension.swift"; sourceTree = "<group>"; };
@@ -615,7 +615,7 @@
 		2CC11CFDE26F6D3A7AB39E2D3024BEBD /* EXTSafeCategory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXTSafeCategory.h; path = extobjc/EXTSafeCategory.h; sourceTree = "<group>"; };
 		2CC8FEF0928CCCD47E418EF19B5BE510 /* PKCS7Padding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PKCS7Padding.swift; sourceTree = "<group>"; };
 		2D31E6C02F918D267512CC0DF6A8ECE2 /* Words and Bits.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Words and Bits.swift"; sourceTree = "<group>"; };
-		2DC3884AC03DA13FA0FF4C5F8C9A996B /* libextobjc */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = libextobjc; path = libextobjc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DC3884AC03DA13FA0FF4C5F8C9A996B /* libextobjc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = libextobjc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DC6A6301C1E24645DC581CD19C1D07E /* DDContextFilterLogFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDContextFilterLogFormatter.m; path = Classes/Extensions/DDContextFilterLogFormatter.m; sourceTree = "<group>"; };
 		2DFFA3113D4F8536223346ABF24B0FE0 /* NoPadding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NoPadding.swift; path = Sources/CryptoSwift/NoPadding.swift; sourceTree = "<group>"; };
 		2E74AC864C4047BAD38DD80C61A17A7D /* Stevia+Percentage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Percentage.swift"; path = "Sources/Stevia/Stevia+Percentage.swift"; sourceTree = "<group>"; };
@@ -628,22 +628,22 @@
 		31515244A84BB1A107E9971CE99DB472 /* YPError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = YPError.swift; sourceTree = "<group>"; };
 		320F2F8DF820223885DB82F6EF109E85 /* YPSelectionsGalleryCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = YPSelectionsGalleryCell.swift; sourceTree = "<group>"; };
 		327A91A92646D33454C3605E8A0C2B2B /* YPPhotoFiltersVC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = YPPhotoFiltersVC.swift; sourceTree = "<group>"; };
-		33629E6AF1D27A4743EAD4068CCF9E60 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		33629E6AF1D27A4743EAD4068CCF9E60 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		33E884025EC2E50A2B3B54B934203196 /* SecureBytes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SecureBytes.swift; path = Sources/CryptoSwift/SecureBytes.swift; sourceTree = "<group>"; };
 		3469F43A9984306EBA3FD36AE06885F1 /* UITextView+Placeholder.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "UITextView+Placeholder.modulemap"; sourceTree = "<group>"; };
-		34BB7BB96BD4F745343BE69059EE83F3 /* EasyMapping */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = EasyMapping; path = EasyMapping.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		34BB7BB96BD4F745343BE69059EE83F3 /* EasyMapping.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EasyMapping.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		35EDD83E5DCB1319ED9B4FF46771AF1D /* PBKDF1.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PBKDF1.swift; sourceTree = "<group>"; };
 		3642C488B4B23D569FFD1D6101248CE0 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CoreData.framework; sourceTree = DEVELOPER_DIR; };
 		36D862F5390723671E7621ED7A78AE5F /* Pods-CalendarApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CalendarApp.release.xcconfig"; sourceTree = "<group>"; };
 		36DFCB9183123EDDB4E6B7452C067C0F /* Addition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Addition.swift; sourceTree = "<group>"; };
 		370F502387430C614A68DE2FED5090D0 /* NSArray+FlattenArray.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+FlattenArray.h"; path = "Sources/EasyMapping/NSArray+FlattenArray.h"; sourceTree = "<group>"; };
-		37940B077EC5813AE69377CD4ED324AD /* ko.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = ko.lproj; sourceTree = "<group>"; };
+		37940B077EC5813AE69377CD4ED324AD /* ko.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = ko.lproj; sourceTree = "<group>"; };
 		38C73406E0212695CCD3E615A800F37B /* FMDB.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDB.h; path = src/fmdb/FMDB.h; sourceTree = "<group>"; };
 		38F2F2337915007CF52A091E78820887 /* EXTRuntimeExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXTRuntimeExtensions.m; path = extobjc/EXTRuntimeExtensions.m; sourceTree = "<group>"; };
 		391DE6E208BEE981872830B3F3CB1DB8 /* Pods-CalendarApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CalendarApp-umbrella.h"; sourceTree = "<group>"; };
 		3942BA9C73D74EAD1215D02F0D00B8E1 /* MTDates.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MTDates.modulemap; sourceTree = "<group>"; };
-		39A4D8FE7A83A6E870E7BDF72EE5411C /* EasyMapping.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = EasyMapping.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		3AEE662637FDF39735B96C9726214183 /* Releasing.md */ = {isa = PBXFileReference; includeInIndex = 1; name = Releasing.md; path = Docs/Releasing.md; sourceTree = "<group>"; };
+		39A4D8FE7A83A6E870E7BDF72EE5411C /* EasyMapping.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = EasyMapping.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		3AEE662637FDF39735B96C9726214183 /* Releasing.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = Releasing.md; path = Docs/Releasing.md; sourceTree = "<group>"; };
 		3B6B38D19372BBB26A61DE7839354F81 /* Stevia+Stacks.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Stacks.swift"; path = "Sources/Stevia/Stevia+Stacks.swift"; sourceTree = "<group>"; };
 		3B7794522DF4940657110E84180B4F12 /* ProgressHUD+CirclePulseMultiple.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ProgressHUD+CirclePulseMultiple.swift"; path = "ProgressHUD/Sources/Animations/ProgressHUD+CirclePulseMultiple.swift"; sourceTree = "<group>"; };
 		3D0BA198B01BB6B5E9533A210CDBE1C3 /* URL+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "URL+Extensions.swift"; sourceTree = "<group>"; };
@@ -657,17 +657,17 @@
 		40456EA6E80CF742C3B7B75B3418392C /* AES.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AES.swift; path = Sources/CryptoSwift/AES.swift; sourceTree = "<group>"; };
 		409A7DE60092D0873F0EC2887CB6D382 /* DDTTYLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDTTYLogger.m; path = Classes/DDTTYLogger.m; sourceTree = "<group>"; };
 		40AD85A1952F74E9D08DDB233E2A8F68 /* MTDates.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MTDates.release.xcconfig; sourceTree = "<group>"; };
-		4124A7A54A03832C5217007824B7C471 /* CocoaLumberjack.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = CocoaLumberjack.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		4124A7A54A03832C5217007824B7C471 /* CocoaLumberjack.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = CocoaLumberjack.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		41B463171B0131B4CF4E8CAB4AE3DEF0 /* EXTNil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXTNil.h; path = extobjc/EXTNil.h; sourceTree = "<group>"; };
 		41C48DA3E60E3E81F967A85B5C4E1A2C /* ProgressHUD+TriangleDotShift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ProgressHUD+TriangleDotShift.swift"; path = "ProgressHUD/Sources/Animations/ProgressHUD+TriangleDotShift.swift"; sourceTree = "<group>"; };
 		4272E903DA86281E07F2E70BC4BD1909 /* YPPermissionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = YPPermissionManager.swift; sourceTree = "<group>"; };
 		4298E9DCE50640ECA36468AE0B5A9518 /* DDASLLogCapture.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDASLLogCapture.h; path = Classes/DDASLLogCapture.h; sourceTree = "<group>"; };
-		42EC13C1D86662BE0726AEDB4E0E1DEF /* fa.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = fa.lproj; sourceTree = "<group>"; };
-		4364E5506F95E7B25AFFB19E1DFAC24B /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE.txt; sourceTree = "<group>"; };
+		42EC13C1D86662BE0726AEDB4E0E1DEF /* fa.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = fa.lproj; sourceTree = "<group>"; };
+		4364E5506F95E7B25AFFB19E1DFAC24B /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		44091307426BD092B237BB49350E931B /* YPPhotoCaptureHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = YPPhotoCaptureHelper.swift; sourceTree = "<group>"; };
 		4423112D7C4F080F68608A9B9B93BA52 /* BlockDecryptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlockDecryptor.swift; path = Sources/CryptoSwift/BlockDecryptor.swift; sourceTree = "<group>"; };
 		44373336283CE9FB82982A960FB06A0E /* CGFloat+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "CGFloat+Extensions.swift"; sourceTree = "<group>"; };
-		44A33BD261D6B1FBA2E6BA4F2E27B380 /* ro.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = ro.lproj; sourceTree = "<group>"; };
+		44A33BD261D6B1FBA2E6BA4F2E27B380 /* ro.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = ro.lproj; sourceTree = "<group>"; };
 		44E24A557E43B09AC2E64C17CD6B8381 /* Checksum.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Checksum.swift; path = Sources/CryptoSwift/Checksum.swift; sourceTree = "<group>"; };
 		47820805AC8B7D01FB0FC797140F6140 /* Digest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Digest.swift; path = Sources/CryptoSwift/Digest.swift; sourceTree = "<group>"; };
 		47AD7FDC787EC1008C42B94C4EE86A65 /* ProgressHUD+PacmanProgress.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ProgressHUD+PacmanProgress.swift"; path = "ProgressHUD/Sources/Animations/ProgressHUD+PacmanProgress.swift"; sourceTree = "<group>"; };
@@ -675,17 +675,17 @@
 		49954409CF3B641D2851D65C2131F122 /* Subtraction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Subtraction.swift; sourceTree = "<group>"; };
 		49D67BBF2A966F742ED8958A31BCA52B /* AVMutableComposition+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "AVMutableComposition+Extensions.swift"; sourceTree = "<group>"; };
 		49F91F763F07B05CD67FF8CBC5484E1C /* DDLegacyMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDLegacyMacros.h; path = Classes/DDLegacyMacros.h; sourceTree = "<group>"; };
-		4A8ADD41685D2B56BFA184F9BC301F65 /* SwiftReflection */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftReflection; path = SwiftReflection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A8ADD41685D2B56BFA184F9BC301F65 /* SwiftReflection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftReflection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AB391761572E28FB091EF21A53A0CAC /* YPFonts.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = YPFonts.swift; sourceTree = "<group>"; };
 		4ADED70A6205B1966F58DC0CECFA4FD6 /* DDLog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDLog.h; path = Classes/DDLog.h; sourceTree = "<group>"; };
 		4B6F3207A9F622E538E179136F2D1AF5 /* Array+Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Array+Foundation.swift"; sourceTree = "<group>"; };
 		4C0BF7D32CE07A1EB8C076F2EF515D86 /* EasyMapping-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "EasyMapping-Info.plist"; sourceTree = "<group>"; };
 		4C7875ADAC89DD16C896BDB015D03229 /* CS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CS.swift; sourceTree = "<group>"; };
 		4C9F9D28770BF33186159F0EB0BC6457 /* YPImagePicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YPImagePicker-umbrella.h"; sourceTree = "<group>"; };
-		4CB3F5552D97C887E2AA81A7826CCDE3 /* sv.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = sv.lproj; sourceTree = "<group>"; };
+		4CB3F5552D97C887E2AA81A7826CCDE3 /* sv.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = sv.lproj; sourceTree = "<group>"; };
 		4CD496A6CD209415527959B6107D6267 /* Random.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Random.swift; sourceTree = "<group>"; };
 		4D309CED3DE71DA9BE1ED0BD546E439F /* ProgressHUD+CircleRippleMultiple.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ProgressHUD+CircleRippleMultiple.swift"; path = "ProgressHUD/Sources/Animations/ProgressHUD+CircleRippleMultiple.swift"; sourceTree = "<group>"; };
-		4E80964F336F4EC4A696FC234FD46163 /* cs.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = cs.lproj; sourceTree = "<group>"; };
+		4E80964F336F4EC4A696FC234FD46163 /* cs.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = cs.lproj; sourceTree = "<group>"; };
 		4F3A66B8D2B716024F8D37343D6875AC /* YPAlbumsManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = YPAlbumsManager.swift; sourceTree = "<group>"; };
 		4F61877CB42113F7E60AF37AC3653078 /* EasyMapping-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EasyMapping-umbrella.h"; sourceTree = "<group>"; };
 		4FB8F6EB6AFD0EBBD23C007E150BA7C9 /* SteviaLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SteviaLayout.modulemap; sourceTree = "<group>"; };
@@ -701,10 +701,10 @@
 		56EAAF62BA9E9640ED90CC89DFEEEE61 /* PHFetchResult+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "PHFetchResult+Extensions.swift"; sourceTree = "<group>"; };
 		570FF13BF2FD67816A7D56094D7E07E2 /* EXTRuntimeExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXTRuntimeExtensions.h; path = extobjc/EXTRuntimeExtensions.h; sourceTree = "<group>"; };
 		5755EA807E6EDA1F4A1EC48FFB6F38C9 /* EKMapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EKMapper.h; path = Sources/EasyMapping/EKMapper.h; sourceTree = "<group>"; };
-		57633E72EDDBBFF55AB031F239145225 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE.txt; sourceTree = "<group>"; };
+		57633E72EDDBBFF55AB031F239145225 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		57C7B8A020DFE309BD61F35505BFB457 /* Utils+Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Utils+Foundation.swift"; sourceTree = "<group>"; };
 		594F6A28B67C77F85E2AE94C20D52537 /* NSDateComponents+MTDates.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDateComponents+MTDates.m"; path = "MTDates/NSDateComponents+MTDates.m"; sourceTree = "<group>"; };
-		59FD30CFD465807C8E5D6DF7ABF67648 /* tr.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = tr.lproj; sourceTree = "<group>"; };
+		59FD30CFD465807C8E5D6DF7ABF67648 /* tr.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = tr.lproj; sourceTree = "<group>"; };
 		5A85BC947B255A975EF47F037AB159C1 /* ProgressHUD-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ProgressHUD-Info.plist"; sourceTree = "<group>"; };
 		5B46378D3A936B0CBFE64745EBEDCFEB /* OFB.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OFB.swift; sourceTree = "<group>"; };
 		5BA420043539B42B1B3DF3FE09C2C42A /* ThumbSelectorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ThumbSelectorView.swift; path = Sources/PryntTrimmerView/ThumbSelectorView.swift; sourceTree = "<group>"; };
@@ -712,11 +712,11 @@
 		5C0CB1902D3AC124636676CB7C9A168C /* EKPropertyMapping.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EKPropertyMapping.m; path = Sources/EasyMapping/EKPropertyMapping.m; sourceTree = "<group>"; };
 		5C3D2AB60279E4240C717C66668EA1D3 /* EKSerializer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EKSerializer.m; path = Sources/EasyMapping/EKSerializer.m; sourceTree = "<group>"; };
 		5C9EA3851FB24EFBE6DECD488E23AAF0 /* ProgressHUD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ProgressHUD.release.xcconfig; sourceTree = "<group>"; };
-		5DA9E419DFCFD44D8897B159ABFAE631 /* es.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = es.lproj; sourceTree = "<group>"; };
+		5DA9E419DFCFD44D8897B159ABFAE631 /* es.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = es.lproj; sourceTree = "<group>"; };
 		5E47DA3EB00BCB27CF6D8B464770CCE6 /* YPDragDirection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = YPDragDirection.swift; sourceTree = "<group>"; };
 		5EB82F6394F12D9D2D5967E15A4B5DE6 /* SteviaLayout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SteviaLayout.release.xcconfig; sourceTree = "<group>"; };
-		5EBCB674B010E47E80A74BE5EE577A6F /* MTDates */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MTDates; path = MTDates.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5F4FBB90648CB1187C716ECFBEA4B8E7 /* SwiftReflection.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = SwiftReflection.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		5EBCB674B010E47E80A74BE5EE577A6F /* MTDates.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MTDates.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F4FBB90648CB1187C716ECFBEA4B8E7 /* SwiftReflection.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = SwiftReflection.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		5F96798562AFE45FF0365E61DE97FB88 /* EKObjectModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EKObjectModel.m; path = Sources/EasyMapping/EKObjectModel.m; sourceTree = "<group>"; };
 		5FE67D1E6295432F15DE8FD8740F7FE1 /* YPImageSize.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = YPImageSize.swift; sourceTree = "<group>"; };
 		60E3735D19820FB9FC0DDB015ED22387 /* CropMaskView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CropMaskView.swift; path = Sources/PryntTrimmerView/Cropper/CropMaskView.swift; sourceTree = "<group>"; };
@@ -726,8 +726,8 @@
 		6241C38968334CF285A764145BAC300B /* YPCameraVC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = YPCameraVC.swift; sourceTree = "<group>"; };
 		6299DFE725C1CEA488E1109C67B88C9B /* ProgressHUD+CircleArcDotSpin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ProgressHUD+CircleArcDotSpin.swift"; path = "ProgressHUD/Sources/Animations/ProgressHUD+CircleArcDotSpin.swift"; sourceTree = "<group>"; };
 		62C1ED7B46F5725B595D61A2E54BA11C /* PryntTrimmerView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PryntTrimmerView-umbrella.h"; sourceTree = "<group>"; };
-		62F80CBA14D8120E2902D917BDD03D2E /* it.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = it.lproj; sourceTree = "<group>"; };
-		64503B232C3A37473C0C6F012FA246E5 /* pt-PT.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = "pt-PT.lproj"; sourceTree = "<group>"; };
+		62F80CBA14D8120E2902D917BDD03D2E /* it.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = it.lproj; sourceTree = "<group>"; };
+		64503B232C3A37473C0C6F012FA246E5 /* pt-PT.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = "pt-PT.lproj"; sourceTree = "<group>"; };
 		64E8CD554E30D31FBFBB219AF9663CD9 /* YPWordings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = YPWordings.swift; sourceTree = "<group>"; };
 		655C05B39BD173A820D3634A2C8BF71C /* EKMappingProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EKMappingProtocol.h; path = Sources/EasyMapping/EKMappingProtocol.h; sourceTree = "<group>"; };
 		66F6C1EBDBD7EA4AC35992041F7E3295 /* ProgressHUD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ProgressHUD.debug.xcconfig; sourceTree = "<group>"; };
@@ -740,9 +740,9 @@
 		68FADB79CA97D18B3790533579AB98D7 /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		69B93EE74F874D8A088D1F82FE352CB2 /* Stevia+Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Notifications.swift"; path = "Sources/Stevia/Stevia+Notifications.swift"; sourceTree = "<group>"; };
 		69FD1FB6415064B93724AED29E78E38D /* ProgressHUD+BarSweepToggle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ProgressHUD+BarSweepToggle.swift"; path = "ProgressHUD/Sources/Animations/ProgressHUD+BarSweepToggle.swift"; sourceTree = "<group>"; };
-		6AECBAD89448FCC775FA38272A4CA11B /* FMDB.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = FMDB.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		6AECBAD89448FCC775FA38272A4CA11B /* FMDB.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = FMDB.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		6B565C07388506370474784F00C91730 /* NSInvocation+EXT.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSInvocation+EXT.h"; path = "extobjc/NSInvocation+EXT.h"; sourceTree = "<group>"; };
-		6BBD38B15F9593FB20BD2C633D653134 /* vi.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = vi.lproj; sourceTree = "<group>"; };
+		6BBD38B15F9593FB20BD2C633D653134 /* vi.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = vi.lproj; sourceTree = "<group>"; };
 		6BFDC7EEE80D64259BCC35B413868DEB /* Pods-CalendarApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CalendarApp.modulemap"; sourceTree = "<group>"; };
 		6C405775A1A2416E4CE79A2C33F85DB5 /* DDFileLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDFileLogger.m; path = Classes/DDFileLogger.m; sourceTree = "<group>"; };
 		6CD65D34EB9B58D23B673CDCB989EFAF /* YPVideoCaptureVC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = YPVideoCaptureVC.swift; sourceTree = "<group>"; };
@@ -756,8 +756,8 @@
 		6EFBA9EBBA1A63A63F3AECCFC87C9416 /* UInt128.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UInt128.swift; path = Sources/CryptoSwift/UInt128.swift; sourceTree = "<group>"; };
 		6F82002A36E5011B88006F0019FF0BCC /* FMDB.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FMDB.modulemap; sourceTree = "<group>"; };
 		70632648970D7CAE28AD1E1B3E435943 /* Array+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Array+Extension.swift"; path = "Sources/CryptoSwift/Array+Extension.swift"; sourceTree = "<group>"; };
-		70F45AFA29759AFBC50A36E28652B2FC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		719576F8DB1D988D263D603DFEE1FA3E /* en.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = en.lproj; sourceTree = "<group>"; };
+		70F45AFA29759AFBC50A36E28652B2FC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		719576F8DB1D988D263D603DFEE1FA3E /* en.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = en.lproj; sourceTree = "<group>"; };
 		71FC194642D92EDD2055E560228A94A8 /* SHA2.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SHA2.swift; path = Sources/CryptoSwift/SHA2.swift; sourceTree = "<group>"; };
 		72671008FABB7B450B0806E4BBBECBE2 /* YPPermissionCheckable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = YPPermissionCheckable.swift; sourceTree = "<group>"; };
 		7322CFA1312C0E33DD7DA940E79ACD0C /* UITextView+Placeholder-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UITextView+Placeholder-dummy.m"; sourceTree = "<group>"; };
@@ -779,7 +779,7 @@
 		7B3AE84EF169DE07FEA0D77161D082B7 /* BigInt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BigInt.swift; sourceTree = "<group>"; };
 		7B443E66E86F3A28E312BC2F6F7AEA53 /* YPAssetZoomableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = YPAssetZoomableView.swift; sourceTree = "<group>"; };
 		7B860F7AFEB001D3F372F4ACB25B1021 /* EXTKeyPathCoding.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXTKeyPathCoding.h; path = extobjc/EXTKeyPathCoding.h; sourceTree = "<group>"; };
-		7C9E38C05488FE52021A5A9BCEB3AF7A /* ru.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = ru.lproj; sourceTree = "<group>"; };
+		7C9E38C05488FE52021A5A9BCEB3AF7A /* ru.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = ru.lproj; sourceTree = "<group>"; };
 		7D281880492651698A21FE6EED17B7B2 /* DDAbstractDatabaseLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDAbstractDatabaseLogger.h; path = Classes/DDAbstractDatabaseLogger.h; sourceTree = "<group>"; };
 		7D2F5C69BAC81DDC0C57AAAF7C74F971 /* YPColors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = YPColors.swift; sourceTree = "<group>"; };
 		7E04575E38072AE59BF109CFACA09EA7 /* YPGridView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = YPGridView.swift; sourceTree = "<group>"; };
@@ -794,10 +794,10 @@
 		82A3DAD2C4E09FCAC0BF9CFBECB0C605 /* YPSelectionsGalleryVC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = YPSelectionsGalleryVC.swift; sourceTree = "<group>"; };
 		82DA34C04A2C60405EA7479B531410E4 /* CryptoSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CryptoSwift.modulemap; sourceTree = "<group>"; };
 		82F3532239693D178B19362A35E6CA5F /* PryntTrimmerView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PryntTrimmerView-prefix.pch"; sourceTree = "<group>"; };
-		83A75E9997A15AAEC9E1B7D85B17ED54 /* fr.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = fr.lproj; sourceTree = "<group>"; };
+		83A75E9997A15AAEC9E1B7D85B17ED54 /* fr.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = fr.lproj; sourceTree = "<group>"; };
 		83F493B11FB187B199437D5025EFF766 /* Bitwise Ops.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Bitwise Ops.swift"; sourceTree = "<group>"; };
 		84117DDA36D931A38F5DAB2AB3007D46 /* MTDates-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MTDates-Info.plist"; sourceTree = "<group>"; };
-		842CE0A27DFF4B8AAC3B2EC96BEB7CE2 /* nb.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = nb.lproj; sourceTree = "<group>"; };
+		842CE0A27DFF4B8AAC3B2EC96BEB7CE2 /* nb.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = nb.lproj; sourceTree = "<group>"; };
 		85368E18BA81D3141DD7619FFC5A2880 /* EXTADT.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXTADT.m; path = extobjc/EXTADT.m; sourceTree = "<group>"; };
 		855C2FD5E83AC801B424A5AD15249EA5 /* DER.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DER.swift; sourceTree = "<group>"; };
 		860FA9BB02FCACC6A98385FF20D7B249 /* String+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+Extension.swift"; path = "Sources/CryptoSwift/String+Extension.swift"; sourceTree = "<group>"; };
@@ -817,13 +817,13 @@
 		8D01CC94388DFA5858780B0A1BA1E0B3 /* ZeroPadding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZeroPadding.swift; path = Sources/CryptoSwift/ZeroPadding.swift; sourceTree = "<group>"; };
 		8D11D3974F4184D6503187069D5C1180 /* CocoaLumberjack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CocoaLumberjack.release.xcconfig; sourceTree = "<group>"; };
 		8E40B95CF3C99E0E8A93CD8C46EE12D2 /* YPBottomPager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = YPBottomPager.swift; sourceTree = "<group>"; };
-		8F47637E87278DC78002AF00A8503780 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		8F47637E87278DC78002AF00A8503780 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		92197E4361B0051057A9D99CB3CD96FA /* VideoScrollView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VideoScrollView.swift; path = Sources/PryntTrimmerView/Cropper/VideoScrollView.swift; sourceTree = "<group>"; };
 		949460BC02D6BFC61B469DDF4F4CBD06 /* NSFileManager+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "NSFileManager+Extensions.swift"; sourceTree = "<group>"; };
 		950E7FA65BCA643BDC2FD7B09F62F1B3 /* YPFiltersView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = YPFiltersView.swift; sourceTree = "<group>"; };
-		958A6DCA09FC18BCE6F2C75F95D6DEA4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		958A6DCA09FC18BCE6F2C75F95D6DEA4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		95FDFEDE311520AA8DA513E895AA4539 /* YPFlashMode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = YPFlashMode.swift; sourceTree = "<group>"; };
-		97019E2FF46635F70C6F08AB20503ABA /* nl.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = nl.lproj; sourceTree = "<group>"; };
+		97019E2FF46635F70C6F08AB20503ABA /* nl.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = nl.lproj; sourceTree = "<group>"; };
 		971A5B72F27B401A6F52D0BDAD6FAEA3 /* Bundle+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Bundle+Extensions.swift"; sourceTree = "<group>"; };
 		9720FB08BEF193A4C2E8459E6BBC337F /* CipherModeWorker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CipherModeWorker.swift; sourceTree = "<group>"; };
 		979FCAC98E1353C56299A46C53847D90 /* EKObjectModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EKObjectModel.h; path = Sources/EasyMapping/EKObjectModel.h; sourceTree = "<group>"; };
@@ -836,7 +836,7 @@
 		99F9436E12CB0BC748836ED10BF7BF9E /* ProgressHUD+LiveIcon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ProgressHUD+LiveIcon.swift"; path = "ProgressHUD/Sources/ProgressHUD+LiveIcon.swift"; sourceTree = "<group>"; };
 		9A5178FFF81A5354CF779EF626DCA411 /* Pods-CalendarApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CalendarApp-frameworks.sh"; sourceTree = "<group>"; };
 		9AFEA6EC7084A8804DD39768AD18B111 /* Cryptors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Cryptors.swift; path = Sources/CryptoSwift/Cryptors.swift; sourceTree = "<group>"; };
-		9B898B6FB11C3E4E349582DD6E64C9F7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		9B898B6FB11C3E4E349582DD6E64C9F7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		9BA2C7D740A918EFC727725636C43060 /* PKCS7.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PKCS7.swift; sourceTree = "<group>"; };
 		9BF3C46DCF1FD5ADE4C2F579A4724903 /* DDASLLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDASLLogger.m; path = Classes/DDASLLogger.m; sourceTree = "<group>"; };
 		9C414C7F2BC1EEF6AC3F699F65374129 /* CompactMap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CompactMap.swift; path = Sources/CryptoSwift/CompactMap.swift; sourceTree = "<group>"; };
@@ -844,14 +844,14 @@
 		9D02A21F691E49D236F452BA81DB6E34 /* CCM.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CCM.swift; sourceTree = "<group>"; };
 		9D7D41558507B0FF92F54A4900914006 /* EKPropertyHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EKPropertyHelper.m; path = Sources/EasyMapping/EKPropertyHelper.m; sourceTree = "<group>"; };
 		9D88B36FFB5D0F05222B425C5911BDA5 /* ProgressHUD+Public.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ProgressHUD+Public.swift"; path = "ProgressHUD/Sources/ProgressHUD+Public.swift"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E9CEA381D7F4CBB06EAA1D267B952EF /* DDOSLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDOSLogger.h; path = Classes/DDOSLogger.h; sourceTree = "<group>"; };
 		9F096343246325DD22464F87C90E761B /* CocoaLumberjack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CocoaLumberjack.debug.xcconfig; sourceTree = "<group>"; };
-		A0ED32D63D2EB698F451B8F3BBBDEE8F /* Pods-CalendarApp */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-CalendarApp"; path = Pods_CalendarApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0ED32D63D2EB698F451B8F3BBBDEE8F /* Pods_CalendarApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CalendarApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A17A4ADD178A78B8DA57EA99D7D0DBA0 /* YPAccessibility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = YPAccessibility.swift; sourceTree = "<group>"; };
 		A18F2ACFD115552CB134CF3FFD09737F /* Stevia+Alignment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Alignment.swift"; path = "Sources/Stevia/Stevia+Alignment.swift"; sourceTree = "<group>"; };
 		A21F1B902F7E20E07C40A92F8EA70B10 /* MD5.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MD5.swift; path = Sources/CryptoSwift/MD5.swift; sourceTree = "<group>"; };
-		A3A80BA70CFB7F75C5391BEBBBA8C9DA /* FMDB */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FMDB; path = FMDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3A80BA70CFB7F75C5391BEBBBA8C9DA /* FMDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FMDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3DFA42682DD5EF40F06C953E49E72BD /* ProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ProgressHUD-dummy.m"; sourceTree = "<group>"; };
 		A42B1908B02583E56A631DA0C48C957A /* AssetVideoScrollView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssetVideoScrollView.swift; path = Sources/PryntTrimmerView/Parents/AssetVideoScrollView.swift; sourceTree = "<group>"; };
 		A47F833BBA849B586FB4D9D6DB17C52B /* extobjc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = extobjc.h; path = extobjc/extobjc.h; sourceTree = "<group>"; };
@@ -873,16 +873,16 @@
 		ACA2D8E92390385718ECB599950FA07C /* ProgressHUD+QuintupleDotDance.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ProgressHUD+QuintupleDotDance.swift"; path = "ProgressHUD/Sources/Animations/ProgressHUD+QuintupleDotDance.swift"; sourceTree = "<group>"; };
 		AE00A39AA90152B047FDC4FC3FBB7BA8 /* UInt32+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UInt32+Extension.swift"; path = "Sources/CryptoSwift/UInt32+Extension.swift"; sourceTree = "<group>"; };
 		B2091F0596B894F054C564E612B11B53 /* AVAsset+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "AVAsset+Extensions.swift"; sourceTree = "<group>"; };
-		B21D310601ED6EE7B8C0EA00E6E2E26B /* pt-BR.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = "pt-BR.lproj"; sourceTree = "<group>"; };
+		B21D310601ED6EE7B8C0EA00E6E2E26B /* pt-BR.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = "pt-BR.lproj"; sourceTree = "<group>"; };
 		B3067243FF3FE59B2AE35FF7E4975120 /* libextobjc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = libextobjc.release.xcconfig; sourceTree = "<group>"; };
 		B392E154BA41E5DF8A539D38F1769F51 /* SHA1.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SHA1.swift; path = Sources/CryptoSwift/SHA1.swift; sourceTree = "<group>"; };
 		B3FAE9B2F7FE3CC1D48171F5BC862E27 /* ProgressHUD+HorizontalDotScaling.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ProgressHUD+HorizontalDotScaling.swift"; path = "ProgressHUD/Sources/Animations/ProgressHUD+HorizontalDotScaling.swift"; sourceTree = "<group>"; };
 		B4CFF7CBB98F9EC81BE2B66999DD455A /* NSDate+MTDates.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDate+MTDates.m"; path = "MTDates/NSDate+MTDates.m"; sourceTree = "<group>"; };
-		B51A5A6A9FA49788993C398E499590E7 /* km-KH.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = "km-KH.lproj"; sourceTree = "<group>"; };
+		B51A5A6A9FA49788993C398E499590E7 /* km-KH.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = "km-KH.lproj"; sourceTree = "<group>"; };
 		B5E94183C1AB68089448012002D22DEF /* CryptoSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CryptoSwift-prefix.pch"; sourceTree = "<group>"; };
 		B5EAD324ED5766F38DA090C0954A2220 /* AVFileType+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "AVFileType+Extensions.swift"; sourceTree = "<group>"; };
 		B61CA7523CF166FB1517C50CD6400637 /* libextobjc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = libextobjc.debug.xcconfig; sourceTree = "<group>"; };
-		B6382702CC4C0BD0C507EBFA3FC20E1A /* th.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = th.lproj; sourceTree = "<group>"; };
+		B6382702CC4C0BD0C507EBFA3FC20E1A /* th.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = th.lproj; sourceTree = "<group>"; };
 		B656E8F58FCB4E3E5C1FE34573F483CF /* CTR.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CTR.swift; sourceTree = "<group>"; };
 		B6E76DB0127D50AB7BE2A0F2A5A42E15 /* EXTSafeCategory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXTSafeCategory.m; path = extobjc/EXTSafeCategory.m; sourceTree = "<group>"; };
 		B81E660CEA8D407AA97A92414342A6BA /* YPImagePicker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YPImagePicker.swift; path = Source/YPImagePicker.swift; sourceTree = "<group>"; };
@@ -891,7 +891,7 @@
 		BB0265CFDFA1521ECD56A9353ADA8C02 /* EasyMapping-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EasyMapping-prefix.pch"; sourceTree = "<group>"; };
 		BB38825005FC7F2E34D2FD0B2BA1E548 /* YPVideoFiltersVC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = YPVideoFiltersVC.swift; sourceTree = "<group>"; };
 		BC401F329D0E3FE5E547A9F956C2E024 /* YPPickerScreen.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = YPPickerScreen.swift; sourceTree = "<group>"; };
-		BC9B9301E35BDE4976A0D5C295C3136A /* zh-Hant.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = "zh-Hant.lproj"; sourceTree = "<group>"; };
+		BC9B9301E35BDE4976A0D5C295C3136A /* zh-Hant.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = "zh-Hant.lproj"; sourceTree = "<group>"; };
 		BD5FF85F21358BB7CDCB07CF849CA849 /* AVPlayer+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "AVPlayer+Extensions.swift"; sourceTree = "<group>"; };
 		BD6C8AA2AE14B0F8C4BFB980CD05A248 /* EXTConcreteProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXTConcreteProtocol.h; path = extobjc/EXTConcreteProtocol.h; sourceTree = "<group>"; };
 		BD8BEB7C6B7D03DEB25D23A59CC4CC7E /* YPPhotoSaver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = YPPhotoSaver.swift; sourceTree = "<group>"; };
@@ -903,7 +903,7 @@
 		C0721D7237FE62BC5072A0593F113A3C /* Stevia+LayoutAnchors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+LayoutAnchors.swift"; path = "Sources/Stevia/Stevia+LayoutAnchors.swift"; sourceTree = "<group>"; };
 		C08D41D5E626ECE6F6BDEFA8CBCC10EE /* EasyMapping.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EasyMapping.debug.xcconfig; sourceTree = "<group>"; };
 		C241C610D36F915F075A0B2B53D28266 /* DDOSLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDOSLogger.m; path = Classes/DDOSLogger.m; sourceTree = "<group>"; };
-		C261436D14052AE3C35F240BCD155CAC /* CocoaLumberjack */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CocoaLumberjack; path = CocoaLumberjack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C261436D14052AE3C35F240BCD155CAC /* CocoaLumberjack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CocoaLumberjack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3021F6179B107E63C7596019764CDD9 /* Collection+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Collection+Extension.swift"; path = "Sources/CryptoSwift/Collection+Extension.swift"; sourceTree = "<group>"; };
 		C4B85F75C14793E268FA71C3C9A879C2 /* DDDispatchQueueLogFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDDispatchQueueLogFormatter.h; path = Classes/Extensions/DDDispatchQueueLogFormatter.h; sourceTree = "<group>"; };
 		C668DF987120CC46A0377BF13CC24218 /* YPImagePickerConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = YPImagePickerConfiguration.swift; sourceTree = "<group>"; };
@@ -914,7 +914,7 @@
 		C8465816314D99599ABB640DF3B0C66B /* EKSerializer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EKSerializer.h; path = Sources/EasyMapping/EKSerializer.h; sourceTree = "<group>"; };
 		C85C3ED0FB6688AF3CFBDC6366CCDD10 /* YPLog.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = YPLog.swift; sourceTree = "<group>"; };
 		C90633E2EF0A485DC06608A8A4B66AE9 /* AVCaptureSession+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "AVCaptureSession+Extensions.swift"; sourceTree = "<group>"; };
-		C967FBB42590244BEF115D9C3A35C7D7 /* ar.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = ar.lproj; sourceTree = "<group>"; };
+		C967FBB42590244BEF115D9C3A35C7D7 /* ar.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = ar.lproj; sourceTree = "<group>"; };
 		C9DA582A077C766DEB5BCE8F2D970E94 /* ECB.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ECB.swift; sourceTree = "<group>"; };
 		CA1DE31B0DACDF8313A678DF14C6D761 /* AEAD.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AEAD.swift; sourceTree = "<group>"; };
 		CB89842E15BABADD9083B47AA37B9430 /* CBC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CBC.swift; sourceTree = "<group>"; };
@@ -926,30 +926,30 @@
 		CF10DC5A65CF7ED9CC9D6ABCBF2566B1 /* BlockMode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BlockMode.swift; sourceTree = "<group>"; };
 		CFE0981F4087E4F4E9C9C30EDEF84408 /* LibraryMediaManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LibraryMediaManager.swift; sourceTree = "<group>"; };
 		D04144C7BC7C2A0A8C460507D0262F2E /* UIButton+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIButton+Extensions.swift"; sourceTree = "<group>"; };
-		D09DB48D8145BFA029AAEA61818EC68B /* PryntTrimmerView */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PryntTrimmerView; path = PryntTrimmerView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D09DB48D8145BFA029AAEA61818EC68B /* PryntTrimmerView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PryntTrimmerView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1040FDF5E262FBD8CE4F7EE6E846810 /* YPLibraryVC+CollectionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "YPLibraryVC+CollectionView.swift"; sourceTree = "<group>"; };
 		D14D4FC8CA2D97D22EC0022536CED75A /* CocoaLumberjack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CocoaLumberjack.h; path = Classes/CocoaLumberjack.h; sourceTree = "<group>"; };
 		D20AFDFD97118AF3BBB4FFF0A6AAC3E5 /* FMDB-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FMDB-umbrella.h"; sourceTree = "<group>"; };
 		D23E2755ED4FA9BBCB2C6739C6935D72 /* EKObjectMapping.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EKObjectMapping.h; path = Sources/EasyMapping/EKObjectMapping.h; sourceTree = "<group>"; };
 		D29159B29FE35684BFF738FE24FB3873 /* ISO10126Padding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ISO10126Padding.swift; path = Sources/CryptoSwift/ISO10126Padding.swift; sourceTree = "<group>"; };
-		D29C35FC7F977659199A0E55752CD616 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		D29C35FC7F977659199A0E55752CD616 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		D29E82AAF1A476A2A1BDCDD76146950D /* CryptoSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CryptoSwift-dummy.m"; sourceTree = "<group>"; };
 		D2C2545B9AEB38C058247FBEA194C3BE /* YPFilterCollectionViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = YPFilterCollectionViewCell.swift; sourceTree = "<group>"; };
 		D314DC3BA9221E55C882428A2B84821A /* CocoaLumberjack-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CocoaLumberjack-Info.plist"; sourceTree = "<group>"; };
 		D3D8841D9DECEB8736365DD6904740E0 /* Shifts.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Shifts.swift; sourceTree = "<group>"; };
 		D46E63CFE19E0C98E0C217DF5414218D /* SwiftReflection.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftReflection.release.xcconfig; sourceTree = "<group>"; };
 		D4B2B8F9471C7B1A300DCD8F01871A6E /* YPCropVC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = YPCropVC.swift; sourceTree = "<group>"; };
-		D4C1500CCE83336E68F16E10C4866A99 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		D4C1500CCE83336E68F16E10C4866A99 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		D4F82BEBBD0D72BADD612552E369A2A8 /* Division.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Division.swift; sourceTree = "<group>"; };
 		D50B56F724F7FE82DBD5FB79C5534709 /* MTDates-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MTDates-umbrella.h"; sourceTree = "<group>"; };
 		D533F1E354C99E2A6D3B1E0E823AD26F /* CocoaLumberjack-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CocoaLumberjack-umbrella.h"; sourceTree = "<group>"; };
 		D551A7E2D113432D531DB8FF69A00182 /* AVAssetTimeSelector.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AVAssetTimeSelector.swift; path = Sources/PryntTrimmerView/Parents/AVAssetTimeSelector.swift; sourceTree = "<group>"; };
-		D5A58D6EE03D27E606A77A5853584107 /* da.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = da.lproj; sourceTree = "<group>"; };
+		D5A58D6EE03D27E606A77A5853584107 /* da.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = da.lproj; sourceTree = "<group>"; };
 		D6D21B865453D08149147B7F6B4AC8DA /* ProgressHUD+HorizontalBarScaling.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ProgressHUD+HorizontalBarScaling.swift"; path = "ProgressHUD/Sources/Animations/ProgressHUD+HorizontalBarScaling.swift"; sourceTree = "<group>"; };
-		D6FF371B7028957C7DA552E10D3ED75E /* YPImagePicker */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = YPImagePicker; path = YPImagePicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6FF371B7028957C7DA552E10D3ED75E /* YPImagePicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YPImagePicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7495BF0C655D2FACD2AC542658C341E /* Stevia+Constraints.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Constraints.swift"; path = "Sources/Stevia/Stevia+Constraints.swift"; sourceTree = "<group>"; };
 		D775BE80F59C23686C8FA7A9ED591AF9 /* CocoaLumberjack.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CocoaLumberjack.modulemap; sourceTree = "<group>"; };
-		D78B3E3CB954901B7F38EBD30AE04630 /* zh-Hans.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = "zh-Hans.lproj"; sourceTree = "<group>"; };
+		D78B3E3CB954901B7F38EBD30AE04630 /* zh-Hans.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = "zh-Hans.lproj"; sourceTree = "<group>"; };
 		D7A45878C8A8BCA4AD99C431668F0A96 /* YPPickerVC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YPPickerVC.swift; path = Source/YPPickerVC.swift; sourceTree = "<group>"; };
 		D7BC07978014E2E90E8AA9C76D1B168C /* CocoaLumberjack-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CocoaLumberjack-prefix.pch"; sourceTree = "<group>"; };
 		D80190F3FBAF7FD1D9C2C813574F55A9 /* ProgressHUD+DualDotSidestep.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ProgressHUD+DualDotSidestep.swift"; path = "ProgressHUD/Sources/Animations/ProgressHUD+DualDotSidestep.swift"; sourceTree = "<group>"; };
@@ -964,12 +964,12 @@
 		DCC73CF50BFEAF3287CEAA9F84F30330 /* EKPropertyMapping.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EKPropertyMapping.h; path = Sources/EasyMapping/EKPropertyMapping.h; sourceTree = "<group>"; };
 		DDD8CCA48F6E875E8AE14B6F714C042F /* FMDatabase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabase.m; path = src/fmdb/FMDatabase.m; sourceTree = "<group>"; };
 		DE1015E434062F695A28D2FC972CA39F /* NSInvocation+EXT.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSInvocation+EXT.m"; path = "extobjc/NSInvocation+EXT.m"; sourceTree = "<group>"; };
-		DE90CE8A0DA0F3A5364FCDD4803AD3EC /* SteviaLayout */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SteviaLayout; path = Stevia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE90CE8A0DA0F3A5364FCDD4803AD3EC /* Stevia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Stevia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE9E79B0D2DB9EC03B35AA9F67CDA52D /* MTDates-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MTDates-dummy.m"; sourceTree = "<group>"; };
 		DEC807BAD9C42824C0E7195C3D73270B /* EXTSelectorChecking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXTSelectorChecking.h; path = extobjc/EXTSelectorChecking.h; sourceTree = "<group>"; };
 		DEF58D59B42D54C3D3556B4652BD2E7C /* Rabbit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Rabbit.swift; path = Sources/CryptoSwift/Rabbit.swift; sourceTree = "<group>"; };
 		DF1E1263CB4A7A9231082285503AF1BA /* ChaCha20+Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "ChaCha20+Foundation.swift"; sourceTree = "<group>"; };
-		DF4DBE9DF0C5F3A881960F8598625C0F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		DF4DBE9DF0C5F3A881960F8598625C0F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E0C04CED341C578314F0A0C4B96A755D /* FMDatabasePool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabasePool.m; path = src/fmdb/FMDatabasePool.m; sourceTree = "<group>"; };
 		E17C1FE844A0156DCA2BB7E1EC796C0B /* FMDB-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FMDB-dummy.m"; sourceTree = "<group>"; };
 		E17D50AD155A11E62DA521120898D86F /* SwiftReflection-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftReflection-umbrella.h"; sourceTree = "<group>"; };
@@ -989,7 +989,7 @@
 		EC6E3F324D0CE35A2262EF6DC9886D85 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabaseAdditions.h; path = src/fmdb/FMDatabaseAdditions.h; sourceTree = "<group>"; };
 		EC92F6FABB4CE834F0C14B4BE43DF71A /* ProgressHUD+CircleBarSpinFade.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ProgressHUD+CircleBarSpinFade.swift"; path = "ProgressHUD/Sources/Animations/ProgressHUD+CircleBarSpinFade.swift"; sourceTree = "<group>"; };
 		EDDB52EAB58AB5804F47784720CDF44C /* SteviaLayout-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SteviaLayout-Info.plist"; sourceTree = "<group>"; };
-		EDE131D6E5D5273568C6001796E210FF /* ja.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = ja.lproj; sourceTree = "<group>"; };
+		EDE131D6E5D5273568C6001796E210FF /* ja.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = ja.lproj; sourceTree = "<group>"; };
 		EE151A297319633AF8D1C60392D5679A /* CryptoSwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CryptoSwift-Info.plist"; sourceTree = "<group>"; };
 		EEB025224E5BC29BBBBFC0AA021E60EE /* RSA+Cipher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "RSA+Cipher.swift"; sourceTree = "<group>"; };
 		EF0ED58F09EF082B71497859D76E702C /* FMResultSet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMResultSet.m; path = src/fmdb/FMResultSet.m; sourceTree = "<group>"; };
@@ -998,29 +998,29 @@
 		F02C49151C6E4498D3A9C17BA1184FEB /* EXTScope.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXTScope.h; path = extobjc/EXTScope.h; sourceTree = "<group>"; };
 		F07EE167A138F44DEE3E262159813DB9 /* SwiftReflection-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftReflection-Info.plist"; sourceTree = "<group>"; };
 		F0A58DC36F557BB41E7CDB1D298B440B /* Comparable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Comparable.swift; sourceTree = "<group>"; };
-		F0C7FE88342E3772A8A133204A1E1910 /* UITextView+Placeholder */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "UITextView+Placeholder"; path = UITextView_Placeholder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0C7FE88342E3772A8A133204A1E1910 /* UITextView_Placeholder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UITextView_Placeholder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0E38DC539F388A84A37DAEF67AD51A6 /* NSMethodSignature+EXT.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSMethodSignature+EXT.m"; path = "extobjc/NSMethodSignature+EXT.m"; sourceTree = "<group>"; };
 		F1D214F644145ABA3F5D8C0AC9F7A08F /* ASN1Decoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ASN1Decoder.swift; sourceTree = "<group>"; };
 		F1E98056A3666837872B5E91D1FA1014 /* PryntTrimmerView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PryntTrimmerView.modulemap; sourceTree = "<group>"; };
 		F26E03027635C469A192B50854203F69 /* YPLibraryViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = YPLibraryViewCell.swift; sourceTree = "<group>"; };
 		F2CBF10328D832DB86FCA7B6707ABB8A /* YPDeviceOrientationHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = YPDeviceOrientationHelper.swift; sourceTree = "<group>"; };
 		F2E9DF4C204FD460E28AAD12E504C288 /* ProgressHUD+BallVerticalBounce.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ProgressHUD+BallVerticalBounce.swift"; path = "ProgressHUD/Sources/Animations/ProgressHUD+BallVerticalBounce.swift"; sourceTree = "<group>"; };
-		F3D26D7B70C6625DDD49DF437C70593F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		F3D26D7B70C6625DDD49DF437C70593F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		F3F8B55C70CDF3E680CE3DB9ED35E7DC /* PCBC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCBC.swift; sourceTree = "<group>"; };
 		F42F140E970B1EDF88A595322C8040CF /* EKMappingBlocks.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EKMappingBlocks.m; path = Sources/EasyMapping/EKMappingBlocks.m; sourceTree = "<group>"; };
-		F435D268D1AD487A26DD93135F7D113D /* bg.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = bg.lproj; sourceTree = "<group>"; };
+		F435D268D1AD487A26DD93135F7D113D /* bg.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = bg.lproj; sourceTree = "<group>"; };
 		F4CE46FB14DEEB570B2324A5BF4E65CB /* FMDatabaseQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabaseQueue.h; path = src/fmdb/FMDatabaseQueue.h; sourceTree = "<group>"; };
 		F56591D9304CC155CBE38D0DCDB440DE /* YPLibrary+LibraryChange.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "YPLibrary+LibraryChange.swift"; sourceTree = "<group>"; };
 		F57B740683C94AB5F7A9B1F3640C91CF /* Stevia+Baselines.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Baselines.swift"; path = "Sources/Stevia/Stevia+Baselines.swift"; sourceTree = "<group>"; };
 		F6125AE3B54576ABC3C4384A9F586848 /* ProgressHUD+SFSymbolBounce.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ProgressHUD+SFSymbolBounce.swift"; path = "ProgressHUD/Sources/Animations/ProgressHUD+SFSymbolBounce.swift"; sourceTree = "<group>"; };
 		F731BAB9C36B5C916396078B47CDA92F /* EXTSelectorChecking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXTSelectorChecking.m; path = extobjc/EXTSelectorChecking.m; sourceTree = "<group>"; };
-		F81274EDB681F11E7CB05F7DCA2BB33C /* CryptoSwift */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CryptoSwift; path = CryptoSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F81274EDB681F11E7CB05F7DCA2BB33C /* CryptoSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CryptoSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F89D7E9EC3FA7B3097336C9E4211146F /* EasyMapping.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EasyMapping.h; path = Sources/EasyMapping/EasyMapping.h; sourceTree = "<group>"; };
-		F92CE28F8C9125C023DB1FEF778FFB9A /* km.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = km.lproj; sourceTree = "<group>"; };
+		F92CE28F8C9125C023DB1FEF778FFB9A /* km.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = km.lproj; sourceTree = "<group>"; };
 		FA6B7D5462C775C464BFB5D94F58A9A4 /* EXTConcreteProtocol.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXTConcreteProtocol.m; path = extobjc/EXTConcreteProtocol.m; sourceTree = "<group>"; };
 		FAF8C3DF878D630C722D4EFFC606A74F /* Floating Point Conversion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Floating Point Conversion.swift"; sourceTree = "<group>"; };
 		FB43261A0989CBA2237C9CCE4F5651D2 /* AEADChaCha20Poly1305.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AEADChaCha20Poly1305.swift; sourceTree = "<group>"; };
-		FB677AD4C87D8957A8659CC51E7B170B /* de.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = de.lproj; sourceTree = "<group>"; };
+		FB677AD4C87D8957A8659CC51E7B170B /* de.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = de.lproj; sourceTree = "<group>"; };
 		FB8F47ACBACFAEA32BFDD9A79AD07F5E /* OCB.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OCB.swift; sourceTree = "<group>"; };
 		FD5CC28B76C08878C5973B5451394881 /* ProgressHUD+Enums.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ProgressHUD+Enums.swift"; path = "ProgressHUD/Sources/ProgressHUD+Enums.swift"; sourceTree = "<group>"; };
 		FD7A335CB1C691F723248FF9B2C8B753 /* UITextView+Placeholder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITextView+Placeholder.m"; path = "Sources/UITextView+Placeholder.m"; sourceTree = "<group>"; };
@@ -1256,7 +1256,6 @@
 				88AA3D81CE550900444148FE38EC0F5A /* ProgressView.swift */,
 				A67E92232784B3A46DEDAAA4F3F9C43C /* Support Files */,
 			);
-			name = ProgressHUD;
 			path = ProgressHUD;
 			sourceTree = "<group>";
 		};
@@ -1277,7 +1276,6 @@
 				12CB4B7854A7FB0BD645CDF1E0B25F30 /* YPAlbumVC.swift */,
 				9850DB565429D094943822E4567D5C71 /* YPAlbumView.swift */,
 			);
-			name = Album;
 			path = Album;
 			sourceTree = "<group>";
 		};
@@ -1314,7 +1312,6 @@
 				BB38825005FC7F2E34D2FD0B2BA1E548 /* YPVideoFiltersVC.swift */,
 				E625BD061D53D102E5A42D5946B5BFB7 /* YPVideoView.swift */,
 			);
-			name = Video;
 			path = Video;
 			sourceTree = "<group>";
 		};
@@ -1349,7 +1346,6 @@
 				D4B2B8F9471C7B1A300DCD8F01871A6E /* YPCropVC.swift */,
 				2502F4A5004C2759FA349C67E6E2EC5A /* YPCropView.swift */,
 			);
-			name = Crop;
 			path = Crop;
 			sourceTree = "<group>";
 		};
@@ -1359,7 +1355,6 @@
 				8044138F5547BAE317051EB09B480591 /* YPVideoCaptureHelper.swift */,
 				6CD65D34EB9B58D23B673CDCB989EFAF /* YPVideoCaptureVC.swift */,
 			);
-			name = Video;
 			path = Video;
 			sourceTree = "<group>";
 		};
@@ -1445,7 +1440,6 @@
 				AC2CAF4AE17BAB33666C6D01DA3856EA /* YPMenuItem.swift */,
 				6DD60C374BA53A17773A5BE6F9F68DE1 /* YPPagerMenu.swift */,
 			);
-			name = BottomPager;
 			path = BottomPager;
 			sourceTree = "<group>";
 		};
@@ -1741,7 +1735,6 @@
 				FD7A335CB1C691F723248FF9B2C8B753 /* UITextView+Placeholder.m */,
 				F72D2112FE3CE23AF2EB74D8E42B3101 /* Support Files */,
 			);
-			name = "UITextView+Placeholder";
 			path = "UITextView+Placeholder";
 			sourceTree = "<group>";
 		};
@@ -1801,19 +1794,19 @@
 		81278F85442AF6DD06866292CCCBAFCC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C261436D14052AE3C35F240BCD155CAC /* CocoaLumberjack */,
-				F81274EDB681F11E7CB05F7DCA2BB33C /* CryptoSwift */,
-				34BB7BB96BD4F745343BE69059EE83F3 /* EasyMapping */,
-				A3A80BA70CFB7F75C5391BEBBBA8C9DA /* FMDB */,
-				2DC3884AC03DA13FA0FF4C5F8C9A996B /* libextobjc */,
-				5EBCB674B010E47E80A74BE5EE577A6F /* MTDates */,
-				A0ED32D63D2EB698F451B8F3BBBDEE8F /* Pods-CalendarApp */,
-				0D3287058D2F13BD484A454154BEA62B /* ProgressHUD */,
-				D09DB48D8145BFA029AAEA61818EC68B /* PryntTrimmerView */,
-				DE90CE8A0DA0F3A5364FCDD4803AD3EC /* SteviaLayout */,
-				4A8ADD41685D2B56BFA184F9BC301F65 /* SwiftReflection */,
-				F0C7FE88342E3772A8A133204A1E1910 /* UITextView+Placeholder */,
-				D6FF371B7028957C7DA552E10D3ED75E /* YPImagePicker */,
+				C261436D14052AE3C35F240BCD155CAC /* CocoaLumberjack.framework */,
+				F81274EDB681F11E7CB05F7DCA2BB33C /* CryptoSwift.framework */,
+				34BB7BB96BD4F745343BE69059EE83F3 /* EasyMapping.framework */,
+				A3A80BA70CFB7F75C5391BEBBBA8C9DA /* FMDB.framework */,
+				2DC3884AC03DA13FA0FF4C5F8C9A996B /* libextobjc.framework */,
+				5EBCB674B010E47E80A74BE5EE577A6F /* MTDates.framework */,
+				A0ED32D63D2EB698F451B8F3BBBDEE8F /* Pods_CalendarApp.framework */,
+				0D3287058D2F13BD484A454154BEA62B /* ProgressHUD.framework */,
+				D09DB48D8145BFA029AAEA61818EC68B /* PryntTrimmerView.framework */,
+				DE90CE8A0DA0F3A5364FCDD4803AD3EC /* Stevia.framework */,
+				4A8ADD41685D2B56BFA184F9BC301F65 /* SwiftReflection.framework */,
+				F0C7FE88342E3772A8A133204A1E1910 /* UITextView_Placeholder.framework */,
+				D6FF371B7028957C7DA552E10D3ED75E /* YPImagePicker.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1886,7 +1879,6 @@
 				A5F58DC803E9EDD34C95BEFA87C3DD81 /* UINavigationBar+Extensions.swift */,
 				3D0BA198B01BB6B5E9533A210CDBE1C3 /* URL+Extensions.swift */,
 			);
-			name = Extensions;
 			path = Extensions;
 			sourceTree = "<group>";
 		};
@@ -1949,7 +1941,6 @@
 				950E7FA65BCA643BDC2FD7B09F62F1B3 /* YPFiltersView.swift */,
 				327A91A92646D33454C3605E8A0C2B2B /* YPPhotoFiltersVC.swift */,
 			);
-			name = Photo;
 			path = Photo;
 			sourceTree = "<group>";
 		};
@@ -1975,7 +1966,6 @@
 				55CDB1CE18FDB9548F0CDD96D10612A1 /* YPPermissionDeniedPopup.swift */,
 				4272E903DA86281E07F2E70BC4BD1909 /* YPPermissionManager.swift */,
 			);
-			name = Permissions;
 			path = Permissions;
 			sourceTree = "<group>";
 		};
@@ -2057,7 +2047,6 @@
 				1005C2AEF3F8B4D902A1C850E25E1586 /* Album */,
 				3C69CFF2C3770C24E528AF1F653DB78A /* BottomPager */,
 			);
-			name = Gallery;
 			path = Gallery;
 			sourceTree = "<group>";
 		};
@@ -2111,7 +2100,6 @@
 				13098299383E9942DE25EED2435BB33D /* Stevia+Style.swift */,
 				5CADAAF4F0D7077537371B79E88ABF54 /* Support Files */,
 			);
-			name = SteviaLayout;
 			path = SteviaLayout;
 			sourceTree = "<group>";
 		};
@@ -2128,7 +2116,6 @@
 				92197E4361B0051057A9D99CB3CD96FA /* VideoScrollView.swift */,
 				32C8AB529608F8D70BF949373081C798 /* Support Files */,
 			);
-			name = PryntTrimmerView;
 			path = PryntTrimmerView;
 			sourceTree = "<group>";
 		};
@@ -2195,7 +2182,6 @@
 				3059749BF65385164300CF1B2C82DA60 /* YPCameraView.swift */,
 				44091307426BD092B237BB49350E931B /* YPPhotoCaptureHelper.swift */,
 			);
-			name = Photo;
 			path = Photo;
 			sourceTree = "<group>";
 		};
@@ -2235,7 +2221,6 @@
 				5647626CA62FD62678A8EDF589845611 /* Support Files */,
 				04F674D45517B35C13C60366750ED9EB /* UmbrellaHeader */,
 			);
-			name = libextobjc;
 			path = libextobjc;
 			sourceTree = "<group>";
 		};
@@ -2320,7 +2305,6 @@
 				594F6A28B67C77F85E2AE94C20D52537 /* NSDateComponents+MTDates.m */,
 				ADC1B7CF5E255E69BACC2F1E4251C793 /* Support Files */,
 			);
-			name = MTDates;
 			path = MTDates;
 			sourceTree = "<group>";
 		};
@@ -2502,7 +2486,7 @@
 			);
 			name = ProgressHUD;
 			productName = ProgressHUD;
-			productReference = 0D3287058D2F13BD484A454154BEA62B /* ProgressHUD */;
+			productReference = 0D3287058D2F13BD484A454154BEA62B /* ProgressHUD.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		031EC6716B0AE84A37919C3814AA103F /* YPImagePicker */ = {
@@ -2522,7 +2506,7 @@
 			);
 			name = YPImagePicker;
 			productName = YPImagePicker;
-			productReference = D6FF371B7028957C7DA552E10D3ED75E /* YPImagePicker */;
+			productReference = D6FF371B7028957C7DA552E10D3ED75E /* YPImagePicker.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		492A3F539D36426FFCED62F4F58F688B /* PryntTrimmerView */ = {
@@ -2540,7 +2524,7 @@
 			);
 			name = PryntTrimmerView;
 			productName = PryntTrimmerView;
-			productReference = D09DB48D8145BFA029AAEA61818EC68B /* PryntTrimmerView */;
+			productReference = D09DB48D8145BFA029AAEA61818EC68B /* PryntTrimmerView.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		5871DC2BEE84E6F86D58A842B7E93836 /* SwiftReflection */ = {
@@ -2558,7 +2542,7 @@
 			);
 			name = SwiftReflection;
 			productName = SwiftReflection;
-			productReference = 4A8ADD41685D2B56BFA184F9BC301F65 /* SwiftReflection */;
+			productReference = 4A8ADD41685D2B56BFA184F9BC301F65 /* SwiftReflection.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		6FB117A0AF935F961E149EF4814DB63B /* EasyMapping */ = {
@@ -2576,7 +2560,7 @@
 			);
 			name = EasyMapping;
 			productName = EasyMapping;
-			productReference = 34BB7BB96BD4F745343BE69059EE83F3 /* EasyMapping */;
+			productReference = 34BB7BB96BD4F745343BE69059EE83F3 /* EasyMapping.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		8592E0E389D40AC17881400ADC67ABC0 /* FMDB */ = {
@@ -2594,7 +2578,7 @@
 			);
 			name = FMDB;
 			productName = FMDB;
-			productReference = A3A80BA70CFB7F75C5391BEBBBA8C9DA /* FMDB */;
+			productReference = A3A80BA70CFB7F75C5391BEBBBA8C9DA /* FMDB.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		9449933C13F773C82CDD00B6F56EC316 /* MTDates */ = {
@@ -2612,7 +2596,7 @@
 			);
 			name = MTDates;
 			productName = MTDates;
-			productReference = 5EBCB674B010E47E80A74BE5EE577A6F /* MTDates */;
+			productReference = 5EBCB674B010E47E80A74BE5EE577A6F /* MTDates.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		94DBE1F02563D90F416A7DB9558489B2 /* UITextView+Placeholder */ = {
@@ -2630,7 +2614,7 @@
 			);
 			name = "UITextView+Placeholder";
 			productName = UITextView_Placeholder;
-			productReference = F0C7FE88342E3772A8A133204A1E1910 /* UITextView+Placeholder */;
+			productReference = F0C7FE88342E3772A8A133204A1E1910 /* UITextView_Placeholder.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		99313990C1D76A6D1D017868B6975CC8 /* CryptoSwift */ = {
@@ -2648,7 +2632,7 @@
 			);
 			name = CryptoSwift;
 			productName = CryptoSwift;
-			productReference = F81274EDB681F11E7CB05F7DCA2BB33C /* CryptoSwift */;
+			productReference = F81274EDB681F11E7CB05F7DCA2BB33C /* CryptoSwift.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		BAE34FFDE094C323201B4A16B1404D0E /* Pods-CalendarApp */ = {
@@ -2678,7 +2662,7 @@
 			);
 			name = "Pods-CalendarApp";
 			productName = Pods_CalendarApp;
-			productReference = A0ED32D63D2EB698F451B8F3BBBDEE8F /* Pods-CalendarApp */;
+			productReference = A0ED32D63D2EB698F451B8F3BBBDEE8F /* Pods_CalendarApp.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		CF263AB023E40C4315ED4A97C6D7829F /* SteviaLayout */ = {
@@ -2696,7 +2680,7 @@
 			);
 			name = SteviaLayout;
 			productName = Stevia;
-			productReference = DE90CE8A0DA0F3A5364FCDD4803AD3EC /* SteviaLayout */;
+			productReference = DE90CE8A0DA0F3A5364FCDD4803AD3EC /* Stevia.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		E95654B155D25890BE8E26081FCA8265 /* CocoaLumberjack */ = {
@@ -2714,7 +2698,7 @@
 			);
 			name = CocoaLumberjack;
 			productName = CocoaLumberjack;
-			productReference = C261436D14052AE3C35F240BCD155CAC /* CocoaLumberjack */;
+			productReference = C261436D14052AE3C35F240BCD155CAC /* CocoaLumberjack.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		FCF9E951FF37FA2C3B94343A6EC04C7B /* libextobjc */ = {
@@ -2732,7 +2716,7 @@
 			);
 			name = libextobjc;
 			productName = libextobjc;
-			productReference = 2DC3884AC03DA13FA0FF4C5F8C9A996B /* libextobjc */;
+			productReference = 2DC3884AC03DA13FA0FF4C5F8C9A996B /* libextobjc.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -3426,7 +3410,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/SteviaLayout/SteviaLayout-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/SteviaLayout/SteviaLayout-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -3495,7 +3479,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/libextobjc/libextobjc-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/libextobjc/libextobjc-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -3530,7 +3514,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/SwiftReflection/SwiftReflection-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/SwiftReflection/SwiftReflection-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -3565,7 +3549,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/FMDB/FMDB-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/FMDB/FMDB-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -3661,7 +3645,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/PryntTrimmerView/PryntTrimmerView-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/PryntTrimmerView/PryntTrimmerView-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -3696,7 +3680,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/CryptoSwift/CryptoSwift-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/CryptoSwift/CryptoSwift-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -3730,7 +3714,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/UITextView+Placeholder/UITextView+Placeholder-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/UITextView+Placeholder/UITextView+Placeholder-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -3764,7 +3748,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/FMDB/FMDB-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/FMDB/FMDB-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -3799,7 +3783,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/CocoaLumberjack/CocoaLumberjack-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/CocoaLumberjack/CocoaLumberjack-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -3834,7 +3818,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-CalendarApp/Pods-CalendarApp-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -3871,7 +3855,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/CocoaLumberjack/CocoaLumberjack-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/CocoaLumberjack/CocoaLumberjack-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -3906,7 +3890,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/MTDates/MTDates-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/MTDates/MTDates-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -3942,7 +3926,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-CalendarApp/Pods-CalendarApp-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -4014,7 +3998,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/YPImagePicker/YPImagePicker-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/YPImagePicker/YPImagePicker-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -4048,7 +4032,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/PryntTrimmerView/PryntTrimmerView-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/PryntTrimmerView/PryntTrimmerView-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -4083,7 +4067,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/UITextView+Placeholder/UITextView+Placeholder-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/UITextView+Placeholder/UITextView+Placeholder-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -4118,7 +4102,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/EasyMapping/EasyMapping-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/EasyMapping/EasyMapping-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -4153,7 +4137,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/libextobjc/libextobjc-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/libextobjc/libextobjc-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -4187,7 +4171,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/EasyMapping/EasyMapping-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/EasyMapping/EasyMapping-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -4221,7 +4205,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/SteviaLayout/SteviaLayout-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/SteviaLayout/SteviaLayout-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -4255,7 +4239,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/MTDates/MTDates-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/MTDates/MTDates-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -4290,7 +4274,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/CryptoSwift/CryptoSwift-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/CryptoSwift/CryptoSwift-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -4392,7 +4376,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/YPImagePicker/YPImagePicker-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/YPImagePicker/YPImagePicker-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -4427,7 +4411,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/SwiftReflection/SwiftReflection-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/SwiftReflection/SwiftReflection-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

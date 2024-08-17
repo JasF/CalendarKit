@@ -48,6 +48,8 @@
 		7924836B23CB7BFE003E3D27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7924836523CB7BFE003E3D27 /* AppDelegate.swift */; };
 		7924836C23CB7BFE003E3D27 /* CustomCalendarExampleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7924836623CB7BFE003E3D27 /* CustomCalendarExampleController.swift */; };
 		79EBF686266D4D0900DA9ACA /* CalendarKit in Frameworks */ = {isa = PBXBuildFile; productRef = 79EBF685266D4D0900DA9ACA /* CalendarKit */; };
+		91CE0CB72C710F9A008B333C /* JMSReligionViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91CE0CB62C710F9A008B333C /* JMSReligionViewController.storyboard */; };
+		91CE0CB92C710FC5008B333C /* JMSReligionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CE0CB82C710FC5008B333C /* JMSReligionViewController.swift */; };
 		C3EB2617296B2D3C00024DB3 /* PhotosViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3EB2616296B2D3C00024DB3 /* PhotosViewController.storyboard */; };
 		C3EB2619296B2D4E00024DB3 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3EB2618296B2D4E00024DB3 /* PhotosViewController.swift */; };
 /* End PBXBuildFile section */
@@ -112,6 +114,8 @@
 		7924836423CB7BFE003E3D27 /* DatePickerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerController.swift; sourceTree = "<group>"; };
 		7924836523CB7BFE003E3D27 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7924836623CB7BFE003E3D27 /* CustomCalendarExampleController.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = CustomCalendarExampleController.swift; sourceTree = "<group>"; tabWidth = 2; };
+		91CE0CB62C710F9A008B333C /* JMSReligionViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = JMSReligionViewController.storyboard; sourceTree = "<group>"; };
+		91CE0CB82C710FC5008B333C /* JMSReligionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JMSReligionViewController.swift; sourceTree = "<group>"; };
 		A223D8E39EB8C7A25F4E823A /* Pods_CalendarApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CalendarApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9AA9C00B26E36DF4A5997EB /* Pods-CalendarApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalendarApp.debug.xcconfig"; path = "Target Support Files/Pods-CalendarApp/Pods-CalendarApp.debug.xcconfig"; sourceTree = "<group>"; };
 		C3EB2616296B2D3C00024DB3 /* PhotosViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PhotosViewController.storyboard; sourceTree = "<group>"; };
@@ -238,6 +242,7 @@
 		5D5E16272C6FB41A004F9BC2 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				91CE0CB52C710F37008B333C /* JMSReligionViewController */,
 				5D5E16352C6FD5A1004F9BC2 /* JMSAboutYouViewController */,
 				5D5E162D2C6FB9CA004F9BC2 /* JMSNameSurnameViewController */,
 				5D5E16282C6FB421004F9BC2 /* ProfileViewController */,
@@ -353,6 +358,15 @@
 				C3EB2618296B2D4E00024DB3 /* PhotosViewController.swift */,
 			);
 			path = CalendarApp;
+			sourceTree = "<group>";
+		};
+		91CE0CB52C710F37008B333C /* JMSReligionViewController */ = {
+			isa = PBXGroup;
+			children = (
+				91CE0CB62C710F9A008B333C /* JMSReligionViewController.storyboard */,
+				91CE0CB82C710FC5008B333C /* JMSReligionViewController.swift */,
+			);
+			path = JMSReligionViewController;
 			sourceTree = "<group>";
 		};
 		A4BC8BF1FF2FECE62E2C1DE3 /* Pods */ = {
@@ -472,6 +486,7 @@
 				7924835023CB7B58003E3D27 /* LaunchScreen.storyboard in Resources */,
 				5D952A122C6BC8F200D6BF67 /* CountersViewController.storyboard in Resources */,
 				5D5E16372C6FD600004F9BC2 /* JMSAboutYouViewController.storyboard in Resources */,
+				91CE0CB72C710F9A008B333C /* JMSReligionViewController.storyboard in Resources */,
 				7924834D23CB7B58003E3D27 /* Assets.xcassets in Resources */,
 				5D5E162A2C6FB482004F9BC2 /* ProfileViewController.storyboard in Resources */,
 				5D5E162F2C6FB9DB004F9BC2 /* JMSNameSurnameViewController.storyboard in Resources */,
@@ -531,6 +546,7 @@
 				5D460C152C6D25570096BC59 /* JMSDatabase.swift in Sources */,
 				C3EB2619296B2D4E00024DB3 /* PhotosViewController.swift in Sources */,
 				5D460C2E2C6D26EE0096BC59 /* JMSEntityDescription.swift in Sources */,
+				91CE0CB92C710FC5008B333C /* JMSReligionViewController.swift in Sources */,
 				5D460C2B2C6D26EE0096BC59 /* JMSFetchRequest.m in Sources */,
 				5DAE54432C6D3684003076B1 /* JMSOwnerUser+JMSFactory.m in Sources */,
 				5D460C2C2C6D26EE0096BC59 /* JMSFetchedResultsController.m in Sources */,
