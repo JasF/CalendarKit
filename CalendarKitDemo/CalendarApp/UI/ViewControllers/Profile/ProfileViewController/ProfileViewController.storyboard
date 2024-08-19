@@ -72,8 +72,53 @@
                                             <outlet property="title" destination="bUw-G2-yY8" id="0yf-UG-nCC"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="JMSPSubCell" id="iyb-lo-ow7" customClass="JMSPSubCell" customModule="CalendarApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="114.66666412353516" width="393" height="85.333335876464844"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="iyb-lo-ow7" id="Y9K-26-2UG">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="85.333335876464844"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="huE-fB-bye">
+                                                    <rect key="frame" x="16" y="12" width="361" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oOu-Hf-0n3">
+                                                    <rect key="frame" x="16" y="35" width="361" height="18.333333333333329"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" red="0.66274509803921566" green="0.66274509803921566" blue="0.66274509803921566" alpha="1" colorSpace="custom" customColorSpace="deviceRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lTx-Yz-Eim">
+                                                    <rect key="frame" x="16" y="55.333333333333343" width="361" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" red="0.66274509803921566" green="0.66274509803921566" blue="0.66274509803921566" alpha="1" colorSpace="custom" customColorSpace="deviceRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="lTx-Yz-Eim" secondAttribute="bottom" constant="12" id="2td-ER-dcb"/>
+                                                <constraint firstItem="huE-fB-bye" firstAttribute="leading" secondItem="Y9K-26-2UG" secondAttribute="leading" constant="16" id="7KJ-g1-V5g"/>
+                                                <constraint firstItem="oOu-Hf-0n3" firstAttribute="trailing" secondItem="huE-fB-bye" secondAttribute="trailing" id="9WK-jj-dOK"/>
+                                                <constraint firstAttribute="trailing" secondItem="huE-fB-bye" secondAttribute="trailing" constant="16" id="EJq-pS-YnC"/>
+                                                <constraint firstItem="lTx-Yz-Eim" firstAttribute="trailing" secondItem="huE-fB-bye" secondAttribute="trailing" id="QrJ-Mf-jEx"/>
+                                                <constraint firstItem="huE-fB-bye" firstAttribute="top" secondItem="Y9K-26-2UG" secondAttribute="top" constant="12" id="Sxq-c5-ZGR"/>
+                                                <constraint firstItem="oOu-Hf-0n3" firstAttribute="top" secondItem="huE-fB-bye" secondAttribute="bottom" constant="2" id="hDM-IE-Zw2"/>
+                                                <constraint firstItem="oOu-Hf-0n3" firstAttribute="leading" secondItem="huE-fB-bye" secondAttribute="leading" id="rBD-ou-aFc"/>
+                                                <constraint firstItem="lTx-Yz-Eim" firstAttribute="leading" secondItem="huE-fB-bye" secondAttribute="leading" id="rQT-98-9x1"/>
+                                                <constraint firstItem="lTx-Yz-Eim" firstAttribute="top" secondItem="oOu-Hf-0n3" secondAttribute="bottom" constant="2" id="yK3-RF-5RX"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="subtitle" destination="oOu-Hf-0n3" id="Hhu-yp-wao"/>
+                                            <outlet property="subtitle2" destination="lTx-Yz-Eim" id="qyC-8b-3tC"/>
+                                            <outlet property="title" destination="huE-fB-bye" id="Itp-ql-wji"/>
+                                        </connections>
+                                    </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="JMSPHeaderCell" id="Wxw-F0-fi2" customClass="JMSPHeaderCell" customModule="CalendarApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="114.66666412353516" width="393" height="10.333333015441895"/>
+                                        <rect key="frame" x="0.0" y="200" width="393" height="10.333333015441895"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Wxw-F0-fi2" id="t0U-iW-YGr">
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="10.333333015441895"/>

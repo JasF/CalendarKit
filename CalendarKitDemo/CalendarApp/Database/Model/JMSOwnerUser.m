@@ -37,7 +37,7 @@ static NSInteger const kEventCreateRefreshPeriodDefault = 60;
 #endif
             , @"ext_phone", @"client_to_book", @"client_to_sleep2"
             ,@"clients_all", @"clients_new_cur", @"clients_new_prev", @"clients_sleep_cur", @"clients_sleep_prev", @"senders", @"albums", @"url_recommendation", @"color_rec", @"is_waitinglist", @"interval_waitinglist", @"en_waitinglist", @"tariffEmpty", @"share_color", @"share_month", @"share_days", @"parameters", @"first_counter", @"second_counter", @"third_counter", @"fourth_counter",
-                @"name", @"surname", @"about_you", @"religion"
+                @"name", @"surname", @"about_you", @"religion", @"bliudo", @"age"
         ]];
         
         /*

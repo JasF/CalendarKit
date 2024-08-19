@@ -118,5 +118,7 @@
 @property (nonatomic, strong) NSString *surname;
 @property (nonatomic, strong) NSString *about_you;
 @property (nonatomic, strong) NSString *religion;
+@property (nonatomic, strong) NSString *bliudo;
+@property (nonatomic, strong) NSNumber *age;
 
 @end
