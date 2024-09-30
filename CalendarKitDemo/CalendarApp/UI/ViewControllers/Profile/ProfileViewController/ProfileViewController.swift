@@ -101,6 +101,8 @@ class ProfileViewController : UIViewController, UITableViewDelegate, UITableView
         case .namesurname:
             showNameSurnameViewController()
             break
+        case .aboutyou:
+            showAboutYouViewController()
         default:
             break
         }
@@ -110,5 +112,10 @@ class ProfileViewController : UIViewController, UITableViewDelegate, UITableView
         let storyboard = UIStoryboard(name: "JMSNameSurnameViewController", bundle: nil)
         let viewController = storyboard.instantiateInitialViewController()! as! JMSNameSurnameViewController
         navigationController?.pushViewController(viewController, animated: true)
+    }
+    func showAboutYouViewController() {
+        let storyboard = UIStoryboard(name: "JMSAboutYouViewController", bundle: nil)
+        let viewContoller = storyboard.instantiateInitialViewController()! as! JMSAboutYouViewController
+        navigationController?.pushViewController(viewContoller, animated: true)
     }
 }

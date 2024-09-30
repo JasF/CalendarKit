@@ -62,6 +62,11 @@ class JMSAboutYouViewController : UIViewController, UITableViewDelegate, UITable
     func updateDoneButton() {
         doneItem?.isEnabled = true
     }
+    @IBAction func doneTapped() {
+        JMSOwnerUser.owner().about_you = aboutyouCell().textView?.text ?? ""
+        DSCoreData.shared().saveContext()
+        navigationController?.popViewController(animated: true)
+    }
     
     
 }
