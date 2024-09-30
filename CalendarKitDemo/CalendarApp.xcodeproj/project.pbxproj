@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		44B7FBB805D7BFC9DFBE897B /* Pods_CalendarApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A223D8E39EB8C7A25F4E823A /* Pods_CalendarApp.framework */; };
+		5D07C5302CAB09C700951854 /* JMSReligionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D07C52F2CAB09C700951854 /* JMSReligionViewController.swift */; };
+		5D07C5322CAB09F500951854 /* JMSReligionViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D07C5312CAB09F500951854 /* JMSReligionViewController.storyboard */; };
 		5D460C152C6D25570096BC59 /* JMSDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D460C142C6D25570096BC59 /* JMSDatabase.swift */; };
 		5D460C172C6D267C0096BC59 /* JMSDAOFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D460C162C6D267C0096BC59 /* JMSDAOFactory.swift */; };
 		5D460C292C6D26EE0096BC59 /* JMSManagedObjectContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D460C192C6D26EE0096BC59 /* JMSManagedObjectContext.m */; };
@@ -53,6 +55,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5D07C52F2CAB09C700951854 /* JMSReligionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JMSReligionViewController.swift; sourceTree = "<group>"; };
+		5D07C5312CAB09F500951854 /* JMSReligionViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = JMSReligionViewController.storyboard; sourceTree = "<group>"; };
 		5D460C142C6D25570096BC59 /* JMSDatabase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JMSDatabase.swift; sourceTree = "<group>"; };
 		5D460C162C6D267C0096BC59 /* JMSDAOFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JMSDAOFactory.swift; sourceTree = "<group>"; };
 		5D460C192C6D26EE0096BC59 /* JMSManagedObjectContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMSManagedObjectContext.m; sourceTree = "<group>"; };
@@ -133,6 +137,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5D07C52C2CAB093300951854 /* JMSReligionViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5D07C52F2CAB09C700951854 /* JMSReligionViewController.swift */,
+				5D07C5312CAB09F500951854 /* JMSReligionViewController.storyboard */,
+			);
+			path = JMSReligionViewController;
+			sourceTree = "<group>";
+		};
 		5D460C132C6D249C0096BC59 /* Database */ = {
 			isa = PBXGroup;
 			children = (
@@ -238,6 +251,7 @@
 		5D5E16272C6FB41A004F9BC2 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				5D07C52C2CAB093300951854 /* JMSReligionViewController */,
 				5D5E16352C6FD5A1004F9BC2 /* JMSAboutYouViewController */,
 				5D5E162D2C6FB9CA004F9BC2 /* JMSNameSurnameViewController */,
 				5D5E16282C6FB421004F9BC2 /* ProfileViewController */,
@@ -472,6 +486,7 @@
 				7924835023CB7B58003E3D27 /* LaunchScreen.storyboard in Resources */,
 				5D952A122C6BC8F200D6BF67 /* CountersViewController.storyboard in Resources */,
 				5D5E16372C6FD600004F9BC2 /* JMSAboutYouViewController.storyboard in Resources */,
+				5D07C5322CAB09F500951854 /* JMSReligionViewController.storyboard in Resources */,
 				7924834D23CB7B58003E3D27 /* Assets.xcassets in Resources */,
 				5D5E162A2C6FB482004F9BC2 /* ProfileViewController.storyboard in Resources */,
 				5D5E162F2C6FB9DB004F9BC2 /* JMSNameSurnameViewController.storyboard in Resources */,
@@ -531,6 +546,7 @@
 				5D460C152C6D25570096BC59 /* JMSDatabase.swift in Sources */,
 				C3EB2619296B2D4E00024DB3 /* PhotosViewController.swift in Sources */,
 				5D460C2E2C6D26EE0096BC59 /* JMSEntityDescription.swift in Sources */,
+				5D07C5302CAB09C700951854 /* JMSReligionViewController.swift in Sources */,
 				5D460C2B2C6D26EE0096BC59 /* JMSFetchRequest.m in Sources */,
 				5DAE54432C6D3684003076B1 /* JMSOwnerUser+JMSFactory.m in Sources */,
 				5D460C2C2C6D26EE0096BC59 /* JMSFetchedResultsController.m in Sources */,

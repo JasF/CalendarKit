@@ -19,9 +19,9 @@ class JMSPTitleSubtitleCell : UITableViewCell {
 
 class ProfileViewController : UIViewController, UITableViewDelegate, UITableViewDataSource {
     enum Cells:Int {
-        case header, namesurname, aboutyou
+        case header, namesurname, aboutyou, religion
     }
-    let cells = [Cells.header, .namesurname,.aboutyou]
+    let cells = [Cells.header, .namesurname,.aboutyou, .religion]
     @IBOutlet var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,6 +52,8 @@ class ProfileViewController : UIViewController, UITableViewDelegate, UITableView
         case .aboutyou:
             return aboutYouCell()
             
+        case .religion:
+            return religionCell()
         }
     }
     
@@ -93,6 +95,18 @@ class ProfileViewController : UIViewController, UITableViewDelegate, UITableView
         
         
     }
+    func religionCell() -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "JMSPTitleSubtitleCell") as! JMSPTitleSubtitleCell
+        cell.title?.text = "Религиозные предпочтения"
+        let owner = JMSOwnerUser.owner()!
+        var subtitle = "Укажите вашу религию"
+        let religion = owner.religion ?? ""
+        if religion.isEmpty == false {
+            subtitle = "Ваша религия: \(religion)"
+        }
+        cell.subtitle?.text = subtitle
+        return cell
+    }
     
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -103,6 +117,8 @@ class ProfileViewController : UIViewController, UITableViewDelegate, UITableView
             break
         case .aboutyou:
             showAboutYouViewController()
+        case .religion:
+            showReligionViewController()
         default:
             break
         }
@@ -117,5 +133,10 @@ class ProfileViewController : UIViewController, UITableViewDelegate, UITableView
         let storyboard = UIStoryboard(name: "JMSAboutYouViewController", bundle: nil)
         let viewContoller = storyboard.instantiateInitialViewController()! as! JMSAboutYouViewController
         navigationController?.pushViewController(viewContoller, animated: true)
+    }
+    func showReligionViewController() {
+        let storyboard = UIStoryboard(name: "JMSReligionViewController", bundle: nil)
+        let viewController = storyboard.instantiateInitialViewController()! as! JMSReligionViewController
+        navigationController?.pushViewController(viewController, animated: true)
     }
 }
