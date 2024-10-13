@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		44B7FBB805D7BFC9DFBE897B /* Pods_CalendarApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A223D8E39EB8C7A25F4E823A /* Pods_CalendarApp.framework */; };
+		5D0218532CB9933800AA9CFC /* JMSItogoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0218522CB9933800AA9CFC /* JMSItogoViewController.swift */; };
+		5D0218552CB993A600AA9CFC /* JMSItogoViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D0218542CB993A600AA9CFC /* JMSItogoViewController.storyboard */; };
 		5D07C5302CAB09C700951854 /* JMSReligionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D07C52F2CAB09C700951854 /* JMSReligionViewController.swift */; };
 		5D07C5322CAB09F500951854 /* JMSReligionViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D07C5312CAB09F500951854 /* JMSReligionViewController.storyboard */; };
 		5D460C152C6D25570096BC59 /* JMSDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D460C142C6D25570096BC59 /* JMSDatabase.swift */; };
@@ -55,6 +57,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5D0218522CB9933800AA9CFC /* JMSItogoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JMSItogoViewController.swift; sourceTree = "<group>"; };
+		5D0218542CB993A600AA9CFC /* JMSItogoViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = JMSItogoViewController.storyboard; sourceTree = "<group>"; };
 		5D07C52F2CAB09C700951854 /* JMSReligionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JMSReligionViewController.swift; sourceTree = "<group>"; };
 		5D07C5312CAB09F500951854 /* JMSReligionViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = JMSReligionViewController.storyboard; sourceTree = "<group>"; };
 		5D460C142C6D25570096BC59 /* JMSDatabase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JMSDatabase.swift; sourceTree = "<group>"; };
@@ -137,6 +141,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5D02184B2CB991E100AA9CFC /* JMSItogoViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5D0218522CB9933800AA9CFC /* JMSItogoViewController.swift */,
+				5D0218542CB993A600AA9CFC /* JMSItogoViewController.storyboard */,
+			);
+			path = JMSItogoViewController;
+			sourceTree = "<group>";
+		};
 		5D07C52C2CAB093300951854 /* JMSReligionViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -251,6 +264,7 @@
 		5D5E16272C6FB41A004F9BC2 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				5D02184B2CB991E100AA9CFC /* JMSItogoViewController */,
 				5D07C52C2CAB093300951854 /* JMSReligionViewController */,
 				5D5E16352C6FD5A1004F9BC2 /* JMSAboutYouViewController */,
 				5D5E162D2C6FB9CA004F9BC2 /* JMSNameSurnameViewController */,
@@ -482,6 +496,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D5E16342C6FBC20004F9BC2 /* JMSNSInputCell.xib in Resources */,
+				5D0218552CB993A600AA9CFC /* JMSItogoViewController.storyboard in Resources */,
 				C3EB2617296B2D3C00024DB3 /* PhotosViewController.storyboard in Resources */,
 				7924835023CB7B58003E3D27 /* LaunchScreen.storyboard in Resources */,
 				5D952A122C6BC8F200D6BF67 /* CountersViewController.storyboard in Resources */,
@@ -575,6 +590,7 @@
 				5D460C432C6D28B40096BC59 /* JMSApplicationAssembly.m in Sources */,
 				5D460C4C2C6D29220096BC59 /* JMSAbstractUser.m in Sources */,
 				5D460C362C6D28170096BC59 /* JMSOwnerUser.m in Sources */,
+				5D0218532CB9933800AA9CFC /* JMSItogoViewController.swift in Sources */,
 				5D460C542C6D2CB00096BC59 /* Managers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

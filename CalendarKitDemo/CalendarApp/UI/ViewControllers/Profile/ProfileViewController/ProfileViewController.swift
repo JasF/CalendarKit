@@ -16,12 +16,17 @@ class JMSPTitleSubtitleCell : UITableViewCell {
     @IBOutlet var title: UILabel?
     @IBOutlet var subtitle: UILabel?
 }
+class JMSPTitleSubtitleSub2Cell : UITableViewCell {
+    @IBOutlet var title: UILabel?
+    @IBOutlet var subtitle: UILabel?
+    @IBOutlet var subtitle2: UILabel?
+}
 
 class ProfileViewController : UIViewController, UITableViewDelegate, UITableViewDataSource {
     enum Cells:Int {
-        case header, namesurname, aboutyou, religion
+        case header, namesurname, aboutyou, religion, itogo
     }
-    let cells = [Cells.header, .namesurname,.aboutyou, .religion]
+    let cells = [Cells.header, .namesurname,.aboutyou, .religion, .itogo]
     @IBOutlet var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,6 +59,8 @@ class ProfileViewController : UIViewController, UITableViewDelegate, UITableView
             
         case .religion:
             return religionCell()
+        case .itogo:
+            return itogoCell()
         }
     }
     
@@ -107,6 +114,27 @@ class ProfileViewController : UIViewController, UITableViewDelegate, UITableView
         cell.subtitle?.text = subtitle
         return cell
     }
+    func itogoCell() -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "JMSPTitleSubtitleSub2Cell") as! JMSPTitleSubtitleSub2Cell
+        cell.title?.text = "Итоговая ячейка"
+        
+        let owner = JMSOwnerUser.owner()!
+        var subtitle = "Укажите любимое блюдо"
+        let food = owner.food ?? ""
+        if food.isEmpty == false {
+            subtitle = "Любимое блюдо: \(food)"
+        
+        }
+        cell.subtitle?.text = subtitle
+        
+        var subtitle2 = "Укажите ваш возраст"
+        let age = owner.age
+        if age != nil {
+            subtitle2 = "Ваш возраст: \(age!)"
+        }
+        cell.subtitle2?.text = subtitle2
+        return cell
+    }
     
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -114,14 +142,17 @@ class ProfileViewController : UIViewController, UITableViewDelegate, UITableView
         switch cells[indexPath.row] {
         case .namesurname:
             showNameSurnameViewController()
-            break
         case .aboutyou:
             showAboutYouViewController()
         case .religion:
             showReligionViewController()
+        case .itogo:
+            showItogoViewController()
         default:
             break
         }
+        
+        
     }
     
     func showNameSurnameViewController() {
@@ -137,6 +168,11 @@ class ProfileViewController : UIViewController, UITableViewDelegate, UITableView
     func showReligionViewController() {
         let storyboard = UIStoryboard(name: "JMSReligionViewController", bundle: nil)
         let viewController = storyboard.instantiateInitialViewController()! as! JMSReligionViewController
+        navigationController?.pushViewController(viewController, animated: true)
+    }
+    func showItogoViewController() {
+        let storyboard = UIStoryboard(name: "JMSItogoViewController", bundle: nil)
+        let viewController = storyboard.instantiateInitialViewController()! as! JMSItogoViewController
         navigationController?.pushViewController(viewController, animated: true)
     }
 }
