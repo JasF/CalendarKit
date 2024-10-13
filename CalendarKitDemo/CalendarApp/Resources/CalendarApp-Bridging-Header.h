@@ -14,3 +14,4 @@
 #import "DDLogMacros.h"
 #import "JMSOwnerUser+JMSFactory.h"
 #import "DSCoreData.h"
+#import "JMSColor.h"

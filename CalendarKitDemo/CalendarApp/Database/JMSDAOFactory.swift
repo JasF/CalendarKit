@@ -21,7 +21,10 @@ import Foundation
     }
     
     let accessors:Dictionary<String,String> = {
-        var data = ["JMSOwnerUser":"ownerUserDAO"]
+        var data = [
+            "JMSOwnerUser":"ownerUserDAO",
+            "JMSColor":"colorDAO"
+        ]
         
         return data
     }()
@@ -51,6 +54,8 @@ import Foundation
         switch key {
         case "JMSOwnerUser":
             return daoAssembly.ownerUserDAO()
+        case "JMSColor":
+            return daoAssembly.colorDAO()
         default:
             return nil
         }
