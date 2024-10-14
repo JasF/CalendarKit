@@ -10,7 +10,9 @@ import Foundation
 
 class JMSSettingsHeaderCell : UITableViewCell {
     @IBOutlet var bigLetters: UILabel?
+    @IBOutlet var smallLetter: UILabel?
     @IBOutlet var fontColor: UILabel?
+    @IBOutlet var bgColor: UILabel?
 }
 
 class JMSSettingsSwitcherCell : UITableViewCell {
@@ -25,10 +27,10 @@ class JMSSettingsInfoCell : UITableViewCell {
 class JMSSettingsViewController : UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet var tableView: UITableView!
     enum Cells:Int {
-        case header, bigLetters, fontColor
+        case header, bigLetters, smallLetters, fontColor, bgColor
     }
     
-    var cells = [Cells.header, .bigLetters, .fontColor]
+    var cells = [Cells.header, .bigLetters, .smallLetters, .fontColor, .bgColor]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,8 +54,12 @@ class JMSSettingsViewController : UIViewController, UITableViewDelegate, UITable
             return headerCell()
         case .bigLetters:
             return bigLettersCell()
+        case .smallLetters:
+            return smallLettersCell()
         case .fontColor:
             return fontColorCell()
+        case .bgColor:
+            return bgColorCell()
         }
     }
     
@@ -63,11 +69,21 @@ class JMSSettingsViewController : UIViewController, UITableViewDelegate, UITable
         cell.switcher?.setOn(JMSOwnerUser.owner().bigLetters?.boolValue ?? false, animated: false)
         return cell
     }
+    func smallLettersCell() -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "JMSSettingsSwitcherCell") as! JMSSettingsSwitcherCell
+        cell.title?.text = "Маленькие буквы"
+        cell.switcher?.setOn(JMSOwnerUser.owner().smallLetters?.boolValue ?? false, animated: false)
+        return cell
+    }
+    
+    
     
     func headerCell() -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "JMSSettingsHeaderCell") as! JMSSettingsHeaderCell
         let isBigLetters = JMSOwnerUser.owner().bigLetters?.boolValue ?? false
         cell.bigLetters?.text = "Большие буквы: \(isBigLetters ? "Вкл" : "Выкл")"
+        let isSmallLetters = JMSOwnerUser.owner().smallLetters?.boolValue ?? false
+        cell.smallLetter?.text = "Маленькие буквы: \(isSmallLetters ? "Вкл" : "Выкл")"
         let fontColorId = JMSOwnerUser.owner().fontColorId ?? ""
         var color: JMSColor?
         if fontColorId.isEmpty == false {
@@ -75,6 +91,14 @@ class JMSSettingsViewController : UIViewController, UITableViewDelegate, UITable
         }
         let colorName = color?.name ?? ""
         cell.fontColor?.text = "Цвет шрифта: \(colorName.isEmpty ? "Не выбрано" : colorName)"
+        
+        let bgColorId = JMSOwnerUser.owner().bgColorId ?? ""
+        var bgColor: JMSColor?
+        if bgColorId.isEmpty == false {
+            bgColor = JMSColor.jms_findSingle(with: NSPredicate(format: "uid == %@", bgColorId as NSString)) as? JMSColor
+        }
+        let bgColorName = bgColor?.name ?? ""
+        cell.bgColor?.text = "Цвет фона: \(bgColorName.isEmpty ? "Не выбрано" : bgColorName)"
         return cell
     }
     
@@ -83,14 +107,23 @@ class JMSSettingsViewController : UIViewController, UITableViewDelegate, UITable
         cell.title?.text = "Цвет шрифта"
         return cell
     }
+    func bgColorCell() -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "JMSSettingsInfoCell") as! JMSSettingsInfoCell
+        cell.title?.text = "Цвет фона"
+        return cell
+    }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         switch cells[indexPath.row] {
         case .bigLetters:
             handleTappedOnBigLettersSwitch(indexPath)
+        case .smallLetters:
+            handleTappedOnSmallLettersSwitch(indexPath)
         case .fontColor:
-            return showSelectFontColorViewController()
+            showSelectFontColorViewController()
+        case .bgColor:
+            showSelectBgColorViewController()
         default:
             break
         }
@@ -104,6 +137,16 @@ class JMSSettingsViewController : UIViewController, UITableViewDelegate, UITable
         DSCoreData.shared().saveContext(completion: {})
         updateHeader()
     }
+    func handleTappedOnSmallLettersSwitch(_ indexPath: IndexPath) {
+        let cell = tableView.cellForRow(at: indexPath) as! JMSSettingsSwitcherCell
+        let isOn = !(cell.switcher?.isOn ?? false)
+        cell.switcher?.setOn(isOn, animated: true)
+        JMSOwnerUser.owner().smallLetters = isOn as NSNumber
+        DSCoreData.shared().saveContext(completion: {})
+        updateHeader()
+        
+    }
+    
     
     func updateHeader() {
         tableView.reloadRows(at: [IndexPath(row: cells.firstIndex(of: .header)!, section: 0)], with: .fade)
@@ -112,8 +155,19 @@ class JMSSettingsViewController : UIViewController, UITableViewDelegate, UITable
     func showSelectFontColorViewController() {
         let storyboard = UIStoryboard(name: "JMSSettingsSelectColorViewController", bundle: nil)
         let viewController = storyboard.instantiateViewController(withIdentifier: "JMSSettingsSelectColorViewController") as! JMSSettingsSelectColorViewController
+        viewController.isBgColor = false
         viewController.colorSelectedBlock = { [weak self] (color) in
             JMSOwnerUser.owner().fontColorId = color?.uid ?? ""
+            DSCoreData.shared().saveContext(completion: {})
+            self?.updateHeader()
+        }
+        navigationController?.pushViewController(viewController, animated: true)
+    }
+    func showSelectBgColorViewController() {
+        let storyboard = UIStoryboard(name: "JMSSettingsSelectColorViewController", bundle: nil)
+        let viewController = storyboard.instantiateViewController(withIdentifier: "JMSSettingsSelectColorViewController") as! JMSSettingsSelectColorViewController
+        viewController.colorSelectedBlock = { [weak self] (color) in
+            JMSOwnerUser.owner().bgColorId = color?.uid ?? ""
             DSCoreData.shared().saveContext(completion: {})
             self?.updateHeader()
         }

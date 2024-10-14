@@ -121,6 +121,9 @@
 @property (nonatomic, strong) NSString *food;
 @property (nonatomic, strong) NSNumber *age;
 @property (nonatomic, strong) NSNumber *bigLetters;
+@property (nonatomic, strong) NSNumber *smallLetters;
+
 @property (nonatomic, strong) NSString *fontColorId;
+@property (nonatomic, strong) NSString *bgColorId;
 
 @end

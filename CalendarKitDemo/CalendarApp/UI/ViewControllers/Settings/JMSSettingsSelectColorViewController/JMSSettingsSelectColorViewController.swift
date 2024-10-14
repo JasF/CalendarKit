@@ -16,11 +16,18 @@ class JMSSettingsSelectColorViewController : UIViewController, UITableViewDelega
     @IBOutlet var tableView: UITableView!
     var colors = [JMSColor]()
     var colorSelectedBlock: ((JMSColor?) -> Void)?
+    var isBgColor:Bool = true
+
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Цвет шрифта"
         colors = JMSColor.mr_findAll() as! [JMSColor]
+        if isBgColor {
+            title = "Цвет фона"
+        }
+        
     }
+    
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension

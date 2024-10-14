@@ -68,15 +68,15 @@
                                             <outlet property="title" destination="0TC-ko-qO6" id="H31-tk-NSn"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="JMSSettingsInfoCell" id="PwE-Fg-I3R" customClass="JMSSettingsInfoCell" customModule="CalendarApp" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="JMSSettingsInfoCell" id="PwE-Fg-I3R" customClass="JMSSettingsInfoCell" customModule="CalendarApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="94.666667938232422" width="393" height="44.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="PwE-Fg-I3R" id="uXY-fs-qf8">
-                                            <rect key="frame" x="0.0" y="0.0" width="393" height="44.666667938232422"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="362.66666666666669" height="44.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XO7-nA-Dem">
-                                                    <rect key="frame" x="16" y="12.000000000000002" width="361" height="20.666666666666671"/>
+                                                    <rect key="frame" x="16" y="12.000000000000002" width="330.66666666666669" height="20.666666666666671"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -94,10 +94,10 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="JMSSettingsHeaderCell" id="w4F-6f-OKg" customClass="JMSSettingsHeaderCell" customModule="CalendarApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="139.33333587646484" width="393" height="75"/>
+                                        <rect key="frame" x="0.0" y="139.33333587646484" width="393" height="135.66667175292969"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="w4F-6f-OKg" id="dF7-WQ-t8O">
-                                            <rect key="frame" x="0.0" y="0.0" width="393" height="75"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="135.66667175292969"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bXe-rb-Df5">
@@ -106,8 +106,20 @@
                                                     <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eeX-fI-ueD">
+                                                    <rect key="frame" x="16" y="42.333333333333336" width="361" height="20.333333333333336"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qfG-qE-a3Z">
-                                                    <rect key="frame" x="16" y="42.333333333333336" width="361" height="20.666666666666664"/>
+                                                    <rect key="frame" x="16" y="72.666666666666671" width="361" height="20.333333333333329"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vF8-p4-E9a">
+                                                    <rect key="frame" x="16" y="103" width="361" height="20.666666666666671"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -115,18 +127,26 @@
                                             </subviews>
                                             <color key="backgroundColor" red="0.85098039215686272" green="0.85098039215686272" blue="0.85098039215686272" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
+                                                <constraint firstItem="eeX-fI-ueD" firstAttribute="leading" secondItem="bXe-rb-Df5" secondAttribute="leading" id="2Lb-x8-2Bb"/>
+                                                <constraint firstItem="eeX-fI-ueD" firstAttribute="trailing" secondItem="bXe-rb-Df5" secondAttribute="trailing" id="78W-hY-v7V"/>
                                                 <constraint firstItem="qfG-qE-a3Z" firstAttribute="leading" secondItem="bXe-rb-Df5" secondAttribute="leading" id="CCM-FO-O55"/>
-                                                <constraint firstItem="qfG-qE-a3Z" firstAttribute="top" secondItem="bXe-rb-Df5" secondAttribute="bottom" constant="10" id="ElR-eO-V9x"/>
+                                                <constraint firstAttribute="bottom" secondItem="vF8-p4-E9a" secondAttribute="bottom" constant="12" id="Dw3-ZE-T1p"/>
+                                                <constraint firstItem="qfG-qE-a3Z" firstAttribute="top" secondItem="eeX-fI-ueD" secondAttribute="bottom" constant="10" id="ElR-eO-V9x"/>
                                                 <constraint firstItem="qfG-qE-a3Z" firstAttribute="trailing" secondItem="bXe-rb-Df5" secondAttribute="trailing" id="Ngk-u0-XfW"/>
                                                 <constraint firstItem="bXe-rb-Df5" firstAttribute="top" secondItem="dF7-WQ-t8O" secondAttribute="top" constant="12" id="SjE-qr-c3c"/>
+                                                <constraint firstItem="vF8-p4-E9a" firstAttribute="top" secondItem="qfG-qE-a3Z" secondAttribute="bottom" constant="10" id="TFS-UK-Bxg"/>
                                                 <constraint firstItem="bXe-rb-Df5" firstAttribute="leading" secondItem="dF7-WQ-t8O" secondAttribute="leading" constant="16" id="XNo-8w-mmK"/>
-                                                <constraint firstAttribute="bottom" secondItem="qfG-qE-a3Z" secondAttribute="bottom" constant="12" id="o1m-Cn-zk6"/>
+                                                <constraint firstItem="vF8-p4-E9a" firstAttribute="trailing" secondItem="qfG-qE-a3Z" secondAttribute="trailing" id="dZk-U6-8Kc"/>
+                                                <constraint firstItem="vF8-p4-E9a" firstAttribute="leading" secondItem="qfG-qE-a3Z" secondAttribute="leading" id="etB-Yq-LXo"/>
+                                                <constraint firstItem="eeX-fI-ueD" firstAttribute="top" secondItem="bXe-rb-Df5" secondAttribute="bottom" constant="10" id="rbb-IO-x7E"/>
                                                 <constraint firstAttribute="trailing" secondItem="bXe-rb-Df5" secondAttribute="trailing" constant="16" id="sV8-50-UWs"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="bgColor" destination="vF8-p4-E9a" id="LQ1-fF-6oo"/>
                                             <outlet property="bigLetters" destination="bXe-rb-Df5" id="CDR-yZ-hrQ"/>
                                             <outlet property="fontColor" destination="qfG-qE-a3Z" id="kIC-fF-b3P"/>
+                                            <outlet property="smallLetter" destination="eeX-fI-ueD" id="hDM-W6-BRU"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
