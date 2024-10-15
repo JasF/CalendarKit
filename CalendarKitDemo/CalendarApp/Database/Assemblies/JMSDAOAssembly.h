@@ -44,6 +44,7 @@
 @class JMSExpenseCategoryDAO;
 @class JMSExpenseProviderDAO;
 @class JMSColorDAO;
+@class JMSTransportDAO;
 
 @interface JMSDAOAssembly : NSObject
 + (instancetype)shared;
@@ -51,6 +52,7 @@
 - (JMSDatabase *)databaseFactory;
 - (JMSOwnerUserDAO *)ownerUserDAO;
 - (JMSColorDAO *)colorDAO;
+- (JMSTransportDAO *)transportDAO;
 /*
 - (JMSUserDAO *)userDAO;
 - (JMSRynServerMessageDAO *)rynServerMessageDAO;

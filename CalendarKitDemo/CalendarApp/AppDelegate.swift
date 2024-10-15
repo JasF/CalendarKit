@@ -7,6 +7,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
       updateColorsTableIfNeeded()
+      updateTransportsTableIfNeeded()
     window = UIWindow(frame: UIScreen.main.bounds)
     window?.backgroundColor = UIColor.white
     window?.makeKeyAndVisible()
@@ -58,6 +59,29 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
             сolor.uid = "6"
             сolor.name = "Серый"
             DSCoreData.shared().saveContext(completion: {})
+        }
+    }
+    func updateTransportsTableIfNeeded() {
+        let transports = JMSTransport.mr_findAll() as! [JMSTransport]
+        if transports.count == 0 {
+            var transport = JMSTransport.mr_createEntity(in: DSCoreData.shared().readContext) as! JMSTransport
+            transport.uid = "1"
+            transport.name = "Автомобиль"
+            transport = JMSTransport.mr_createEntity(in: DSCoreData.shared().readContext) as! JMSTransport
+            transport.uid = "2"
+            transport.name = "Самолет"
+            transport = JMSTransport.mr_createEntity(in: DSCoreData.shared().readContext) as! JMSTransport
+            transport.uid = "3"
+            transport.name = "Поезд"
+            transport = JMSTransport.mr_createEntity(in: DSCoreData.shared().readContext) as! JMSTransport
+            transport.uid = "4"
+            transport.name = "Велосипед"
+            transport = JMSTransport.mr_createEntity(in: DSCoreData.shared().readContext) as! JMSTransport
+            transport.uid = "5"
+            transport.name = "Байк"
+            transport = JMSTransport.mr_createEntity(in: DSCoreData.shared().readContext) as! JMSTransport
+            DSCoreData.shared().saveContext(completion: {})
+            
         }
     }
 }

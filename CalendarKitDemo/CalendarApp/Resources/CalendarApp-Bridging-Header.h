@@ -15,3 +15,4 @@
 #import "JMSOwnerUser+JMSFactory.h"
 #import "DSCoreData.h"
 #import "JMSColor.h"
+#import "JMSTransport.h"

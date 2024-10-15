@@ -23,7 +23,8 @@ import Foundation
     let accessors:Dictionary<String,String> = {
         var data = [
             "JMSOwnerUser":"ownerUserDAO",
-            "JMSColor":"colorDAO"
+            "JMSColor":"colorDAO",
+            "JMSTransport":"transportDAO"
         ]
         
         return data
@@ -56,6 +57,8 @@ import Foundation
             return daoAssembly.ownerUserDAO()
         case "JMSColor":
             return daoAssembly.colorDAO()
+        case "JMSTransport":
+            return daoAssembly.transportDAO()
         default:
             return nil
         }

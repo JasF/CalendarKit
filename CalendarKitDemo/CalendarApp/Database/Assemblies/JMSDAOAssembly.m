@@ -54,5 +54,12 @@
     }
     return shared;
 }
+- (JMSTransportDAO *)transportDAO {
+    static JMSTransportDAO *shared = nil;
+    if (shared == nil) {
+        shared = [[JMSTransportDAO alloc] init:[self databaseFactory]];
+    }
+    return shared;
+}
 
 @end

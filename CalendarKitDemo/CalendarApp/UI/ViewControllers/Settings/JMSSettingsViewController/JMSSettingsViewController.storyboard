@@ -94,10 +94,10 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="JMSSettingsHeaderCell" id="w4F-6f-OKg" customClass="JMSSettingsHeaderCell" customModule="CalendarApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="139.33333587646484" width="393" height="135.66667175292969"/>
+                                        <rect key="frame" x="0.0" y="139.33333587646484" width="393" height="166"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="w4F-6f-OKg" id="dF7-WQ-t8O">
-                                            <rect key="frame" x="0.0" y="0.0" width="393" height="135.66667175292969"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="166"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bXe-rb-Df5">
@@ -119,7 +119,13 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vF8-p4-E9a">
-                                                    <rect key="frame" x="16" y="103" width="361" height="20.666666666666671"/>
+                                                    <rect key="frame" x="16" y="103" width="361" height="20.333333333333329"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="248" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hku-3r-i2o">
+                                                    <rect key="frame" x="16" y="133.33333333333334" width="361" height="20.666666666666657"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -130,16 +136,19 @@
                                                 <constraint firstItem="eeX-fI-ueD" firstAttribute="leading" secondItem="bXe-rb-Df5" secondAttribute="leading" id="2Lb-x8-2Bb"/>
                                                 <constraint firstItem="eeX-fI-ueD" firstAttribute="trailing" secondItem="bXe-rb-Df5" secondAttribute="trailing" id="78W-hY-v7V"/>
                                                 <constraint firstItem="qfG-qE-a3Z" firstAttribute="leading" secondItem="bXe-rb-Df5" secondAttribute="leading" id="CCM-FO-O55"/>
-                                                <constraint firstAttribute="bottom" secondItem="vF8-p4-E9a" secondAttribute="bottom" constant="12" id="Dw3-ZE-T1p"/>
                                                 <constraint firstItem="qfG-qE-a3Z" firstAttribute="top" secondItem="eeX-fI-ueD" secondAttribute="bottom" constant="10" id="ElR-eO-V9x"/>
+                                                <constraint firstItem="hku-3r-i2o" firstAttribute="trailing" secondItem="vF8-p4-E9a" secondAttribute="trailing" id="FeZ-kw-pbY"/>
+                                                <constraint firstItem="hku-3r-i2o" firstAttribute="leading" secondItem="vF8-p4-E9a" secondAttribute="leading" id="LgV-lA-vy2"/>
                                                 <constraint firstItem="qfG-qE-a3Z" firstAttribute="trailing" secondItem="bXe-rb-Df5" secondAttribute="trailing" id="Ngk-u0-XfW"/>
                                                 <constraint firstItem="bXe-rb-Df5" firstAttribute="top" secondItem="dF7-WQ-t8O" secondAttribute="top" constant="12" id="SjE-qr-c3c"/>
                                                 <constraint firstItem="vF8-p4-E9a" firstAttribute="top" secondItem="qfG-qE-a3Z" secondAttribute="bottom" constant="10" id="TFS-UK-Bxg"/>
                                                 <constraint firstItem="bXe-rb-Df5" firstAttribute="leading" secondItem="dF7-WQ-t8O" secondAttribute="leading" constant="16" id="XNo-8w-mmK"/>
                                                 <constraint firstItem="vF8-p4-E9a" firstAttribute="trailing" secondItem="qfG-qE-a3Z" secondAttribute="trailing" id="dZk-U6-8Kc"/>
                                                 <constraint firstItem="vF8-p4-E9a" firstAttribute="leading" secondItem="qfG-qE-a3Z" secondAttribute="leading" id="etB-Yq-LXo"/>
+                                                <constraint firstAttribute="bottom" secondItem="hku-3r-i2o" secondAttribute="bottom" constant="12" id="pLu-TF-R7d"/>
                                                 <constraint firstItem="eeX-fI-ueD" firstAttribute="top" secondItem="bXe-rb-Df5" secondAttribute="bottom" constant="10" id="rbb-IO-x7E"/>
                                                 <constraint firstAttribute="trailing" secondItem="bXe-rb-Df5" secondAttribute="trailing" constant="16" id="sV8-50-UWs"/>
+                                                <constraint firstItem="hku-3r-i2o" firstAttribute="top" secondItem="vF8-p4-E9a" secondAttribute="bottom" constant="10" id="tFl-de-uJ1"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -147,6 +156,7 @@
                                             <outlet property="bigLetters" destination="bXe-rb-Df5" id="CDR-yZ-hrQ"/>
                                             <outlet property="fontColor" destination="qfG-qE-a3Z" id="kIC-fF-b3P"/>
                                             <outlet property="smallLetter" destination="eeX-fI-ueD" id="hDM-W6-BRU"/>
+                                            <outlet property="transport" destination="hku-3r-i2o" id="sJI-Ud-Rz1"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

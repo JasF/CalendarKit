@@ -13,6 +13,7 @@ class JMSSettingsHeaderCell : UITableViewCell {
     @IBOutlet var smallLetter: UILabel?
     @IBOutlet var fontColor: UILabel?
     @IBOutlet var bgColor: UILabel?
+    @IBOutlet var transport: UILabel?
 }
 
 class JMSSettingsSwitcherCell : UITableViewCell {
@@ -27,10 +28,10 @@ class JMSSettingsInfoCell : UITableViewCell {
 class JMSSettingsViewController : UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet var tableView: UITableView!
     enum Cells:Int {
-        case header, bigLetters, smallLetters, fontColor, bgColor
+        case header, bigLetters, smallLetters, fontColor, bgColor, transport
     }
     
-    var cells = [Cells.header, .bigLetters, .smallLetters, .fontColor, .bgColor]
+    var cells = [Cells.header, .bigLetters, .smallLetters, .fontColor, .bgColor, .transport]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -60,6 +61,8 @@ class JMSSettingsViewController : UIViewController, UITableViewDelegate, UITable
             return fontColorCell()
         case .bgColor:
             return bgColorCell()
+        case .transport:
+            return transportCell()
         }
     }
     
@@ -112,6 +115,11 @@ class JMSSettingsViewController : UIViewController, UITableViewDelegate, UITable
         cell.title?.text = "Цвет фона"
         return cell
     }
+    func transportCell() -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "JMSSettingsInfoCell") as! JMSSettingsInfoCell
+        cell.title?.text = "Транспорт"
+        return cell
+    }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
@@ -124,6 +132,8 @@ class JMSSettingsViewController : UIViewController, UITableViewDelegate, UITable
             showSelectFontColorViewController()
         case .bgColor:
             showSelectBgColorViewController()
+        case .transport:
+            showSelectTransportViewController()
         default:
             break
         }
@@ -172,6 +182,17 @@ class JMSSettingsViewController : UIViewController, UITableViewDelegate, UITable
             self?.updateHeader()
         }
         navigationController?.pushViewController(viewController, animated: true)
+    }
+    func showSelectTransportViewController() {
+        let storyboard = UIStoryboard(name: "JMSTransportViewController", bundle: nil)
+        let viewController = storyboard.instantiateViewController(withIdentifier: "JMSTransportViewController") as! JMSTransportViewController
+        viewController.transportSelectedBlock = { [weak self] (transport) in
+            JMSOwnerUser.owner().transportId = transport?.uid ?? ""
+            DSCoreData.shared().saveContext(completion: {})
+            self?.updateHeader()
+        }
+        navigationController?.pushViewController(viewController, animated: true)
+        
     }
     
 }
