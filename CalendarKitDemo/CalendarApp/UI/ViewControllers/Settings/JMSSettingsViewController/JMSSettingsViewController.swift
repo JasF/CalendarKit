@@ -29,10 +29,10 @@ class JMSSettingsInfoCell : UITableViewCell {
 class JMSSettingsViewController : UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet var tableView: UITableView!
     enum Cells:Int {
-        case header, bigLetters, smallLetters, fontColor, bgColor, transport, services
+        case header, bigLetters, smallLetters, fontColor, bgColor, transport, services, clients
     }
     
-    var cells = [Cells.header, .bigLetters, .smallLetters, .fontColor, .bgColor, .transport, .services]
+    var cells = [Cells.header, .bigLetters, .smallLetters, .fontColor, .bgColor, .transport, .services, .clients]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -66,6 +66,8 @@ class JMSSettingsViewController : UIViewController, UITableViewDelegate, UITable
             return transportCell()
         case .services:
             return servicesCell()
+        case .clients:
+            return clientsCell()
         }
     }
     
@@ -144,6 +146,11 @@ class JMSSettingsViewController : UIViewController, UITableViewDelegate, UITable
         cell.title?.text = "Услуги"
         return cell
     }
+    func clientsCell() -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "JMSSettingsInfoCell") as! JMSSettingsInfoCell
+        cell.title?.text = "Клиенты"
+        return cell
+    }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
@@ -160,6 +167,8 @@ class JMSSettingsViewController : UIViewController, UITableViewDelegate, UITable
             showSelectTransportViewController()
         case .services:
             showSelectServiceViewController()
+        case .clients:
+            showClientViewController()
             
         default:
             break
@@ -229,6 +238,13 @@ class JMSSettingsViewController : UIViewController, UITableViewDelegate, UITable
             DSCoreData.shared().saveContext(completion: {})
             self?.updateHeader()
         }
+        navigationController?.pushViewController(viewController, animated: true)
+        
+    }
+    func showClientViewController() {
+        let storyboard = UIStoryboard(name: "JMSClientsViewController", bundle: nil)
+        let viewController = storyboard.instantiateViewController(withIdentifier: "JMSClientsViewController") as! JMSClientsViewController
+        
         navigationController?.pushViewController(viewController, animated: true)
         
     }

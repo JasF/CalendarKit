@@ -68,5 +68,12 @@
     }
     return shared;
 }
+- (JMSClientDAO *)clientDAO {
+    static JMSClientDAO *shared = nil;
+    if (shared == nil) {
+        shared = [[JMSClientDAO alloc] init:[self databaseFactory]];
+    }
+    return shared;
+}
 
 @end

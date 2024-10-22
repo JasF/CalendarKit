@@ -9,6 +9,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
       updateColorsTableIfNeeded()
       updateTransportsTableIfNeeded()
       updateServiceTableIfNeeded()
+      updateClientsTableIfNeeded()
     window = UIWindow(frame: UIScreen.main.bounds)
     window?.backgroundColor = UIColor.white
     window?.makeKeyAndVisible()
@@ -80,7 +81,6 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
             transport = JMSTransport.mr_createEntity(in: DSCoreData.shared().readContext) as! JMSTransport
             transport.uid = "5"
             transport.name = "Байк"
-            transport = JMSTransport.mr_createEntity(in: DSCoreData.shared().readContext) as! JMSTransport
             DSCoreData.shared().saveContext(completion: {})
             
         }
@@ -107,6 +107,21 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
             service.uid = "6"
             service.name = "Консультация"
             
+        }
+    }
+    func updateClientsTableIfNeeded() {
+        let clients = JMSClient.mr_findAll() as! [JMSClient]
+        if clients.count == 0 {
+            var client = JMSClient.mr_createEntity(in: DSCoreData.shared().readContext) as! JMSClient
+            client.id = "1"
+            client.name = "Вика"
+            client.surname = "Иванова"
+            client.phone = "+3758001234567"
+            client = JMSClient.mr_createEntity(in: DSCoreData.shared().readContext) as! JMSClient
+            client.id = "2"
+            client.name = "Тестовый"
+            client.surname = "Клиент"
+            client.phone = "+3758007777777"
         }
     }
 }

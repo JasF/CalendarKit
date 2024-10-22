@@ -61,6 +61,10 @@
 		5DAE543D2C6D34E6003076B1 /* DSCoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DAE543C2C6D34E6003076B1 /* DSCoreData.m */; };
 		5DAE54402C6D3532003076B1 /* Singleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DAE543E2C6D3532003076B1 /* Singleton.m */; };
 		5DAE54432C6D3684003076B1 /* JMSOwnerUser+JMSFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DAE54422C6D3684003076B1 /* JMSOwnerUser+JMSFactory.m */; };
+		5DE33ED62CC8044400AD4505 /* JMSClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE33ED52CC8044400AD4505 /* JMSClient.m */; };
+		5DE33ED82CC806D900AD4505 /* JMSClientDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE33ED72CC806D900AD4505 /* JMSClientDAO.swift */; };
+		5DE33EDB2CC8112D00AD4505 /* JMSClientsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE33EDA2CC8112D00AD4505 /* JMSClientsViewController.swift */; };
+		5DE33EDD2CC8116400AD4505 /* JMSClientsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DE33EDC2CC8116400AD4505 /* JMSClientsViewController.storyboard */; };
 		7924834D23CB7B58003E3D27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7924834C23CB7B58003E3D27 /* Assets.xcassets */; };
 		7924835023CB7B58003E3D27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7924834E23CB7B58003E3D27 /* LaunchScreen.storyboard */; };
 		7924836A23CB7BFE003E3D27 /* DatePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7924836423CB7BFE003E3D27 /* DatePickerController.swift */; };
@@ -146,6 +150,11 @@
 		5DAE543F2C6D3532003076B1 /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
 		5DAE54412C6D3684003076B1 /* JMSOwnerUser+JMSFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JMSOwnerUser+JMSFactory.h"; sourceTree = "<group>"; };
 		5DAE54422C6D3684003076B1 /* JMSOwnerUser+JMSFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JMSOwnerUser+JMSFactory.m"; sourceTree = "<group>"; };
+		5DE33ED42CC8043100AD4505 /* JMSClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JMSClient.h; sourceTree = "<group>"; };
+		5DE33ED52CC8044400AD4505 /* JMSClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JMSClient.m; sourceTree = "<group>"; };
+		5DE33ED72CC806D900AD4505 /* JMSClientDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JMSClientDAO.swift; sourceTree = "<group>"; };
+		5DE33EDA2CC8112D00AD4505 /* JMSClientsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JMSClientsViewController.swift; sourceTree = "<group>"; };
+		5DE33EDC2CC8116400AD4505 /* JMSClientsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = JMSClientsViewController.storyboard; sourceTree = "<group>"; };
 		7924834023CB7B57003E3D27 /* CalendarApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalendarApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7924834C23CB7B58003E3D27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7924834F23CB7B58003E3D27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -186,6 +195,7 @@
 		5D02185D2CBBEC3600AA9CFC /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				5DE33ED92CC8110200AD4505 /* JMSClientsViewController */,
 				5D0D97442CC6C7D700AAC732 /* JMSServiceViewController */,
 				5D3F060C2CBED7C300A509E5 /* JMSTransportViewController */,
 				5D0218632CBBF86400AA9CFC /* JMSSettingsSelectColorViewController */,
@@ -299,6 +309,8 @@
 				5D3F06042CBECC1500A509E5 /* JMSTransport.m */,
 				5D0D973D2CC6B4B700AAC732 /* JMSService.h */,
 				5D0D973E2CC6B4DF00AAC732 /* JMSService.m */,
+				5DE33ED42CC8043100AD4505 /* JMSClient.h */,
+				5DE33ED52CC8044400AD4505 /* JMSClient.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -322,6 +334,7 @@
 				5D02185B2CBBE8B600AA9CFC /* JMSColorDAO.swift */,
 				5D3F060A2CBECE0F00A509E5 /* JMSTransportDAO.swift */,
 				5D0D97422CC6B74D00AAC732 /* JMSServiceDAO.swift */,
+				5DE33ED72CC806D900AD4505 /* JMSClientDAO.swift */,
 			);
 			path = DAOs;
 			sourceTree = "<group>";
@@ -440,6 +453,15 @@
 				5DAE543C2C6D34E6003076B1 /* DSCoreData.m */,
 			);
 			path = Other;
+			sourceTree = "<group>";
+		};
+		5DE33ED92CC8110200AD4505 /* JMSClientsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5DE33EDA2CC8112D00AD4505 /* JMSClientsViewController.swift */,
+				5DE33EDC2CC8116400AD4505 /* JMSClientsViewController.storyboard */,
+			);
+			path = JMSClientsViewController;
 			sourceTree = "<group>";
 		};
 		7924833723CB7B57003E3D27 = {
@@ -599,6 +621,7 @@
 				5D0D97482CC6C84A00AAC732 /* JMSServiceViewController.storyboard in Resources */,
 				C3EB2617296B2D3C00024DB3 /* PhotosViewController.storyboard in Resources */,
 				5D0218672CBBF88500AA9CFC /* JMSSettingsSelectColorViewController.storyboard in Resources */,
+				5DE33EDD2CC8116400AD4505 /* JMSClientsViewController.storyboard in Resources */,
 				7924835023CB7B58003E3D27 /* LaunchScreen.storyboard in Resources */,
 				5D952A122C6BC8F200D6BF67 /* CountersViewController.storyboard in Resources */,
 				5D5E16372C6FD600004F9BC2 /* JMSAboutYouViewController.storyboard in Resources */,
@@ -701,8 +724,11 @@
 				5D460C5C2C6D2E380096BC59 /* NSDate+Helper.m in Sources */,
 				5D460C5B2C6D2E380096BC59 /* NSDate+JMSHelper.m in Sources */,
 				5D460C432C6D28B40096BC59 /* JMSApplicationAssembly.m in Sources */,
+				5DE33EDB2CC8112D00AD4505 /* JMSClientsViewController.swift in Sources */,
 				5D460C4C2C6D29220096BC59 /* JMSAbstractUser.m in Sources */,
+				5DE33ED82CC806D900AD4505 /* JMSClientDAO.swift in Sources */,
 				5D460C362C6D28170096BC59 /* JMSOwnerUser.m in Sources */,
+				5DE33ED62CC8044400AD4505 /* JMSClient.m in Sources */,
 				5D02186A2CBBF99400AA9CFC /* UIColor+Ext.swift in Sources */,
 				5D0218532CB9933800AA9CFC /* JMSItogoViewController.swift in Sources */,
 				5D460C542C6D2CB00096BC59 /* Managers.swift in Sources */,

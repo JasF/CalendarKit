@@ -17,3 +17,4 @@
 #import "JMSColor.h"
 #import "JMSTransport.h"
 #import "JMSService.h"
+#import "JMSClient.h"

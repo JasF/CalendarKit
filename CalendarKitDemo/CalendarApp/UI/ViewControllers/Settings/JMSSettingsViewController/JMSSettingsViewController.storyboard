@@ -94,10 +94,10 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="JMSSettingsHeaderCell" id="w4F-6f-OKg" customClass="JMSSettingsHeaderCell" customModule="CalendarApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="139.33333587646484" width="393" height="188.33332824707031"/>
+                                        <rect key="frame" x="0.0" y="139.33333587646484" width="393" height="196.33332824707031"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="w4F-6f-OKg" id="dF7-WQ-t8O">
-                                            <rect key="frame" x="0.0" y="0.0" width="393" height="188.33332824707031"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="196.33332824707031"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bXe-rb-Df5">
@@ -131,7 +131,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="247" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KJT-z5-bSn">
-                                                    <rect key="frame" x="16" y="155.66666666666666" width="361" height="20.666666666666657"/>
+                                                    <rect key="frame" x="16" y="163.66666666666666" width="361" height="20.666666666666657"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -150,7 +150,7 @@
                                                 <constraint firstItem="qfG-qE-a3Z" firstAttribute="trailing" secondItem="bXe-rb-Df5" secondAttribute="trailing" id="Ngk-u0-XfW"/>
                                                 <constraint firstItem="bXe-rb-Df5" firstAttribute="top" secondItem="dF7-WQ-t8O" secondAttribute="top" constant="12" id="SjE-qr-c3c"/>
                                                 <constraint firstItem="vF8-p4-E9a" firstAttribute="top" secondItem="qfG-qE-a3Z" secondAttribute="bottom" constant="10" id="TFS-UK-Bxg"/>
-                                                <constraint firstItem="KJT-z5-bSn" firstAttribute="top" secondItem="hku-3r-i2o" secondAttribute="bottom" constant="2" id="VrJ-Zi-WTF"/>
+                                                <constraint firstItem="KJT-z5-bSn" firstAttribute="top" secondItem="hku-3r-i2o" secondAttribute="bottom" constant="10" id="VrJ-Zi-WTF"/>
                                                 <constraint firstItem="bXe-rb-Df5" firstAttribute="leading" secondItem="dF7-WQ-t8O" secondAttribute="leading" constant="16" id="XNo-8w-mmK"/>
                                                 <constraint firstItem="vF8-p4-E9a" firstAttribute="trailing" secondItem="qfG-qE-a3Z" secondAttribute="trailing" id="dZk-U6-8Kc"/>
                                                 <constraint firstItem="vF8-p4-E9a" firstAttribute="leading" secondItem="qfG-qE-a3Z" secondAttribute="leading" id="etB-Yq-LXo"/>
