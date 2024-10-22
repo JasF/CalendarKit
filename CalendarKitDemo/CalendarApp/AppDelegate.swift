@@ -8,6 +8,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
       updateColorsTableIfNeeded()
       updateTransportsTableIfNeeded()
+      updateServiceTableIfNeeded()
     window = UIWindow(frame: UIScreen.main.bounds)
     window?.backgroundColor = UIColor.white
     window?.makeKeyAndVisible()
@@ -81,6 +82,30 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
             transport.name = "Байк"
             transport = JMSTransport.mr_createEntity(in: DSCoreData.shared().readContext) as! JMSTransport
             DSCoreData.shared().saveContext(completion: {})
+            
+        }
+    }
+    func updateServiceTableIfNeeded() {
+        let services = JMSService.mr_findAll() as! [JMSService]
+        if services.count == 0 {
+            var service = JMSService.mr_createEntity(in: DSCoreData.shared().readContext) as! JMSService
+            service.uid = "1"
+            service.name = "Маникюр"
+            service = JMSService.mr_createEntity(in: DSCoreData.shared().readContext) as! JMSService
+            service.uid = "2"
+            service.name = "Педикюр"
+            service = JMSService.mr_createEntity(in: DSCoreData.shared().readContext) as! JMSService
+            service.uid = "3"
+            service.name = "Депиляция"
+            service = JMSService.mr_createEntity(in: DSCoreData.shared().readContext) as! JMSService
+            service.uid = "4"
+            service.name = "Бритье"
+            service = JMSService.mr_createEntity(in: DSCoreData.shared().readContext) as! JMSService
+            service.uid = "5"
+            service.name = "Стрижка"
+            service = JMSService.mr_createEntity(in: DSCoreData.shared().readContext) as! JMSService
+            service.uid = "6"
+            service.name = "Консультация"
             
         }
     }

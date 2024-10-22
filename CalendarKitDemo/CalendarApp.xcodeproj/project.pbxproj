@@ -19,6 +19,10 @@
 		5D02186A2CBBF99400AA9CFC /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0218692CBBF99400AA9CFC /* UIColor+Ext.swift */; };
 		5D07C5302CAB09C700951854 /* JMSReligionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D07C52F2CAB09C700951854 /* JMSReligionViewController.swift */; };
 		5D07C5322CAB09F500951854 /* JMSReligionViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D07C5312CAB09F500951854 /* JMSReligionViewController.storyboard */; };
+		5D0D973F2CC6B4DF00AAC732 /* JMSService.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0D973E2CC6B4DF00AAC732 /* JMSService.m */; };
+		5D0D97432CC6B74D00AAC732 /* JMSServiceDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0D97422CC6B74D00AAC732 /* JMSServiceDAO.swift */; };
+		5D0D97462CC6C82E00AAC732 /* JMSServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0D97452CC6C82E00AAC732 /* JMSServiceViewController.swift */; };
+		5D0D97482CC6C84A00AAC732 /* JMSServiceViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D0D97472CC6C84A00AAC732 /* JMSServiceViewController.storyboard */; };
 		5D3F06052CBECC1500A509E5 /* JMSTransport.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3F06042CBECC1500A509E5 /* JMSTransport.m */; };
 		5D3F060B2CBECE0F00A509E5 /* JMSTransportDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D3F060A2CBECE0F00A509E5 /* JMSTransportDAO.swift */; };
 		5D3F060E2CBED81C00A509E5 /* JMSTransportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D3F060D2CBED81C00A509E5 /* JMSTransportViewController.swift */; };
@@ -80,6 +84,11 @@
 		5D0218692CBBF99400AA9CFC /* UIColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
 		5D07C52F2CAB09C700951854 /* JMSReligionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JMSReligionViewController.swift; sourceTree = "<group>"; };
 		5D07C5312CAB09F500951854 /* JMSReligionViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = JMSReligionViewController.storyboard; sourceTree = "<group>"; };
+		5D0D973D2CC6B4B700AAC732 /* JMSService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JMSService.h; sourceTree = "<group>"; };
+		5D0D973E2CC6B4DF00AAC732 /* JMSService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JMSService.m; sourceTree = "<group>"; };
+		5D0D97422CC6B74D00AAC732 /* JMSServiceDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JMSServiceDAO.swift; sourceTree = "<group>"; };
+		5D0D97452CC6C82E00AAC732 /* JMSServiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JMSServiceViewController.swift; sourceTree = "<group>"; };
+		5D0D97472CC6C84A00AAC732 /* JMSServiceViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = JMSServiceViewController.storyboard; sourceTree = "<group>"; };
 		5D3F06032CBECBE500A509E5 /* JMSTransport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JMSTransport.h; sourceTree = "<group>"; };
 		5D3F06042CBECC1500A509E5 /* JMSTransport.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JMSTransport.m; sourceTree = "<group>"; };
 		5D3F060A2CBECE0F00A509E5 /* JMSTransportDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JMSTransportDAO.swift; sourceTree = "<group>"; };
@@ -177,6 +186,7 @@
 		5D02185D2CBBEC3600AA9CFC /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				5D0D97442CC6C7D700AAC732 /* JMSServiceViewController */,
 				5D3F060C2CBED7C300A509E5 /* JMSTransportViewController */,
 				5D0218632CBBF86400AA9CFC /* JMSSettingsSelectColorViewController */,
 				5D02185E2CBBEC3D00AA9CFC /* JMSSettingsViewController */,
@@ -217,6 +227,15 @@
 				5D07C5312CAB09F500951854 /* JMSReligionViewController.storyboard */,
 			);
 			path = JMSReligionViewController;
+			sourceTree = "<group>";
+		};
+		5D0D97442CC6C7D700AAC732 /* JMSServiceViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5D0D97452CC6C82E00AAC732 /* JMSServiceViewController.swift */,
+				5D0D97472CC6C84A00AAC732 /* JMSServiceViewController.storyboard */,
+			);
+			path = JMSServiceViewController;
 			sourceTree = "<group>";
 		};
 		5D3F060C2CBED7C300A509E5 /* JMSTransportViewController */ = {
@@ -278,6 +297,8 @@
 				5D0218592CBBE5C900AA9CFC /* JMSColor.m */,
 				5D3F06032CBECBE500A509E5 /* JMSTransport.h */,
 				5D3F06042CBECC1500A509E5 /* JMSTransport.m */,
+				5D0D973D2CC6B4B700AAC732 /* JMSService.h */,
+				5D0D973E2CC6B4DF00AAC732 /* JMSService.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -300,6 +321,7 @@
 				5D460C462C6D28D40096BC59 /* JMSOwnerUserDAO.swift */,
 				5D02185B2CBBE8B600AA9CFC /* JMSColorDAO.swift */,
 				5D3F060A2CBECE0F00A509E5 /* JMSTransportDAO.swift */,
+				5D0D97422CC6B74D00AAC732 /* JMSServiceDAO.swift */,
 			);
 			path = DAOs;
 			sourceTree = "<group>";
@@ -574,6 +596,7 @@
 			files = (
 				5D5E16342C6FBC20004F9BC2 /* JMSNSInputCell.xib in Resources */,
 				5D0218552CB993A600AA9CFC /* JMSItogoViewController.storyboard in Resources */,
+				5D0D97482CC6C84A00AAC732 /* JMSServiceViewController.storyboard in Resources */,
 				C3EB2617296B2D3C00024DB3 /* PhotosViewController.storyboard in Resources */,
 				5D0218672CBBF88500AA9CFC /* JMSSettingsSelectColorViewController.storyboard in Resources */,
 				7924835023CB7B58003E3D27 /* LaunchScreen.storyboard in Resources */,
@@ -642,6 +665,7 @@
 				5D3F060E2CBED81C00A509E5 /* JMSTransportViewController.swift in Sources */,
 				5D02185A2CBBE5C900AA9CFC /* JMSColor.m in Sources */,
 				C3EB2619296B2D4E00024DB3 /* PhotosViewController.swift in Sources */,
+				5D0D97462CC6C82E00AAC732 /* JMSServiceViewController.swift in Sources */,
 				5D460C2E2C6D26EE0096BC59 /* JMSEntityDescription.swift in Sources */,
 				5D07C5302CAB09C700951854 /* JMSReligionViewController.swift in Sources */,
 				5D460C2B2C6D26EE0096BC59 /* JMSFetchRequest.m in Sources */,
@@ -655,6 +679,7 @@
 				5D5E16312C6FB9E9004F9BC2 /* JMSNameSurnameViewController.swift in Sources */,
 				5D3F06052CBECC1500A509E5 /* JMSTransport.m in Sources */,
 				5D460C2F2C6D26EE0096BC59 /* MagicalRecordPatch.m in Sources */,
+				5D0D973F2CC6B4DF00AAC732 /* JMSService.m in Sources */,
 				5D460C302C6D26EF0096BC59 /* EasyMappingHelper.swift in Sources */,
 				5D5E162C2C6FB497004F9BC2 /* ProfileViewController.swift in Sources */,
 				5DAE54402C6D3532003076B1 /* Singleton.m in Sources */,
@@ -670,6 +695,7 @@
 				5D460C312C6D26EF0096BC59 /* NSPredicate+SQL.swift in Sources */,
 				5D460C472C6D28D40096BC59 /* JMSOwnerUserDAO.swift in Sources */,
 				5D460C292C6D26EE0096BC59 /* JMSManagedObjectContext.m in Sources */,
+				5D0D97432CC6B74D00AAC732 /* JMSServiceDAO.swift in Sources */,
 				5D460C2A2C6D26EE0096BC59 /* RXTimer.m in Sources */,
 				5D5E16392C6FD632004F9BC2 /* JMSAboutYouViewController.swift in Sources */,
 				5D460C5C2C6D2E380096BC59 /* NSDate+Helper.m in Sources */,

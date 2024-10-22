@@ -61,5 +61,12 @@
     }
     return shared;
 }
+- (JMSServiceDAO *)serviceDAO {
+    static JMSServiceDAO *shared = nil;
+    if (shared == nil) {
+        shared = [[JMSServiceDAO alloc] init:[self databaseFactory]];
+    }
+    return shared;
+}
 
 @end

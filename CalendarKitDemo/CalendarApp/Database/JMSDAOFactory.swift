@@ -24,7 +24,8 @@ import Foundation
         var data = [
             "JMSOwnerUser":"ownerUserDAO",
             "JMSColor":"colorDAO",
-            "JMSTransport":"transportDAO"
+            "JMSTransport":"transportDAO",
+            "JMSService":"serviceDAO"
         ]
         
         return data
@@ -59,6 +60,8 @@ import Foundation
             return daoAssembly.colorDAO()
         case "JMSTransport":
             return daoAssembly.transportDAO()
+        case "JMSService":
+            return daoAssembly.serviceDAO()
         default:
             return nil
         }

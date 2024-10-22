@@ -14,6 +14,7 @@ class JMSSettingsHeaderCell : UITableViewCell {
     @IBOutlet var fontColor: UILabel?
     @IBOutlet var bgColor: UILabel?
     @IBOutlet var transport: UILabel?
+    @IBOutlet var service: UILabel?
 }
 
 class JMSSettingsSwitcherCell : UITableViewCell {
@@ -28,10 +29,10 @@ class JMSSettingsInfoCell : UITableViewCell {
 class JMSSettingsViewController : UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet var tableView: UITableView!
     enum Cells:Int {
-        case header, bigLetters, smallLetters, fontColor, bgColor, transport
+        case header, bigLetters, smallLetters, fontColor, bgColor, transport, services
     }
     
-    var cells = [Cells.header, .bigLetters, .smallLetters, .fontColor, .bgColor, .transport]
+    var cells = [Cells.header, .bigLetters, .smallLetters, .fontColor, .bgColor, .transport, .services]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -63,6 +64,8 @@ class JMSSettingsViewController : UIViewController, UITableViewDelegate, UITable
             return bgColorCell()
         case .transport:
             return transportCell()
+        case .services:
+            return servicesCell()
         }
     }
     
@@ -102,6 +105,22 @@ class JMSSettingsViewController : UIViewController, UITableViewDelegate, UITable
         }
         let bgColorName = bgColor?.name ?? ""
         cell.bgColor?.text = "Цвет фона: \(bgColorName.isEmpty ? "Не выбрано" : bgColorName)"
+        let transportId = JMSOwnerUser.owner().transportId ?? ""
+        var transport: JMSTransport?
+        if transportId.isEmpty == false {
+            transport = JMSTransport.jms_findSingle(with: NSPredicate(format: "uid == %@", transportId as NSString)) as? JMSTransport
+        }
+        let transportName = transport?.name ?? ""
+        cell.transport?.text = "Транспорт: \(transportName.isEmpty ? "Не выбрано" : transportName)"
+        let serviceId = JMSOwnerUser.owner().serviceId ?? ""
+        var service: JMSService?
+        if serviceId.isEmpty == false {
+            service = JMSService.jms_findSingle(with: NSPredicate(format: "uid == %@", serviceId as NSString)) as? JMSService
+        }
+        let serviceName = service?.name ?? ""
+        cell.service?.text = "Услуги: \(serviceName.isEmpty ? "Не выбрано" : serviceName)"
+        
+        
         return cell
     }
     
@@ -120,6 +139,11 @@ class JMSSettingsViewController : UIViewController, UITableViewDelegate, UITable
         cell.title?.text = "Транспорт"
         return cell
     }
+    func servicesCell() -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "JMSSettingsInfoCell") as! JMSSettingsInfoCell
+        cell.title?.text = "Услуги"
+        return cell
+    }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
@@ -134,6 +158,9 @@ class JMSSettingsViewController : UIViewController, UITableViewDelegate, UITable
             showSelectBgColorViewController()
         case .transport:
             showSelectTransportViewController()
+        case .services:
+            showSelectServiceViewController()
+            
         default:
             break
         }
@@ -188,6 +215,17 @@ class JMSSettingsViewController : UIViewController, UITableViewDelegate, UITable
         let viewController = storyboard.instantiateViewController(withIdentifier: "JMSTransportViewController") as! JMSTransportViewController
         viewController.transportSelectedBlock = { [weak self] (transport) in
             JMSOwnerUser.owner().transportId = transport?.uid ?? ""
+            DSCoreData.shared().saveContext(completion: {})
+            self?.updateHeader()
+        }
+        navigationController?.pushViewController(viewController, animated: true)
+        
+    }
+    func showSelectServiceViewController() {
+        let storyboard = UIStoryboard(name: "JMSServiceViewController", bundle: nil)
+        let viewController = storyboard.instantiateViewController(withIdentifier: "JMSServiceViewController") as! JMSServiceViewController
+        viewController.serviceSelectedBlock = { [weak self] (service) in
+            JMSOwnerUser.owner().serviceId = service?.uid ?? ""
             DSCoreData.shared().saveContext(completion: {})
             self?.updateHeader()
         }

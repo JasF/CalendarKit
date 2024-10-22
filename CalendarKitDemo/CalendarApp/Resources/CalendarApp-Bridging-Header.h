@@ -16,3 +16,4 @@
 #import "DSCoreData.h"
 #import "JMSColor.h"
 #import "JMSTransport.h"
+#import "JMSService.h"
