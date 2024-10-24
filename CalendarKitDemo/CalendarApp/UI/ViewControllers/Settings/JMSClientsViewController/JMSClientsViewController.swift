@@ -11,6 +11,9 @@ class JMSCCell : UITableViewCell {
     @IBOutlet var title: UILabel?
     @IBOutlet var phone: UILabel?
 }
+class JMSCAddCell : UITableViewCell {
+    @IBOutlet var addClient: UILabel?
+}
 
 class JMSClientsViewController : UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet var tableView: UITableView!
@@ -33,8 +36,10 @@ class JMSClientsViewController : UIViewController, UITableViewDelegate, UITableV
             let clientCell = Cell(.info)
             clientCell.client = client
             cells.append(clientCell)
+            
         }
-        cells.append(Cell(.add))
+        let cell = Cell(.add)
+        cells.append(cell)
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension
@@ -50,9 +55,13 @@ class JMSClientsViewController : UIViewController, UITableViewDelegate, UITableV
         case .info:
             let cell = tableView.dequeueReusableCell(withIdentifier: "JMSCCell") as! JMSCCell
             cell.title?.text = "\(cellInfo.client?.name ?? "") \(cellInfo.client?.surname ?? "")"
+            cell.phone?.text = cellInfo.client?.phone
+            
             return cell
         case .add:
-            return UITableViewCell()
+            let cell = tableView.dequeueReusableCell(withIdentifier: "JMSCAddCell") as! JMSCAddCell
+            cell.addClient?.text = "+ Добавить клиента"
+            return cell
         }
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
