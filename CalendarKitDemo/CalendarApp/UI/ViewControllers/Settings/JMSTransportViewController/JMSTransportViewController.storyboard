@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -37,28 +37,63 @@
                                 <rect key="frame" x="0.0" y="103" width="393" height="715"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="JMSTAddCell" id="AyN-0w-oVY" customClass="JMSTAddCell" customModule="CalendarApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="45.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="AyN-0w-oVY" id="Gh8-2N-kqe">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="45.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WXu-oL-3hC">
+                                                    <rect key="frame" x="16" y="12.000000000000002" width="361" height="21.666666666666671"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" systemColor="systemRedColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="WXu-oL-3hC" firstAttribute="top" secondItem="Gh8-2N-kqe" secondAttribute="top" constant="12" id="2OJ-pg-cAN"/>
+                                                <constraint firstItem="WXu-oL-3hC" firstAttribute="leading" secondItem="Gh8-2N-kqe" secondAttribute="leading" constant="16" id="S0U-Ib-4hP"/>
+                                                <constraint firstAttribute="trailing" secondItem="WXu-oL-3hC" secondAttribute="trailing" constant="16" id="S6M-0b-Mxu"/>
+                                                <constraint firstAttribute="bottom" secondItem="WXu-oL-3hC" secondAttribute="bottom" constant="12" id="oce-lf-cry"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="add" destination="WXu-oL-3hC" id="zcc-QW-eMe"/>
+                                        </connections>
+                                    </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="JMSTCell" id="LTF-2C-88m" customClass="JMSTCell" customModule="CalendarApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="50" width="393" height="44.666667938232422"/>
+                                        <rect key="frame" x="0.0" y="95.666667938232422" width="393" height="67"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LTF-2C-88m" id="8dg-rf-g0L">
-                                            <rect key="frame" x="0.0" y="0.0" width="393" height="44.666667938232422"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="67"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8sV-ZX-IBY">
-                                                    <rect key="frame" x="16" y="12.000000000000002" width="361" height="20.666666666666671"/>
+                                                    <rect key="frame" x="16" y="11.999999999999998" width="361" height="20.333333333333329"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CoH-WG-NEt">
+                                                    <rect key="frame" x="16" y="34.333333333333336" width="361" height="20.666666666666664"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="CoH-WG-NEt" firstAttribute="top" secondItem="8sV-ZX-IBY" secondAttribute="bottom" constant="2" id="Cfr-s6-IXI"/>
                                                 <constraint firstAttribute="trailing" secondItem="8sV-ZX-IBY" secondAttribute="trailing" constant="16" id="EOB-xs-imT"/>
+                                                <constraint firstItem="CoH-WG-NEt" firstAttribute="trailing" secondItem="8sV-ZX-IBY" secondAttribute="trailing" id="M7U-fi-Zl9"/>
+                                                <constraint firstItem="CoH-WG-NEt" firstAttribute="leading" secondItem="8sV-ZX-IBY" secondAttribute="leading" id="Zrw-oj-e7S"/>
                                                 <constraint firstItem="8sV-ZX-IBY" firstAttribute="leading" secondItem="8dg-rf-g0L" secondAttribute="leading" constant="16" id="sM9-15-8bj"/>
-                                                <constraint firstAttribute="bottom" secondItem="8sV-ZX-IBY" secondAttribute="bottom" constant="12" id="vVw-3U-llK"/>
                                                 <constraint firstItem="8sV-ZX-IBY" firstAttribute="top" secondItem="8dg-rf-g0L" secondAttribute="top" constant="12" id="x3E-3i-uun"/>
+                                                <constraint firstAttribute="bottom" secondItem="CoH-WG-NEt" secondAttribute="bottom" constant="12" id="yRz-R3-ecX"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="speed" destination="CoH-WG-NEt" id="4Te-tH-uPh"/>
                                             <outlet property="title" destination="8sV-ZX-IBY" id="vcp-mp-gsr"/>
                                         </connections>
                                     </tableViewCell>
@@ -91,6 +126,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

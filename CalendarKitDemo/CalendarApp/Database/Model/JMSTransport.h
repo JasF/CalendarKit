@@ -11,6 +11,7 @@
 @interface JMSTransport : NSBeforeManagedObject <EKMappingProtocol>
 @property (nonatomic, strong) NSString *uid;
 @property (nonatomic, strong) NSString *name;
+@property (nonatomic, strong) NSNumber *speed;
 @end
 
 #endif /* JMSTransport_h */

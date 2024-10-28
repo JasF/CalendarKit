@@ -14,7 +14,7 @@
 +(EKObjectMapping *)objectMapping
 {
     return [EKObjectMapping mappingForClass:self withBlock:^(EKObjectMapping *mapping) {
-        [mapping mapPropertiesFromArray:@[@"uid", @"name"]];
+        [mapping mapPropertiesFromArray:@[@"uid", @"name", @"speed"]];
     }];
 }
 

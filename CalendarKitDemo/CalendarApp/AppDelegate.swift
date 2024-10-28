@@ -69,18 +69,23 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
             var transport = JMSTransport.mr_createEntity(in: DSCoreData.shared().readContext) as! JMSTransport
             transport.uid = "1"
             transport.name = "Автомобиль"
+            transport.speed = 60 as NSNumber
             transport = JMSTransport.mr_createEntity(in: DSCoreData.shared().readContext) as! JMSTransport
             transport.uid = "2"
             transport.name = "Самолет"
+            transport.speed = 800 as NSNumber
             transport = JMSTransport.mr_createEntity(in: DSCoreData.shared().readContext) as! JMSTransport
             transport.uid = "3"
             transport.name = "Поезд"
+            transport.speed = 100 as NSNumber
             transport = JMSTransport.mr_createEntity(in: DSCoreData.shared().readContext) as! JMSTransport
             transport.uid = "4"
             transport.name = "Велосипед"
+            transport.speed = 20 as NSNumber
             transport = JMSTransport.mr_createEntity(in: DSCoreData.shared().readContext) as! JMSTransport
             transport.uid = "5"
             transport.name = "Байк"
+            transport.speed = 90 as NSNumber
             DSCoreData.shared().saveContext(completion: {})
             
         }
