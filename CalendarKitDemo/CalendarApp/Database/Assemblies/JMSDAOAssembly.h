@@ -47,6 +47,7 @@
 @class JMSTransportDAO;
 @class JMSServiceDAO;
 @class JMSClientDAO;
+@class JMSCurrencyDAO;
 
 @interface JMSDAOAssembly : NSObject
 + (instancetype)shared;
@@ -57,6 +58,7 @@
 - (JMSTransportDAO *)transportDAO;
 - (JMSServiceDAO *)serviceDAO;
 - (JMSClientDAO *)clientDAO;
+- (JMSCurrencyDAO *)currencyDAO;
 /*
 - (JMSUserDAO *)userDAO;
 - (JMSRynServerMessageDAO *)rynServerMessageDAO;

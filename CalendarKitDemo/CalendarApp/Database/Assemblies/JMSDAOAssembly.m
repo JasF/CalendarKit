@@ -75,5 +75,12 @@
     }
     return shared;
 }
+- (JMSCurrencyDAO *)currencyDAO {
+    static JMSCurrencyDAO *shared = nil;
+    if (shared == nil) {
+        shared = [[JMSCurrencyDAO alloc] init:[self databaseFactory]];
+    }
+    return shared;
+}
 
 @end

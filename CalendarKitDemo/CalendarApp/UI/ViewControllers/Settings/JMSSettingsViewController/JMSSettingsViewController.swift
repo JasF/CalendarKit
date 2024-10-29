@@ -29,10 +29,10 @@ class JMSSettingsInfoCell : UITableViewCell {
 class JMSSettingsViewController : UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet var tableView: UITableView!
     enum Cells:Int {
-        case header, bigLetters, smallLetters, fontColor, bgColor, transport, services, clients
+        case header, bigLetters, smallLetters, fontColor, bgColor, transport, services, clients, currency
     }
     
-    var cells = [Cells.header, .bigLetters, .smallLetters, .fontColor, .bgColor, .transport, .services, .clients]
+    var cells = [Cells.header, .bigLetters, .smallLetters, .fontColor, .bgColor, .transport, .services, .clients, .currency]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -68,6 +68,8 @@ class JMSSettingsViewController : UIViewController, UITableViewDelegate, UITable
             return servicesCell()
         case .clients:
             return clientsCell()
+        case .currency:
+            return currencyCell()
         }
     }
     
@@ -151,7 +153,11 @@ class JMSSettingsViewController : UIViewController, UITableViewDelegate, UITable
         cell.title?.text = "Клиенты"
         return cell
     }
-    
+    func currencyCell() -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "JMSSettingsInfoCell") as! JMSSettingsInfoCell
+        cell.title?.text = "Валюта"
+        return cell
+    }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         switch cells[indexPath.row] {
@@ -169,6 +175,8 @@ class JMSSettingsViewController : UIViewController, UITableViewDelegate, UITable
             showSelectServiceViewController()
         case .clients:
             showClientViewController()
+        case .currency:
+            showCurrencyViewController()
             
         default:
             break
@@ -247,6 +255,11 @@ class JMSSettingsViewController : UIViewController, UITableViewDelegate, UITable
         
         navigationController?.pushViewController(viewController, animated: true)
         
+    }
+    func showCurrencyViewController() {
+        let storyboard = UIStoryboard(name: "JMSCurrencyViewController", bundle: nil)
+        let viewController = storyboard.instantiateViewController(withIdentifier: "JMSCurrencyViewController") as! JMSCurrencyViewController
+        navigationController?.pushViewController(viewController, animated: true)
     }
     
 }

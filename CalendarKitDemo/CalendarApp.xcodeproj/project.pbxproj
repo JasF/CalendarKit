@@ -65,6 +65,10 @@
 		5DE33ED82CC806D900AD4505 /* JMSClientDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE33ED72CC806D900AD4505 /* JMSClientDAO.swift */; };
 		5DE33EDB2CC8112D00AD4505 /* JMSClientsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE33EDA2CC8112D00AD4505 /* JMSClientsViewController.swift */; };
 		5DE33EDD2CC8116400AD4505 /* JMSClientsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DE33EDC2CC8116400AD4505 /* JMSClientsViewController.storyboard */; };
+		5DF9612E2CD154150033D789 /* JMSCurrency.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DF9612D2CD154150033D789 /* JMSCurrency.m */; };
+		5DF961302CD15B230033D789 /* JMSCurrencyDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF9612F2CD15B230033D789 /* JMSCurrencyDAO.swift */; };
+		5DF961332CD160F40033D789 /* JMSCurrencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF961322CD160F40033D789 /* JMSCurrencyViewController.swift */; };
+		5DF961352CD1610A0033D789 /* JMSCurrencyViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DF961342CD1610A0033D789 /* JMSCurrencyViewController.storyboard */; };
 		7924834D23CB7B58003E3D27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7924834C23CB7B58003E3D27 /* Assets.xcassets */; };
 		7924835023CB7B58003E3D27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7924834E23CB7B58003E3D27 /* LaunchScreen.storyboard */; };
 		7924836A23CB7BFE003E3D27 /* DatePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7924836423CB7BFE003E3D27 /* DatePickerController.swift */; };
@@ -155,6 +159,11 @@
 		5DE33ED72CC806D900AD4505 /* JMSClientDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JMSClientDAO.swift; sourceTree = "<group>"; };
 		5DE33EDA2CC8112D00AD4505 /* JMSClientsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JMSClientsViewController.swift; sourceTree = "<group>"; };
 		5DE33EDC2CC8116400AD4505 /* JMSClientsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = JMSClientsViewController.storyboard; sourceTree = "<group>"; };
+		5DF9612C2CD154010033D789 /* JMSCurrency.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JMSCurrency.h; sourceTree = "<group>"; };
+		5DF9612D2CD154150033D789 /* JMSCurrency.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JMSCurrency.m; sourceTree = "<group>"; };
+		5DF9612F2CD15B230033D789 /* JMSCurrencyDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JMSCurrencyDAO.swift; sourceTree = "<group>"; };
+		5DF961322CD160F40033D789 /* JMSCurrencyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JMSCurrencyViewController.swift; sourceTree = "<group>"; };
+		5DF961342CD1610A0033D789 /* JMSCurrencyViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = JMSCurrencyViewController.storyboard; sourceTree = "<group>"; };
 		7924834023CB7B57003E3D27 /* CalendarApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalendarApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7924834C23CB7B58003E3D27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7924834F23CB7B58003E3D27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -195,6 +204,7 @@
 		5D02185D2CBBEC3600AA9CFC /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				5DF961312CD160CA0033D789 /* JMSCurrencyViewController */,
 				5DE33ED92CC8110200AD4505 /* JMSClientsViewController */,
 				5D0D97442CC6C7D700AAC732 /* JMSServiceViewController */,
 				5D3F060C2CBED7C300A509E5 /* JMSTransportViewController */,
@@ -311,6 +321,8 @@
 				5D0D973E2CC6B4DF00AAC732 /* JMSService.m */,
 				5DE33ED42CC8043100AD4505 /* JMSClient.h */,
 				5DE33ED52CC8044400AD4505 /* JMSClient.m */,
+				5DF9612C2CD154010033D789 /* JMSCurrency.h */,
+				5DF9612D2CD154150033D789 /* JMSCurrency.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -335,6 +347,7 @@
 				5D3F060A2CBECE0F00A509E5 /* JMSTransportDAO.swift */,
 				5D0D97422CC6B74D00AAC732 /* JMSServiceDAO.swift */,
 				5DE33ED72CC806D900AD4505 /* JMSClientDAO.swift */,
+				5DF9612F2CD15B230033D789 /* JMSCurrencyDAO.swift */,
 			);
 			path = DAOs;
 			sourceTree = "<group>";
@@ -462,6 +475,15 @@
 				5DE33EDC2CC8116400AD4505 /* JMSClientsViewController.storyboard */,
 			);
 			path = JMSClientsViewController;
+			sourceTree = "<group>";
+		};
+		5DF961312CD160CA0033D789 /* JMSCurrencyViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5DF961322CD160F40033D789 /* JMSCurrencyViewController.swift */,
+				5DF961342CD1610A0033D789 /* JMSCurrencyViewController.storyboard */,
+			);
+			path = JMSCurrencyViewController;
 			sourceTree = "<group>";
 		};
 		7924833723CB7B57003E3D27 = {
@@ -631,6 +653,7 @@
 				5D5E162A2C6FB482004F9BC2 /* ProfileViewController.storyboard in Resources */,
 				5D5E162F2C6FB9DB004F9BC2 /* JMSNameSurnameViewController.storyboard in Resources */,
 				5D3F06102CBED83700A509E5 /* JMSTransportViewController.storyboard in Resources */,
+				5DF961352CD1610A0033D789 /* JMSCurrencyViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -694,8 +717,10 @@
 				5D460C2B2C6D26EE0096BC59 /* JMSFetchRequest.m in Sources */,
 				5D02185C2CBBE8B600AA9CFC /* JMSColorDAO.swift in Sources */,
 				5DAE54432C6D3684003076B1 /* JMSOwnerUser+JMSFactory.m in Sources */,
+				5DF9612E2CD154150033D789 /* JMSCurrency.m in Sources */,
 				5D460C2C2C6D26EE0096BC59 /* JMSFetchedResultsController.m in Sources */,
 				5D0218602CBBEC4C00AA9CFC /* JMSSettingsViewController.swift in Sources */,
+				5DF961332CD160F40033D789 /* JMSCurrencyViewController.swift in Sources */,
 				7924836C23CB7BFE003E3D27 /* CustomCalendarExampleController.swift in Sources */,
 				7924836A23CB7BFE003E3D27 /* DatePickerController.swift in Sources */,
 				5D460C552C6D2CB00096BC59 /* RSSwizzle.m in Sources */,
@@ -706,6 +731,7 @@
 				5D460C302C6D26EF0096BC59 /* EasyMappingHelper.swift in Sources */,
 				5D5E162C2C6FB497004F9BC2 /* ProfileViewController.swift in Sources */,
 				5DAE54402C6D3532003076B1 /* Singleton.m in Sources */,
+				5DF961302CD15B230033D789 /* JMSCurrencyDAO.swift in Sources */,
 				5D460C322C6D26EF0096BC59 /* NSDateFormatter+SQL.m in Sources */,
 				5D952A142C6BC90E00D6BF67 /* CountersViewController.swift in Sources */,
 				5DAE543D2C6D34E6003076B1 /* DSCoreData.m in Sources */,

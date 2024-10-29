@@ -10,6 +10,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
       updateTransportsTableIfNeeded()
       updateServiceTableIfNeeded()
       updateClientsTableIfNeeded()
+      updateCurrencyTableIfNeeded()
     window = UIWindow(frame: UIScreen.main.bounds)
     window?.backgroundColor = UIColor.white
     window?.makeKeyAndVisible()
@@ -111,7 +112,30 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
             service = JMSService.mr_createEntity(in: DSCoreData.shared().readContext) as! JMSService
             service.uid = "6"
             service.name = "Консультация"
+            DSCoreData.shared().saveContext(completion: {})
             
+        }
+    }
+    func updateCurrencyTableIfNeeded() {
+        let currencies = JMSCurrency.mr_findAll() as! [JMSCurrency]
+        if currencies.count == 0 {
+            var currency = JMSCurrency.mr_createEntity(in: DSCoreData.shared().readContext) as! JMSCurrency
+            currency.uid = "1"
+            currency.name = "Рубли"
+            currency.symbol = "руб."
+            currency = JMSCurrency.mr_createEntity(in: DSCoreData.shared().readContext) as! JMSCurrency
+            currency.uid = "2"
+            currency.name = "Евро"
+            currency.symbol = "eur"
+            currency = JMSCurrency.mr_createEntity(in: DSCoreData.shared().readContext) as! JMSCurrency
+            currency.uid = "3"
+            currency.name = "Доллары"
+            currency.symbol = "$"
+            currency = JMSCurrency.mr_createEntity(in: DSCoreData.shared().readContext) as! JMSCurrency
+            currency.uid = "4"
+            currency.name = "Белорусские рубли"
+            currency.symbol = "BYN"
+            DSCoreData.shared().saveContext(completion: {})
         }
     }
     func updateClientsTableIfNeeded() {
@@ -127,6 +151,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
             client.name = "Тестовый"
             client.surname = "Клиент"
             client.phone = "+3758007777777"
+            DSCoreData.shared().saveContext(completion: {})
         }
     }
 }

@@ -18,3 +18,4 @@
 #import "JMSTransport.h"
 #import "JMSService.h"
 #import "JMSClient.h"
+#import "JMSCurrency.h"

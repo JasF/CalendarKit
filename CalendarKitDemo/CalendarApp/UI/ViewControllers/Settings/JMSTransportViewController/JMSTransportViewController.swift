@@ -15,9 +15,20 @@ class JMSTCell : UITableViewCell {
     @IBOutlet var speed: UILabel?
 }
 
+class JMSTDelCell : UITableViewCell {
+    @IBOutlet var button: UIButton?
+    
+    var buttonTappedBlock: (()->Void)?
+    @IBAction func buttonTapped() {
+        buttonTappedBlock?()
+    }
+}
+class JMSTItogoCell: UITableViewCell {
+    @IBOutlet var itogo: UILabel?
+}
 class JMSTransportViewController : UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet var tableView: UITableView!
-    //var transports = [JMSTransport]()
+    
     enum CellType:Int {
         case info, add, delete, itogo
     }
@@ -38,18 +49,26 @@ class JMSTransportViewController : UIViewController, UITableViewDelegate, UITabl
     }
     var cells = [Cell]()
     var transportSelectedBlock: ((JMSTransport?) -> Void)?
+    var transports = [JMSTransport]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Транспорт"
-        let transports = JMSTransport.mr_findAll() as! [JMSTransport]
+        transports = JMSTransport.mr_findAll() as! [JMSTransport]
+        updateCells()
+        
+    }
+    
+    func updateCells() {
+        cells.removeAll()
         cells.append(contentsOf: transports.map({ it in
             Cell(transport: it)
         }))
         cells.append(Cell(type: .add))
         cells.append(Cell(type: .delete))
         cells.append(Cell(count: transports.count))
-        
     }
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension
     }
@@ -71,6 +90,24 @@ class JMSTransportViewController : UIViewController, UITableViewDelegate, UITabl
         case .add:
             let cell = tableView.dequeueReusableCell(withIdentifier: "JMSTAddCell") as! JMSTAddCell
             cell.add?.text = "+ Добавить транспорт"
+            return cell
+        case .delete:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "JMSTDelCell") as! JMSTDelCell
+            cell.button?.setTitle("Удалить первый транспорт в списке", for: .normal)
+            cell.buttonTappedBlock = { [weak self] in
+                if (self?.transports.isEmpty ?? true) == false {
+                    self?.transports.remove(at: 0)
+                    
+                }
+                self?.updateCells()
+                
+                self?.tableView.reloadData()
+                
+            }
+            return cell
+        case .itogo:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "JMSTItogoCell") as! JMSTItogoCell
+            cell.itogo?.text = "Всего единиц: \(info.count)"
             return cell
         default:
             return UITableViewCell()
