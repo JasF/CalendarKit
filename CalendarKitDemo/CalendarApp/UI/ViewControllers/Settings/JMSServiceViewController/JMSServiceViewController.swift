@@ -9,6 +9,7 @@
 import Foundation
 class JMSSCell : UITableViewCell {
     @IBOutlet var title: UILabel?
+    @IBOutlet var subtitle: UILabel?
 }
 
 class JMSServiceViewController : UIViewController, UITableViewDelegate, UITableViewDataSource {
@@ -34,6 +35,7 @@ class JMSServiceViewController : UIViewController, UITableViewDelegate, UITableV
         let cell = tableView.dequeueReusableCell(withIdentifier: "JMSSCell") as! JMSSCell
         let service = services[indexPath.row]
         cell.title?.text = service.name
+        cell.subtitle?.text = "Цена: \(service.price.asPrice())"
         return cell
     }
     
@@ -45,3 +47,15 @@ class JMSServiceViewController : UIViewController, UITableViewDelegate, UITableV
 }
 
 
+extension NSNumber {
+    func asPrice() -> String {
+        let currencyId = JMSOwnerUser.owner().currencyId ?? ""
+        var currency: JMSCurrency?
+        if currencyId.isEmpty == false {
+            currency = JMSCurrency.jms_findSingle(with: NSPredicate(format: "uid == %@", currencyId as NSString)) as? JMSCurrency
+            
+        }
+        let currencySym = currency?.symbol ?? ""
+        return "\(self.intValue) \(currencySym)"
+    }
+}

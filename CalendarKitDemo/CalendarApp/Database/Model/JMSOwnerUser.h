@@ -127,5 +127,6 @@
 @property (nonatomic, strong) NSString *bgColorId;
 @property (nonatomic, strong) NSString *transportId;
 @property (nonatomic, strong) NSString *serviceId;
+@property (nonatomic, strong) NSString *currencyId;
 
 @end

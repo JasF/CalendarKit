@@ -15,6 +15,7 @@ class JMSSettingsHeaderCell : UITableViewCell {
     @IBOutlet var bgColor: UILabel?
     @IBOutlet var transport: UILabel?
     @IBOutlet var service: UILabel?
+    @IBOutlet var currency: UILabel?
 }
 
 class JMSSettingsSwitcherCell : UITableViewCell {
@@ -123,6 +124,14 @@ class JMSSettingsViewController : UIViewController, UITableViewDelegate, UITable
         }
         let serviceName = service?.name ?? ""
         cell.service?.text = "Услуги: \(serviceName.isEmpty ? "Не выбрано" : serviceName)"
+        let currencyId = JMSOwnerUser.owner().currencyId ?? ""
+        var currency: JMSCurrency?
+        if currencyId.isEmpty == false {
+            currency = JMSCurrency.jms_findSingle(with: NSPredicate(format: "uid == %@", currencyId as NSString)) as? JMSCurrency
+            
+        }
+        let currencyName = currency?.name ?? ""
+        cell.currency?.text = "Валюта : \(currencyName.isEmpty ? "Не выбрано" : currencyName)"
         
         
         return cell
@@ -259,6 +268,13 @@ class JMSSettingsViewController : UIViewController, UITableViewDelegate, UITable
     func showCurrencyViewController() {
         let storyboard = UIStoryboard(name: "JMSCurrencyViewController", bundle: nil)
         let viewController = storyboard.instantiateViewController(withIdentifier: "JMSCurrencyViewController") as! JMSCurrencyViewController
+        viewController.currencySelectedBlock = { [weak self] (currency) in
+            JMSOwnerUser.owner().currencyId = currency?.uid ?? ""
+            DSCoreData.shared().saveContext(completion: {})
+            self?.updateHeader()
+            
+            
+        }
         navigationController?.pushViewController(viewController, animated: true)
     }
     

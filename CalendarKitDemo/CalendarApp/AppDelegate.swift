@@ -97,21 +97,27 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
             var service = JMSService.mr_createEntity(in: DSCoreData.shared().readContext) as! JMSService
             service.uid = "1"
             service.name = "Маникюр"
+            service.price = 100 as NSNumber
             service = JMSService.mr_createEntity(in: DSCoreData.shared().readContext) as! JMSService
             service.uid = "2"
             service.name = "Педикюр"
+            service.price = 150 as NSNumber
             service = JMSService.mr_createEntity(in: DSCoreData.shared().readContext) as! JMSService
             service.uid = "3"
             service.name = "Депиляция"
+            service.price = 200 as NSNumber
             service = JMSService.mr_createEntity(in: DSCoreData.shared().readContext) as! JMSService
             service.uid = "4"
             service.name = "Бритье"
+            service.price = 250 as NSNumber
             service = JMSService.mr_createEntity(in: DSCoreData.shared().readContext) as! JMSService
             service.uid = "5"
             service.name = "Стрижка"
+            service.price = 300 as NSNumber
             service = JMSService.mr_createEntity(in: DSCoreData.shared().readContext) as! JMSService
             service.uid = "6"
             service.name = "Консультация"
+            service.price = 120 as NSNumber
             DSCoreData.shared().saveContext(completion: {})
             
         }

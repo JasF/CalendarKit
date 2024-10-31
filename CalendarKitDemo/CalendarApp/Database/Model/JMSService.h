@@ -11,5 +11,6 @@
 @interface JMSService : NSBeforeManagedObject <EKMappingProtocol>
 @property (nonatomic, strong) NSString *uid;
 @property (nonatomic, strong) NSString *name;
+@property (nonatomic, strong) NSNumber *price;
 @end
 #endif /* JMSService_h */
