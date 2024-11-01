@@ -37,8 +37,87 @@
                                 <rect key="frame" x="0.0" y="103" width="393" height="715"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="JMSSAddCell" id="hvF-GA-0Dy" customClass="JMSSAddCell" customModule="CalendarApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="44.333332061767578"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hvF-GA-0Dy" id="83z-QE-lxx">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="44.333332061767578"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IPJ-VB-GFH">
+                                                    <rect key="frame" x="16" y="11.000000000000002" width="361" height="21.666666666666671"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" systemColor="systemRedColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="IPJ-VB-GFH" firstAttribute="leading" secondItem="83z-QE-lxx" secondAttribute="leading" constant="16" id="YYI-Ju-gnB"/>
+                                                <constraint firstItem="IPJ-VB-GFH" firstAttribute="top" secondItem="83z-QE-lxx" secondAttribute="top" constant="11" id="dZk-ZP-ygp"/>
+                                                <constraint firstAttribute="trailing" secondItem="IPJ-VB-GFH" secondAttribute="trailing" constant="16" id="iat-Mf-rg5"/>
+                                                <constraint firstAttribute="bottom" secondItem="IPJ-VB-GFH" secondAttribute="bottom" constant="11.666667938232422" id="w2a-nJ-9w5"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="add" destination="IPJ-VB-GFH" id="Iae-2z-Occ"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="JMSSDelCell" id="gaJ-nF-NhV" customClass="JMSSDelCell" customModule="CalendarApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="94.333332061767578" width="393" height="64.333335876464844"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gaJ-nF-NhV" id="qcK-JN-YiA">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="64.333335876464844"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="37i-T6-klO">
+                                                    <rect key="frame" x="159" y="12.000000000000004" width="75" height="40.333333333333343"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="rbA-JA-cPC"/>
+                                                    </constraints>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                    <connections>
+                                                        <action selector="buttonTapped" destination="gaJ-nF-NhV" eventType="touchUpInside" id="3kW-LV-sKc"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="37i-T6-klO" secondAttribute="bottom" constant="12" id="VpI-nn-XsP"/>
+                                                <constraint firstItem="37i-T6-klO" firstAttribute="top" secondItem="qcK-JN-YiA" secondAttribute="top" constant="12" id="atb-us-D4u"/>
+                                                <constraint firstItem="37i-T6-klO" firstAttribute="centerX" secondItem="qcK-JN-YiA" secondAttribute="centerX" id="hDq-TI-73F"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="button" destination="37i-T6-klO" id="9eG-hy-IfR"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="JMSSSumCell" id="urf-VY-GsP" customClass="JMSSSumCell" customModule="CalendarApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="158.66666793823242" width="393" height="45.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="urf-VY-GsP" id="TZT-71-gkF">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="45.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Acm-hp-nqS">
+                                                    <rect key="frame" x="16" y="12.000000000000002" width="361" height="21.666666666666671"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Acm-hp-nqS" firstAttribute="leading" secondItem="TZT-71-gkF" secondAttribute="leading" constant="16" id="Jkg-qp-e70"/>
+                                                <constraint firstItem="Acm-hp-nqS" firstAttribute="top" secondItem="TZT-71-gkF" secondAttribute="top" constant="12" id="dV0-c6-zvE"/>
+                                                <constraint firstAttribute="trailing" secondItem="Acm-hp-nqS" secondAttribute="trailing" constant="16" id="fy4-h5-pI4"/>
+                                                <constraint firstAttribute="bottom" secondItem="Acm-hp-nqS" secondAttribute="bottom" constant="12" id="kRb-vd-pSG"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="sum" destination="Acm-hp-nqS" id="q5s-Lf-9ZO"/>
+                                        </connections>
+                                    </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="JMSSCell" id="Iro-Cv-mwg" customClass="JMSSCell" customModule="CalendarApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="50" width="393" height="67.333335876464844"/>
+                                        <rect key="frame" x="0.0" y="204.33333587646484" width="393" height="67.333335876464844"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Iro-Cv-mwg" id="U2N-Ax-3zU">
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="67.333335876464844"/>
@@ -101,6 +180,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
