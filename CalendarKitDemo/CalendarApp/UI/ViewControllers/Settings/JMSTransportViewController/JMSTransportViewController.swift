@@ -117,8 +117,15 @@ class JMSTransportViewController : UIViewController, UITableViewDelegate, UITabl
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let info = cells[indexPath.row]
-        transportSelectedBlock?(info.transport)
-        navigationController?.popViewController(animated: true)
+        showTransportEditViewController(info.transport)
+        
+    }
+    func showTransportEditViewController(_ transport: JMSTransport?) {
+        let storyboard = UIStoryboard(name: "JMSTransportEditViewController", bundle: nil)
+        let viewController = storyboard.instantiateInitialViewController()! as! JMSTransportEditViewController
+
+        viewController.uid = transport?.uid ?? ""
+        navigationController?.pushViewController(viewController, animated: true)
     }
     
 }

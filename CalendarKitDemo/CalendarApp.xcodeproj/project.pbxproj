@@ -23,6 +23,8 @@
 		5D0D97432CC6B74D00AAC732 /* JMSServiceDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0D97422CC6B74D00AAC732 /* JMSServiceDAO.swift */; };
 		5D0D97462CC6C82E00AAC732 /* JMSServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0D97452CC6C82E00AAC732 /* JMSServiceViewController.swift */; };
 		5D0D97482CC6C84A00AAC732 /* JMSServiceViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D0D97472CC6C84A00AAC732 /* JMSServiceViewController.storyboard */; };
+		5D1073F82CDD2CDF0086A187 /* JMSTransportEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1073F72CDD2CDF0086A187 /* JMSTransportEditViewController.swift */; };
+		5D1073FA2CDD2CF40086A187 /* JMSTransportEditViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D1073F92CDD2CF40086A187 /* JMSTransportEditViewController.storyboard */; };
 		5D3F06052CBECC1500A509E5 /* JMSTransport.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3F06042CBECC1500A509E5 /* JMSTransport.m */; };
 		5D3F060B2CBECE0F00A509E5 /* JMSTransportDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D3F060A2CBECE0F00A509E5 /* JMSTransportDAO.swift */; };
 		5D3F060E2CBED81C00A509E5 /* JMSTransportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D3F060D2CBED81C00A509E5 /* JMSTransportViewController.swift */; };
@@ -97,6 +99,8 @@
 		5D0D97422CC6B74D00AAC732 /* JMSServiceDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JMSServiceDAO.swift; sourceTree = "<group>"; };
 		5D0D97452CC6C82E00AAC732 /* JMSServiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JMSServiceViewController.swift; sourceTree = "<group>"; };
 		5D0D97472CC6C84A00AAC732 /* JMSServiceViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = JMSServiceViewController.storyboard; sourceTree = "<group>"; };
+		5D1073F72CDD2CDF0086A187 /* JMSTransportEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JMSTransportEditViewController.swift; sourceTree = "<group>"; };
+		5D1073F92CDD2CF40086A187 /* JMSTransportEditViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = JMSTransportEditViewController.storyboard; sourceTree = "<group>"; };
 		5D3F06032CBECBE500A509E5 /* JMSTransport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JMSTransport.h; sourceTree = "<group>"; };
 		5D3F06042CBECC1500A509E5 /* JMSTransport.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JMSTransport.m; sourceTree = "<group>"; };
 		5D3F060A2CBECE0F00A509E5 /* JMSTransportDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JMSTransportDAO.swift; sourceTree = "<group>"; };
@@ -256,6 +260,15 @@
 				5D0D97472CC6C84A00AAC732 /* JMSServiceViewController.storyboard */,
 			);
 			path = JMSServiceViewController;
+			sourceTree = "<group>";
+		};
+		5D1073F62CDD2C1D0086A187 /* JMSTransportEditViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5D1073F72CDD2CDF0086A187 /* JMSTransportEditViewController.swift */,
+				5D1073F92CDD2CF40086A187 /* JMSTransportEditViewController.storyboard */,
+			);
+			path = JMSTransportEditViewController;
 			sourceTree = "<group>";
 		};
 		5D3F060C2CBED7C300A509E5 /* JMSTransportViewController */ = {
@@ -443,6 +456,7 @@
 		5D952A0F2C6BC8D600D6BF67 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				5D1073F62CDD2C1D0086A187 /* JMSTransportEditViewController */,
 				5D02185D2CBBEC3600AA9CFC /* Settings */,
 				5D5E16272C6FB41A004F9BC2 /* Profile */,
 				5D952A102C6BC8DF00D6BF67 /* CountersViewController */,
@@ -653,6 +667,7 @@
 				5D5E162A2C6FB482004F9BC2 /* ProfileViewController.storyboard in Resources */,
 				5D5E162F2C6FB9DB004F9BC2 /* JMSNameSurnameViewController.storyboard in Resources */,
 				5D3F06102CBED83700A509E5 /* JMSTransportViewController.storyboard in Resources */,
+				5D1073FA2CDD2CF40086A187 /* JMSTransportEditViewController.storyboard in Resources */,
 				5DF961352CD1610A0033D789 /* JMSCurrencyViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -708,6 +723,7 @@
 			files = (
 				7924836B23CB7BFE003E3D27 /* AppDelegate.swift in Sources */,
 				5D460C152C6D25570096BC59 /* JMSDatabase.swift in Sources */,
+				5D1073F82CDD2CDF0086A187 /* JMSTransportEditViewController.swift in Sources */,
 				5D3F060E2CBED81C00A509E5 /* JMSTransportViewController.swift in Sources */,
 				5D02185A2CBBE5C900AA9CFC /* JMSColor.m in Sources */,
 				C3EB2619296B2D4E00024DB3 /* PhotosViewController.swift in Sources */,

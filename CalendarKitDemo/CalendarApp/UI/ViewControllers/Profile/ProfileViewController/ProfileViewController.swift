@@ -24,9 +24,9 @@ class JMSPTitleSubtitleSub2Cell : UITableViewCell {
 
 class ProfileViewController : UIViewController, UITableViewDelegate, UITableViewDataSource {
     enum Cells:Int {
-        case header, namesurname, aboutyou, religion, itogo
+        case header, namesurname, aboutyou, religion, itogo, transport
     }
-    let cells = [Cells.header, .namesurname,.aboutyou, .religion, .itogo]
+    let cells = [Cells.header, .namesurname,.aboutyou, .religion, .itogo, .transport]
     @IBOutlet var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -61,6 +61,8 @@ class ProfileViewController : UIViewController, UITableViewDelegate, UITableView
             return religionCell()
         case .itogo:
             return itogoCell()
+        case .transport:
+            return transportCell()
         }
     }
     
@@ -135,6 +137,12 @@ class ProfileViewController : UIViewController, UITableViewDelegate, UITableView
         cell.subtitle2?.text = subtitle2
         return cell
     }
+    func transportCell() -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "JMSPTitleSubtitleCell") as! JMSPTitleSubtitleCell
+        cell.title?.text = "Транспорт"
+        cell.subtitle?.text = ""
+        return cell
+    }
     
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -148,6 +156,8 @@ class ProfileViewController : UIViewController, UITableViewDelegate, UITableView
             showReligionViewController()
         case .itogo:
             showItogoViewController()
+        case .transport:
+            showTransportViewController()
         default:
             break
         }
@@ -173,6 +183,11 @@ class ProfileViewController : UIViewController, UITableViewDelegate, UITableView
     func showItogoViewController() {
         let storyboard = UIStoryboard(name: "JMSItogoViewController", bundle: nil)
         let viewController = storyboard.instantiateInitialViewController()! as! JMSItogoViewController
+        navigationController?.pushViewController(viewController, animated: true)
+    }
+    func showTransportViewController() {
+        let storyboard = UIStoryboard(name: "JMSTransportViewController", bundle: nil)
+        let viewController = storyboard.instantiateInitialViewController()! as! JMSTransportViewController
         navigationController?.pushViewController(viewController, animated: true)
     }
 }
